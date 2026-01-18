@@ -1,0 +1,5 @@
+** sch_path: /foss/designs/icdec-biomedical-pmic/xschem/power-fet/power-fet.sch
+.subckt power-fet VIN VSS EA_OUTPUT VREG
+*.PININFO VIN:I EA_OUTPUT:I VSS:B VREG:O
+XM1 VREG EA_OUTPUT VIN VSS sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=66 nf=8 m=10
+.ends
