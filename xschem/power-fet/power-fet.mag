@@ -1,0 +1,23 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1768724025
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+use sky130_fd_pr__pfet_g5v0d10v5_YYQDC9  XM1
+timestamp 1768724025
+transform 1 0 6049 0 1 0
+box -5285 -1328 5285 1328
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 VIN
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 VSS
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 EA_OUTPUT
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 VREG
+port 3 nsew
+<< end >>
