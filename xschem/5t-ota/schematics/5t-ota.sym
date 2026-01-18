@@ -1,0 +1,41 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 290 -160 310 -160 {}
+L 4 180 -250 180 -230 {}
+L 4 100 -140 120 -140 {}
+L 4 100 -180 120 -180 {}
+L 4 180 -200 180 -120 {}
+L 4 180 -200 250 -180 {}
+L 4 180 -120 250 -140 {}
+L 4 250 -180 250 -140 {}
+L 4 120 -180 180 -180 {}
+L 4 120 -140 180 -140 {}
+L 4 250 -160 290 -160 {}
+L 7 230 -250 230 -230 {}
+L 7 210 -90 210 -70 {}
+B 5 227.5 -252.5 232.5 -247.5 {name=VDD sig_type=std_logic dir=inout}
+B 5 307.5 -162.5 312.5 -157.5 {name=OUT sig_type=std_logic dir=out}
+B 5 177.5 -252.5 182.5 -247.5 {name=IBIAS sig_type=std_logic dir=in}
+B 5 97.5 -142.5 102.5 -137.5 {name=VN sig_type=std_logic dir=in}
+B 5 97.5 -182.5 102.5 -177.5 {name=VP sig_type=std_logic dir=in}
+B 5 207.5 -72.5 212.5 -67.5 {name=VSS sig_type=std_logic dir=inout}
+T {@symname} 215 -116 0 0 0.2 0.2 {}
+T {@name} 245 -222 0 0 0.2 0.2 {}
+T {VDD} 244 -235 1 1 0.2 0.2 {}
+T {OUT} 245 -164 0 1 0.2 0.2 {}
+T {IBIAS} 194 -265 1 0 0.2 0.2 {}
+T {VN} 185 -144 0 0 0.2 0.2 {}
+T {VP} 185 -184 0 0 0.2 0.2 {}
+T {VSS} 224 -65 1 1 0.2 0.2 {}
+N 120 -220 120 -90 {lab=#net1}
+N 120 -230 120 -220 {lab=#net1}
+N 120 -230 290 -230 {lab=#net1}
+N 120 -90 290 -90 {lab=#net1}
+N 290 -230 290 -90 {lab=#net1}
