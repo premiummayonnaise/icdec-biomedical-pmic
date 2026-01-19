@@ -4,7 +4,6 @@ K {}
 V {}
 S {}
 E {}
-N 1180 -290 1180 -280 {lab=GND}
 N 230 -500 650 -500 {lab=VIN}
 N 650 -350 650 -330 {lab=VREG}
 N 650 -440 650 -410 {lab=VIN}
@@ -37,7 +36,7 @@ N 370 -460 530 -460 {lab=VB}
 N 380 -250 440 -250 {lab=VB}
 N 340 -300 340 -280 {lab=VSS}
 N 340 -90 340 -60 {lab=VSS}
-C {code_shown.sym} 1260 -500 0 0 {name="AC-SIM" only_toplevel=false value="
+C {code_shown.sym} 1280 -500 0 0 {name="AC-SIM" only_toplevel=false value="
 
 .temp 27
 .control
@@ -62,19 +61,6 @@ plot VREG
 
 .endc
 "}
-C {vsource.sym} 1060 -420 0 0 {name=V2 value="1.25" savecurrent=false}
-C {vsource.sym} 1180 -420 0 0 {name=V6 value="DC 0.9" savecurrent=false}
-C {vsource.sym} 1180 -320 0 0 {name=V7 value=0 savecurrent=false}
-C {vsource.sym} 1060 -320 0 0 {name=V8 value="2.5" savecurrent=false}
-C {lab_pin.sym} 1060 -350 0 0 {name=p17 sig_type=std_logic lab=VIN}
-C {lab_pin.sym} 1060 -450 0 0 {name=p19 sig_type=std_logic lab=VREF}
-C {lab_pin.sym} 1180 -450 0 0 {name=p20 sig_type=std_logic lab=VB}
-C {lab_pin.sym} 1060 -290 0 0 {name=p21 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 1060 -390 0 0 {name=p22 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 1180 -390 0 0 {name=p23 sig_type=std_logic lab=VSS}
-C {gnd.sym} 1180 -280 0 0 {name=l3 lab=GND}
-C {lab_pin.sym} 1180 -350 0 0 {name=p27 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/corner.sym} 1020 -160 0 0 {name=CORNER1 only_toplevel=true corner=tt}
 C {sky130_fd_pr/pfet_01v8.sym} 630 -380 0 0 {name=M2
 W=80.5
 L=0.35
@@ -128,3 +114,28 @@ mult=1}
 C {icdec-biomedical-pmic/xschem/5t-ota/5t-ota.sym} 160 -240 0 0 {name=x1}
 C {icdec-biomedical-pmic/xschem/error-amplifier/schematics/error-amplifier.sym} 190 -70 0 0 {name=x2}
 C {lab_pin.sym} 340 -60 0 0 {name=p3 sig_type=std_logic lab=VSS}
+C {vsource.sym} 1030 -280 0 0 {name=V1 value="ac -1m dc 1.8" savecurrent=false}
+C {vsource.sym} 1030 -190 0 0 {name=V3 value="ac 1m dc 1.8" savecurrent=false}
+C {lab_pin.sym} 1030 -250 0 0 {name=p8 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1030 -160 0 0 {name=p9 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1030 -310 0 0 {name=p4 sig_type=std_logic lab=VN}
+C {lab_pin.sym} 1030 -220 0 0 {name=p12 sig_type=std_logic lab=VP}
+C {vsource.sym} 1180 -280 0 0 {name=V5 value=5 savecurrent=false}
+C {vsource.sym} 1180 -190 0 0 {name=V4 value=0 savecurrent=false}
+C {lab_pin.sym} 1180 -250 0 0 {name=p5 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1180 -310 0 0 {name=p6 sig_type=std_logic lab=VDD}
+C {gnd.sym} 1180 -160 0 0 {name=l2 lab=GND}
+C {lab_pin.sym} 1180 -220 0 0 {name=p14 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/corner.sym} 1110 -450 0 0 {name=CORNER only_toplevel=true corner=ss}
+C {lab_pin.sym} 740 -570 0 1 {name=p7 lab=IBIAS_200uA}
+C {lab_pin.sym} 740 -630 0 0 {name=p10 sig_type=std_logic lab=VDD}
+C {isource.sym} 740 -600 0 0 {name=I4 value="200u" savecurrent=false}
+C {vsource.sym} 1030 -400 0 0 {name=V9 value="ac 1m DC 0.9" savecurrent=false}
+C {lab_pin.sym} 1030 -370 0 0 {name=p15 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1030 -430 0 0 {name=p24 sig_type=std_logic lab=VCM}
+C {vsource.sym} 1030 -90 0 0 {name=V10 value="DC 5 AC 1" savecurrent=false}
+C {lab_pin.sym} 1030 -60 0 0 {name=p30 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1030 -120 0 0 {name=p31 sig_type=std_logic lab=VDDr}
+C {lab_pin.sym} 580 -570 0 1 {name=p37 lab=IBIAS_10uA}
+C {lab_pin.sym} 580 -630 0 0 {name=p38 sig_type=std_logic lab=VDD}
+C {isource.sym} 580 -600 0 0 {name=I1 value="10u" savecurrent=false}
