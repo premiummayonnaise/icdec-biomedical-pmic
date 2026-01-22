@@ -1,0 +1,15 @@
+** sch_path: /foss/designs/kerjapraktik/test/comparator_5/comparator_5v.sch
+.subckt comparator_5v VDD REF IN OUT B1 B2 VSS
+*.PININFO VDD:B VSS:B OUT:O IN:I REF:I B1:I B2:I
+XM12 net1 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.75 W=7.5 nf=2 m=1
+XM1 net2 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.75 W=7.5 nf=2 m=1
+XM3 net1 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.75 W=7.5 nf=2 m=1
+XM5 net2 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.75 W=7.5 nf=2 m=1
+XM6 OUT net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.75 W=7.5 nf=2 m=1
+XM2 net1 REF net3 net3 sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.16 nf=1 m=1
+XM7 net2 IN net3 net3 sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.16 nf=1 m=1
+XM8 net3 B1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.75 W=6 nf=2 m=1
+XM9 net4 B2 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.75 W=6 nf=2 m=1
+XM10 OUT B2 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.75 W=6 nf=2 m=1
+XM4 net4 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.75 W=7.5 nf=2 m=1
+.ends
