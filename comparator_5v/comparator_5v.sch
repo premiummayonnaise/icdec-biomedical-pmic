@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N -730 -340 -730 -260 {lab=#net1}
 N -790 -300 -730 -300 {lab=#net1}
