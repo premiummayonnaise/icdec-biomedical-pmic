@@ -4,105 +4,48 @@ K {}
 V {}
 S {}
 E {}
-N 740 -360 830 -360 {lab=#net1}
-N 1010 -140 1010 -120 {lab=VFBr}
-N 940 -140 1010 -140 {lab=VFBr}
-N 1010 -160 1010 -140 {lab=VFBr}
-N 1010 -120 1010 -110 {lab=VFBr}
-N 1010 -240 1010 -220 {lab=VREG}
-N 480 -480 510 -480 {lab=#net1}
-N 480 -220 510 -220 {lab=#net1}
-N 380 -390 560 -390 {lab=VSS}
-N 560 -390 560 -130 {lab=VSS}
-N 380 -130 560 -130 {lab=VSS}
-N 400 -570 630 -570 {lab=VIN}
-N 630 -570 630 -310 {lab=VIN}
-N 400 -310 630 -310 {lab=VIN}
-N 180 -500 270 -500 {lab=VREF}
-N 180 -500 180 -200 {lab=VREF}
-N 180 -200 270 -200 {lab=VREF}
-N 220 -460 270 -460 {lab=VFBr}
-N 220 -460 220 -240 {lab=VFBr}
-N 220 -240 270 -240 {lab=VFBr}
-N 90 -410 220 -410 {lab=VFBr}
-N 90 -310 180 -310 {lab=VREF}
-N 350 -610 350 -570 {lab=IBIAS_200uA}
-N 350 -350 350 -310 {lab=IBIAS_10uA}
-N 630 -440 700 -440 {lab=VIN}
-N 560 -270 700 -270 {lab=VSS}
-N 1010 -620 1010 -490 {lab=VIN}
-N 510 -480 740 -480 {lab=#net1}
-N 740 -480 740 -380 {lab=#net1}
-N 510 -220 740 -220 {lab=#net1}
-N 740 -380 740 -220 {lab=#net1}
-N 1010 -230 1150 -230 {lab=VREG}
-N 990 -360 1060 -360 {lab=VSS}
-N 1150 -230 1380 -230 {lab=VREG}
-N 1750 -450 1750 -440 {lab=GND}
-N 1220 -80 1220 -60 {lab=VSS}
-N 1180 -230 1180 -180 {lab=VREG}
-N 1220 -230 1220 -210 {lab=VREG}
-N 1220 -180 1220 -150 {lab=VSS}
-N 1220 -150 1220 -140 {lab=VSS}
-N 1220 -140 1220 -80 {lab=VSS}
-N 780 -360 780 -230 {lab=#net1}
-N 890 -230 1010 -230 {lab=VREG}
-N 740 -50 780 -50 {lab=#net2}
-N 840 -50 870 -50 {lab=VREG}
-N 780 -230 780 -200 {lab=#net1}
-N 670 -200 780 -200 {lab=#net1}
-N 670 -200 670 -50 {lab=#net1}
-N 670 -50 680 -50 {lab=#net1}
-N 870 -230 870 -50 {lab=VREG}
-N 870 -230 890 -230 {lab=VREG}
-N 1320 -170 1320 -140 {lab=VSS}
-N 770 -560 770 -360 {lab=#net1}
-N 640 -620 1010 -620 {lab=VIN}
-N 1320 -80 1320 -60 {lab=VSS}
-N 1320 -140 1320 -80 {lab=VSS}
-C {icdec-biomedical-pmic/xschem/power-fet/power-fet.sym} 690 -180 0 0 {name=x2}
-C {lab_pin.sym} 990 -190 0 0 {name=p13 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 940 -140 0 0 {name=p11 lab=VFBr}
-C {lab_pin.sym} 990 -80 0 0 {name=p1 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 1010 -50 0 0 {name=p2 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1010 -80 0 0 {name=R3
-L=235
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_2p85.sym} 1010 -190 0 0 {name=R1
-L=0.35
-model=res_high_po_2p85
-spiceprefix=X
-mult=1}
-C {lab_pin.sym} 1060 -360 0 1 {name=p3 sig_type=std_logic lab=VSS}
-C {icdec-biomedical-pmic/xschem/error-amplifier/schematics/two-stage-miller.sym} 100 -300 0 0 {name=x3}
-C {icdec-biomedical-pmic/xschem/5t-ota/schematics/5t-ota.sym} 170 -60 0 0 {name=x4}
-C {lab_pin.sym} 90 -410 0 0 {name=p4 lab=VFBr}
-C {lab_pin.sym} 90 -310 0 0 {name=p8 lab=VREF}
-C {lab_pin.sym} 350 -350 0 0 {name=p23 lab=IBIAS_10uA}
-C {lab_pin.sym} 350 -610 0 0 {name=p24 lab=IBIAS_200uA}
-C {ipin.sym} 700 -440 0 1 {name=p25 lab=VIN}
-C {iopin.sym} 700 -270 0 0 {name=p27 lab=VSS}
-C {lab_pin.sym} 1380 -230 0 1 {name=p17 sig_type=std_logic lab=VREG}
-C {lab_pin.sym} 1320 -60 0 1 {name=p18 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 1440 -550 0 1 {name=p10 lab=IBIAS_200uA}
-C {lab_pin.sym} 1440 -610 0 0 {name=p12 sig_type=std_logic lab=VIN}
-C {isource.sym} 1440 -580 0 0 {name=I4 value="200u" savecurrent=false}
-C {lab_pin.sym} 1320 -550 0 1 {name=p34 lab=IBIAS_10uA}
-C {lab_pin.sym} 1320 -610 0 0 {name=p16 sig_type=std_logic lab=VIN}
-C {isource.sym} 1320 -200 0 0 {name=I3 value="PWL(
-+ 0       0
-+ 20m     0
-+ 200m    50m
-)"
- savecurrent=false}
-C {code_shown.sym} 1820 -650 0 0 {name=AC-SIM1 only_toplevel=false value="
+N 1430 -510 1430 -500 {lab=GND}
+N 510 -380 600 -380 {lab=#net1}
+N 780 -160 780 -140 {lab=VFBr}
+N 710 -160 780 -160 {lab=VFBr}
+N 780 -180 780 -160 {lab=VFBr}
+N 780 -140 780 -130 {lab=VFBr}
+N 780 -260 780 -240 {lab=VREG}
+N 170 -510 170 -470 {lab=IBIAS_200uA}
+N 780 -640 780 -510 {lab=VIN}
+N 780 -250 920 -250 {lab=VREG}
+N 760 -380 830 -380 {lab=VSS}
+N 920 -250 1150 -250 {lab=VREG}
+N 990 -100 990 -80 {lab=VSS}
+N 990 -250 990 -230 {lab=VREG}
+N 990 -170 990 -160 {lab=VSS}
+N 990 -160 990 -100 {lab=VSS}
+N 350 -250 370 -250 {lab=#net1}
+N 430 -250 470 -250 {lab=#net2}
+N 530 -250 560 -250 {lab=VREG}
+N 630 -250 780 -250 {lab=VREG}
+N 220 -510 220 -470 {lab=VIN}
+N 200 -290 200 -250 {lab=VSS}
+N 300 -380 510 -380 {lab=#net1}
+N 560 -250 630 -250 {lab=VREG}
+N 350 -380 350 -250 {lab=#net1}
+N 1090 -180 1090 -160 {lab=VSS}
+N 1090 -100 1090 -70 {lab=VSS}
+N 1090 -160 1090 -100 {lab=VSS}
+N 1090 -250 1090 -240 {lab=VREG}
+N 490 -520 490 -380 {lab=#net1}
+N 490 -640 490 -580 {lab=VIN}
+C {lab_pin.sym} 1120 -610 0 1 {name=p10 lab=IBIAS_200uA}
+C {lab_pin.sym} 1120 -670 0 0 {name=p12 sig_type=std_logic lab=VIN}
+C {isource.sym} 1120 -640 0 0 {name=I4 value="200u" savecurrent=false}
+C {lab_pin.sym} 1000 -610 0 1 {name=p34 lab=IBIAS_10uA}
+C {lab_pin.sym} 1000 -670 0 0 {name=p16 sig_type=std_logic lab=VIN}
+C {code_shown.sym} 1500 -710 0 0 {name=AC-SIM1 only_toplevel=false value="
 
 .temp 27
 .control
 
-tran 10u 200m
+tran 1u 50m
 
 * Nominal output voltage (from regulation region)
 let Vout_nom = 1.25
@@ -132,82 +75,97 @@ plot I(load)
 
 .endc
 "}
-C {vsource.sym} 1630 -580 0 0 {name=V4 value="PWL(
-+ 0       0
-+ 5m      0
-+ 15m     0.6
-+ 30m     1.3
-+ 45m     1.25
-+ 200m    1.25
-)" savecurrent=false}
-C {vsource.sym} 1750 -480 0 0 {name=V5 value=0 savecurrent=false}
-C {vsource.sym} 1630 -480 0 0 {name=V9 value="PWL(
-+ 0     0
-+ 2u    5
-)"
+C {vsource.sym} 1310 -640 0 0 {name=V4 value="1.25" savecurrent=false}
+C {vsource.sym} 1430 -540 0 0 {name=V5 value=0 savecurrent=false}
+C {vsource.sym} 1310 -540 0 0 {name=V9 value="5"
 savecurrent=false}
-C {lab_pin.sym} 1630 -510 0 0 {name=p42 sig_type=std_logic lab=VIN}
-C {lab_pin.sym} 1630 -610 0 0 {name=p47 sig_type=std_logic lab=VREF}
-C {lab_pin.sym} 1630 -450 0 0 {name=p49 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 1630 -550 0 0 {name=p50 sig_type=std_logic lab=VSS}
-C {gnd.sym} 1750 -440 0 0 {name=l1 lab=GND}
-C {lab_pin.sym} 1750 -510 0 0 {name=p52 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/corner.sym} 1620 -320 0 0 {name=CORNER2 only_toplevel=true corner=ff}
-C {lab_pin.sym} 1320 -550 0 1 {name=p5 lab=IBIAS_10uA}
-C {isource.sym} 1320 -580 0 0 {name=I5 value="10u" savecurrent=false}
-C {lab_pin.sym} 1220 -60 0 1 {name=p41 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1200 -180 0 0 {name=M2
-W=20
-L=0.5
-nf=1
-mult=128
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_g5v0d10v5
-spiceprefix=X
-}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 710 -50 1 0 {name=C1 model=cap_mim_m3_1 W=25 L=25 MF=8 spiceprefix=X}
-C {sky130_fd_pr/pfet3_g5v0d10v5.sym} 810 -30 3 0 {name=M1
-W=20
-L=0.5
-body=VDD
-nf=1
-mult=2
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
-spiceprefix=X
-}
-C {lab_pin.sym} 810 -10 0 0 {name=p6 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/pfet3_g5v0d10v5.sym} 750 -590 0 0 {name=M3
-W=10
-L=0.5
-body=VDD
-nf=1
-mult=2
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
-spiceprefix=X
-}
-C {lab_pin.sym} 640 -620 0 0 {name=p7 sig_type=std_logic lab=VIN}
-C {lab_pin.sym} 730 -590 0 0 {name=p9 sig_type=std_logic lab=EN}
-C {vsource.sym} 1440 -480 0 0 {name=V1 value="PWL(
+C {lab_pin.sym} 1310 -570 0 0 {name=p42 sig_type=std_logic lab=VIN}
+C {lab_pin.sym} 1310 -670 0 0 {name=p47 sig_type=std_logic lab=VREF}
+C {lab_pin.sym} 1310 -510 0 0 {name=p49 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1310 -610 0 0 {name=p50 sig_type=std_logic lab=VSS}
+C {gnd.sym} 1430 -500 0 0 {name=l1 lab=GND}
+C {lab_pin.sym} 1430 -570 0 0 {name=p52 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/corner.sym} 1300 -380 0 0 {name=CORNER2 only_toplevel=true corner=tt}
+C {lab_pin.sym} 1000 -610 0 1 {name=p5 lab=IBIAS_10uA}
+C {isource.sym} 1000 -640 0 0 {name=I5 value="10u" savecurrent=false}
+C {vsource.sym} 1120 -540 0 0 {name=V1 value="PWL(
 + 0       0
 + 40m     0
 + 41m     5
 )" savecurrent=false}
-C {lab_pin.sym} 1440 -510 0 0 {name=p14 sig_type=std_logic lab=EN}
-C {lab_pin.sym} 1440 -450 0 0 {name=p15 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1120 -570 0 0 {name=p14 sig_type=std_logic lab=EN}
+C {lab_pin.sym} 1120 -510 0 0 {name=p15 sig_type=std_logic lab=VSS}
+C {icdec-biomedical-pmic/xschem/power-fet/power-fet.sym} 460 -200 0 0 {name=x1}
+C {lab_pin.sym} 760 -210 0 0 {name=p19 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 710 -160 0 0 {name=p20 lab=VFBr}
+C {lab_pin.sym} 760 -100 0 0 {name=p21 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 780 -70 0 0 {name=p22 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/res_high_po_0p35.sym} 780 -100 0 0 {name=R2
+L=235
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_2p85.sym} 780 -210 0 0 {name=R4
+L=0.35
+model=res_high_po_2p85
+spiceprefix=X
+mult=1}
+C {lab_pin.sym} 830 -380 0 1 {name=p26 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 780 -640 0 0 {name=p28 sig_type=std_logic lab=VIN}
+C {icdec-biomedical-pmic/xschem/error-amplifier/schematics/two-stage-miller.sym} -80 -200 0 0 {name=x5}
+C {lab_pin.sym} 90 -360 0 0 {name=p29 lab=VFBr}
+C {lab_pin.sym} 90 -400 0 0 {name=p30 lab=VREF}
+C {lab_pin.sym} 170 -510 0 0 {name=p31 lab=IBIAS_200uA}
+C {ipin.sym} 220 -510 0 1 {name=p32 lab=VIN}
+C {iopin.sym} 200 -250 0 0 {name=p33 lab=VSS}
+C {lab_pin.sym} 1150 -250 0 1 {name=p35 sig_type=std_logic lab=VREG}
+C {lab_pin.sym} 990 -80 0 1 {name=p36 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 400 -250 1 0 {name=C2 model=cap_mim_m3_1 W=25 L=25 MF=8 spiceprefix=X}
+C {sky130_fd_pr/pfet3_g5v0d10v5.sym} 500 -230 3 0 {name=M4
+W=20
+L=0.5
+body=VDD
+nf=1
+mult=2
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {lab_pin.sym} 500 -210 0 0 {name=p37 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1090 -70 0 0 {name=p38 sig_type=std_logic lab=VSS}
+C {isource.sym} 1090 -210 0 0 {name=I1 value="PWL(
++ 0        5m
++ 0.01u    5m
++ 0.011u   50m
++ 0.02u    50m
++ 0.021u   10m
++ 0.025u   10m
++ 0.026u   50m
++ 0.035u   50m
++ 0.036u   5m
++ 0.04u    5m
+)"
+ savecurrent=false}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 990 -200 0 0 {name=C3 model=cap_mim_m3_1 W=30 L=30 MF=8 spiceprefix=X}
+C {sky130_fd_pr/pfet3_g5v0d10v5.sym} 470 -550 0 0 {name=M1
+W=20
+L=0.5
+body=VDD
+nf=1
+mult=2
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {lab_pin.sym} 490 -640 0 0 {name=p1 sig_type=std_logic lab=VIN}
+C {lab_pin.sym} 450 -550 0 0 {name=p2 sig_type=std_logic lab=EN}

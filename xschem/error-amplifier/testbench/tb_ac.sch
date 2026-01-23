@@ -32,13 +32,13 @@ N 380 -310 380 -120 {lab=OUT3}
 N 250 -120 380 -120 {lab=OUT3}
 N 270 -120 270 -110 {lab=OUT3}
 N 120 -120 190 -120 {lab=VN}
-C {vsource.sym} 560 -440 0 0 {name=V2 value="ac -1m dc 1.8" savecurrent=false}
-C {vsource.sym} 560 -350 0 0 {name=V3 value="ac 1m dc 1.8" savecurrent=false}
+C {vsource.sym} 560 -440 0 0 {name=V2 value="ac -1m dc 1.25" savecurrent=false}
+C {vsource.sym} 560 -350 0 0 {name=V3 value="ac 1m dc 1.25" savecurrent=false}
 C {lab_pin.sym} 560 -410 0 0 {name=p8 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 560 -320 0 0 {name=p9 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 560 -470 0 0 {name=p11 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 560 -380 0 0 {name=p12 sig_type=std_logic lab=VP}
-C {devices/code_shown.sym} 790 -850 0 0 {name=NGSPICE only_toplevel=true
+C {devices/code_shown.sym} 800 -790 0 0 {name=NGSPICE only_toplevel=true
 value=".control
   .temp 27
   op
@@ -48,7 +48,7 @@ value=".control
   * --- Original Logic ---
   let vd = v(vp) - v(vn)
   let Av = db( v(OUT) / vd)
-  let phase = 180 + 180*cph( v(OUT) )/pi
+  let phase = 180*cph( v(OUT) )/pi
 
   * --- New Measurement Snippet ---
   * We use the 'Av' and 'phase' vectors created above
