@@ -1,0 +1,85 @@
+**.subckt tb_ac
+V2 VN VSS ac -1m dc 1.25
+V3 VP VSS ac 1m dc 1.25
+V5 VDD VSS 5
+V7 VSS GND 0
+C2 OUT VSS 1p m=1
+I4 VDD IBIAS 200u
+C1 OUT2 VSS 5p m=1
+V1 VCM VSS ac 1m DC 0.9
+C3 OUT3 VSS 10p m=1
+R1 OUT3 VN 1k m=1
+V4 VDDr VSS DC 5 AC 1
+
+x1 VDD OUT VP VN IBIAS VSS two-stage-miller
+x2 VDD OUT2 VCM VCM IBIAS VSS two-stage-miller
+x3 VDDr OUT3 VP VN IBIAS VSS two-stage-miller
+
+.control
+  let runs = 30
+  let run = 1
+  
+  * --- Create Storage Vectors ---
+  compose ugbw_vec size $runs
+  compose pm_vec size $runs
+  compose cmrr_vec size $runs
+  compose psrr_vec size $runs
+
+  dowhile run <= runs
+    reset
+    
+    * Run Analysis
+    ac dec 100 1 100MEG
+    
+    * --- Gain & Phase ---
+    let vd = v(vp) - v(vn)
+    let Av = db(v(OUT) / vd)
+    let phase = 180*cph(v(OUT))/pi
+    
+    * --- CMRR & PSRR Logic ---
+    let Acm = db(v(OUT2) / vcm)
+    let cmrr_val = Av - Acm
+    * PSRR calculation (at low frequency/DC, index 0)
+    let psrr_val = -20*log10(v(OUT3)[0]) 
+
+    * --- Measurements ---
+    meas ac f_0db when Av = 0
+    meas ac phase_at_unity find phase when Av = 0
+    
+    * --- Store values in vectors (index is run-1) ---
+    let ugbw_vec[run-1] = f_0db
+    let pm_vec[run-1] = phase_at_unity
+    let cmrr_vec[run-1] = cmrr_val[0] ; captures DC/Low-freq CMRR
+    let psrr_vec[run-1] = psrr_val
+
+    echo "Iteration $&run of $&runs complete."
+    let run = run + 1
+  end
+
+  * --- Final Output ---
+  echo "Summary of Monte Carlo (30 Runs):"
+  print ugbw_vec pm_vec cmrr_vec psrr_vec
+  
+  * Plotting the last run results
+  plot Av Acm Title 'Differential vs Common Mode Gain'
+  plot psrr_vec Title 'PSRR Distribution'
+.endc
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+* [Subcircuit "two-stage-miller" remains the same as your netlist]
+.subckt two-stage-miller VDD OUT VP VN IBIAS VSS
+XM1 net3 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=75.2 nf=8
+XM2 net2 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=75.2 nf=8
+XM3 net3 VN net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=37.7 nf=8
+XM4 net2 VP net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=37.7 nf=8
+XM5 net1 IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=8
+XM6 IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=8
+XM7 OUT net3 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=160 nf=16
+XM8 OUT IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=8
+XC1 net4 net3 sky130_fd_pr__cap_mim_m3_1 W=25 L=25 MF=8 m=8
+XM9 OUT VSS net4 net4 sky130_fd_pr__pfet_g5v0d10v5 L=0.9 W=20 nf=4
+.ends
+
+.GLOBAL GND
+.end
