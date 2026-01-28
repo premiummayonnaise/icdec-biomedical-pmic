@@ -1,0 +1,164 @@
+* ============================================================
+* tb_ac_pex_mc.spice
+* Standalone PEX AC + CMRR + PSRR + 30-run loop
+* Requires: wo-stage-miller_pex.spice in the SAME working dir
+* ============================================================
+
+.option scale=1
+.GLOBAL 0
+
+* ------------------------
+* --- LINK TO PEX NETLIST
+* ------------------------
+* IMPORTANT: This must point to the PEX netlist you already generated.
+* Put this tb file in the same folder as wo-stage-miller_pex.spice
+.include "two-stage-miller_pex.spice"
+
+* ------------------------
+* --- SOURCES / LOADS (match your tb_ac intent)
+* ------------------------
+* Differential inputs (small-signal)
+V2 VN   VSS  ac -1m  dc 1.25
+V3 VP   VSS  ac  1m  dc 1.25
+
+* Supplies
+V5 VDD  VSS  dc 5
+V4 VDDr VSS  dc 5 ac 1
+
+* Local ground reference
+V7 VSS  0    0
+
+* Bias current source
+I4 VDD  IBIAS 200u
+
+* Loads / extra networks
+C2 OUT  VSS  1p
+C1 OUT2 VSS  5p
+C3 OUT3 VSS  10p
+R1 OUT3 VN   1k
+
+* ------------------------
+* --- DUT INSTANCES (PEX subckt name must match the included file)
+* ------------------------
+* x1: differential gain
+x1 VDD OUT  VP  VN  IBIAS VSS two-stage-miller
+
+* x2: common-mode gain (VCM injection)
+V1 VCM  VSS  ac 1m dc 0.9
+x2 VDD OUT2 VCM VCM IBIAS VSS two-stage-miller
+
+* x3: PSRR injection (VDDr has AC=1)
+x3 VDDr OUT3 VP  VN  IBIAS VSS two-stage-miller
+
+
+* ------------------------
+* --- MODELS / CORNER
+* ------------------------
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice ss
+
+
+* ============================================================
+* CONTROL: single run plots + 30-run “MC-style” repeats
+* ============================================================
+.control
+  set noaskquit
+  .temp 27
+
+  * ----------------------------------------------------------
+  * FIRST: do ONE run (so you still get the plots like before)
+  * ----------------------------------------------------------
+  op
+  ac dec 100 1 100MEG
+  save all
+
+  * Differential gain/phase
+  let vd = v(vp) - v(vn)
+  let Av = db( v(OUT) / vd)
+  let phase = 180*cph( v(OUT) )/pi
+
+  meas ac f_0db when Av = 0
+  meas ac phase_at_unity find phase when Av = 0
+
+  * Common-mode gain / CMRR
+  let Acm = db( v(OUT2) / vcm )
+  let cmrr = Av - Acm
+
+  * PSRR: VDDr has AC=1, so v(out3) is transfer from supply ripple
+  let psrr = -20*log10( mag(v(OUT3)) )
+
+  print f_0db phase_at_unity
+  plot psrr
+  plot av
+  plot acm
+  plot cmrr
+  plot phase
+
+  * ----------------------------------------------------------
+  * THEN: 30-run loop (same measurements each run)
+  * NOTE: This only “varies” if your models enable mismatch/MC.
+  * ----------------------------------------------------------
+  let mc_runs = 30
+  let run = 0
+
+  compose a0_gain_vec  values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose pm_val_vec   values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose cmrr_val_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose psrr_val_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+  dowhile run < mc_runs
+    reset
+    .temp 27
+
+    * --- Differential setup (match your earlier MC snippet style)
+    alter v2 dc = 1.25
+    alter v2 acmag = 0.5
+    alter v3 dc = 1.25
+    alter v3 acmag = 0.5
+    alter v3 acphase = 180
+
+    alter v5 dc = 5
+    alter v5 acmag = 0
+
+    * Keep PSRR source defined; for this first AC it doesn’t matter
+    alter v4 dc = 5
+    alter v4 acmag = 1
+
+    ac dec 50 1 100meg
+
+    * Gain @ low-f
+    let g_inst = db( mag(v(out)) / mag(v(vp)-v(vn)) )
+    let a0_gain_vec[run] = g_inst[0]
+
+    * Phase margin estimate @ unity gain
+    let p_inst = (180/pi)*cph( v(out)/(v(vp)-v(vn)) )
+    meas ac p_unity find p_inst when g_inst=0
+    let pm_val_vec[run] = 180 + p_unity
+
+    * CMRR: make inputs in-phase (common-mode)
+    alter v3 acphase = 0
+    ac dec 50 1 100meg
+    let a_cm = db( mag(v(out)) / mag(v(vp)) )
+    let cmrr_val_vec[run] = a0_gain_vec[run] - a_cm[0]
+
+    * PSRR: kill input AC, drive VDD ripple through VDDr path (x3)
+    alter v2 acmag = 0
+    alter v3 acmag = 0
+    alter v3 acphase = 0
+    * VDDr already has AC=1
+    ac dec 50 1 100meg
+    let psrr_inst = -20*log10( mag(v(out3)) )
+    let psrr_val_vec[run] = psrr_inst[0]
+
+    let run = run + 1
+    echo "Run $&run done."
+  endwhile
+
+  echo "-------------------------------------------------"
+  echo "         FINAL STATISTICAL REPORT (PEX)          "
+  echo "-------------------------------------------------"
+  print mean(a0_gain_vec) mean(pm_val_vec) mean(cmrr_val_vec) mean(psrr_val_vec)
+
+  plot a0_gain_vec pm_val_vec title "Gain & PM (30 runs)"
+.endc
+
+.end

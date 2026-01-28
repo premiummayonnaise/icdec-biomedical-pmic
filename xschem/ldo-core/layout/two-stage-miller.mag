@@ -1,0 +1,91 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1769436194
+<< error_s >>
+rect 2744 -77969 2761 -75673
+rect 2798 -78018 2815 -75722
+rect 5530 -76773 5588 -76621
+rect 5571 -78064 5588 -76773
+rect 5589 -76773 5654 -76737
+rect 5589 -76831 5740 -76773
+rect 5589 -78064 5683 -76831
+rect 5589 -78130 5654 -78064
+rect 7168 -78159 7215 -76784
+rect 7222 -78213 7269 -76838
+rect 8765 -78224 8812 -76838
+rect 8819 -78278 8866 -76784
+rect 11562 -78289 11609 -76356
+rect 14413 -76374 14471 -76258
+rect 11616 -78343 11663 -76410
+rect 14347 -78354 14471 -76374
+rect 14547 -78188 14558 -76258
+rect 19609 -76570 19667 -76418
+rect 14347 -78390 14460 -78354
+rect 14413 -78408 14460 -78390
+rect 19650 -78419 19667 -76570
+rect 19668 -76570 19733 -76534
+rect 19668 -76628 19819 -76570
+rect 19668 -78419 19762 -76628
+rect 19668 -78485 19733 -78419
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+use sky130_fd_pr__cap_mim_m3_1_R7S84X  XC1
+timestamp 1769436194
+transform 1 0 25216 0 1 -94630
+box -2686 -21280 2686 21280
+use sky130_fd_pr__pfet_g5v0d10v5_SFZ6J8  XM1
+timestamp 1769436194
+transform 1 0 1366 0 1 -76798
+box -1461 -1237 1461 1237
+use sky130_fd_pr__pfet_g5v0d10v5_SFZ6J8  XM2
+timestamp 1769436194
+transform 1 0 4193 0 1 -76893
+box -1461 -1237 1461 1237
+use sky130_fd_pr__nfet_g5v0d10v5_5BVNGQ  XM3
+timestamp 1769436194
+transform 1 0 6420 0 1 -77466
+box -831 -729 831 729
+use sky130_fd_pr__nfet_g5v0d10v5_5BVNGQ  XM4
+timestamp 1769436194
+transform 1 0 8017 0 1 -77531
+box -831 -729 831 729
+use sky130_fd_pr__nfet_g5v0d10v5_4AXLQQ  XM5
+timestamp 1769436194
+transform 1 0 10214 0 1 -77317
+box -1431 -1008 1431 1008
+use sky130_fd_pr__nfet_g5v0d10v5_4AXLQQ  XM6
+timestamp 1769436194
+transform 1 0 13011 0 1 -77382
+box -1431 -1008 1431 1008
+use sky130_fd_pr__pfet_g5v0d10v5_HWRH7L  XM7
+timestamp 1769436194
+transform 1 0 17040 0 1 -77188
+box -2693 -1297 2693 1297
+use sky130_fd_pr__nfet_g5v0d10v5_4AXLQQ  XM8
+timestamp 1769436194
+transform 1 0 21099 0 1 -77542
+box -1431 -1008 1431 1008
+use sky130_fd_pr__pfet_g5v0d10v5_X45ZZ5  XM9
+timestamp 1769436194
+transform 1 0 28512 0 1 -115208
+box -705 -797 705 797
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 VDD
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 OUT
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 VP
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 VN
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 IBIAS
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 VSS
+port 5 nsew
+<< end >>

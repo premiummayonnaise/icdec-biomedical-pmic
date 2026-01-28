@@ -1,0 +1,91 @@
+* tb_ac_pex_mc30.spice
+* Uses extracted PEX via include ONLY
+
+.include "two-stage-miller_pex.spice"
+
+.GLOBAL GND
+
+* --- TESTBENCH (same structure as your tb_ac) ---
+V2   VN   VSS  ac -1m dc 1.25
+V3   VP   VSS  ac  1m dc 1.25
+V5   VDD  VSS  5
+V7   VSS  GND  0
+
+C2   OUT   VSS  1p
+C1   OUT2  VSS  5p
+C3   OUT3  VSS  10p
+R1   OUT3  VN   1k
+
+I4   VDD   IBIAS 200u
+V1   VCM   VSS  ac 1m dc 1.25
+V4   VDDr  VSS  dc 5 ac 1
+
+* --- DUT instances (PEX) ---
+* NOTE: subckt name must match inside two-stage-miller_pex.spice
+x1 VDD OUT  VP VN IBIAS VSS two-stage-miller
+x2 VDD OUT2 VCM VCM IBIAS VSS two-stage-miller
+x3 VDDr OUT3 VP VN IBIAS VSS two-stage-miller
+
+.control
+  .temp 27
+
+  let mc_runs = 30
+  let run = 0
+
+  * init vectors (30 entries)
+  compose a0_gain_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose pm_val_vec   values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose cmrr_val_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose psrr_val_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+  dowhile run < mc_runs
+    reset
+    op
+
+    * --- Gain/PM (differential) ---
+    alter v2 dc = 1.25
+    alter v2 acmag = 1m
+    alter v3 dc = 1.25
+    alter v3 acmag = 1m
+    alter v3 acphase = 180
+    alter v5 dc = 5
+    alter v5 acmag = 0
+
+    ac dec 100 1 100meg
+
+    let g_inst = db(mag(v(out))/(mag(v(vp)-v(vn))))
+    let a0_gain_vec[run] = g_inst[0]
+
+    let p_inst = (180/pi)*cph(v(out)/(v(vp)-v(vn)))
+    meas ac p_unity find p_inst when g_inst=0
+    let pm_val_vec[run] = 180 + p_unity
+
+    * --- CMRR (common-mode) ---
+    alter v3 acphase = 0
+    ac dec 100 1 100meg
+    let a_cm = db(mag(v(out2))/mag(v(vcm)))
+    let cmrr_val_vec[run] = a0_gain_vec[run] - a_cm[0]
+
+    * --- PSRR (supply injection at VDDr via x3) ---
+    alter v2 acmag = 0
+    alter v3 acmag = 0
+    alter v4 acmag = 1
+    ac dec 100 1 100meg
+    let psrr_inst = a0_gain_vec[run] - db(mag(v(out3)))
+    let psrr_val_vec[run] = psrr_inst[0]
+
+    let run = run + 1
+    echo "MC RUN $&run DONE"
+  endwhile
+
+  echo "-------------------------------------------------"
+  echo "         FINAL STATISTICAL REPORT (PEX)          "
+  echo "-------------------------------------------------"
+  print mean(a0_gain_vec) mean(pm_val_vec) mean(cmrr_val_vec) mean(psrr_val_vec)
+
+  plot a0_gain_vec pm_val_vec title "Gain dan Stability (PEX MC30)"
+.endc
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice mc
+
+.end

@@ -1,0 +1,100 @@
+* =========================================================
+* tb_ac_pex_mc.spice  (NGSPICE hs a compatible)
+* PEX + AC + 30x Monte Carlo loop
+* =========================================================
+
+*************** MODELS (MUST COME FIRST) *****************
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice ss
+
+*************** PEX NETLIST ******************************
+.include "two-stage-miller_pex.spice"
+
+*************** SOURCES *********************************
+VDD   VDD   VSS   dc 5
+VSSRC VSS   0     0
+
+* Differential excitation (will be altered inside .control)
+V2 VN VSS dc 1.25 ac 0.5
+V3 VP VSS dc 1.25 ac 0.5 180
+
+* Bias current (will be altered inside .control)
+I4 VDD IBIAS 200u
+
+* Loads
+Cload  OUT  VSS 1p
+Cload2 OUT2 VSS 5p
+Cload3 OUT3 VSS 10p
+Rpsrr  OUT3 VN  1k
+
+* CM / PSRR stimulus
+VCM  VCM  VSS dc 0.9 ac 1m
+VDDr VDDr VSS dc 5   ac 1
+
+*************** DUT *************************************
+x1 VDD  OUT  VP  VN  IBIAS VSS two-stage-miller
+x2 VDD  OUT2 VCM VCM IBIAS VSS two-stage-miller
+x3 VDDr OUT3 VP  VN  IBIAS VSS two-stage-miller
+
+.control
+  set noaskquit
+  .temp 27
+
+  let mc_runs = 30
+  let run = 0
+
+  * Pre-allocate vectors (length 30)
+  compose gain0 values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose pm    values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose cmrrv values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose psrrv values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+  dowhile run < mc_runs
+    reset
+
+    * ---------- "MC variation" (ngspice-compatible) ----------
+    * Use unif() which exists broadly: unif(x) returns 0..x
+    * Create +/- variation around nominal
+    let a_dif = 0.5 * (0.95 + unif(0.10))     ; 0.475 .. 0.525
+    let ibias = 200u * (0.95 + unif(0.10))    ; 190u .. 210u
+
+    alter v2 acmag = a_dif
+    alter v3 acmag = a_dif
+    alter v3 acphase = 180
+    alter i4 dc = ibias
+
+    * ---------- Differential gain / phase ----------
+    ac dec 100 1 100MEG
+
+    let vd = v(vp) - v(vn)
+    let Av = db( mag(v(out)/vd) )
+    let gain0[run] = Av[0]
+
+    let ph = (180/pi)*cph(v(out)/vd)
+    meas ac p_unity when Av = 0
+    let pm[run] = 180 + p_unity
+
+    * ---------- CMRR ----------
+    alter v3 acphase = 0
+    ac dec 100 1 100MEG
+    let Acm = db( mag(v(out2)/v(vcm)) )
+    let cmrrv[run] = gain0[run] - Acm[0]
+
+    * ---------- PSRR ----------
+    alter v2 acmag = 0
+    alter v3 acmag = 0
+    alter vdd acmag = 1
+    ac dec 100 1 100MEG
+    let psrrv[run] = gain0[run] - db(mag(v(out3)))[0]
+
+    let run = run + 1
+    echo "MC RUN $&run DONE"
+  endwhile
+
+  echo "================= MC SUMMARY (PEX) ================="
+  print mean(gain0) mean(pm) mean(cmrrv) mean(psrrv)
+
+  plot gain0 pm title "PEX MC: Gain0 & Phase Margin"
+.endc
+
+.GLOBAL 0
+.end

@@ -1,0 +1,45 @@
+** sch_path: /foss/designs/icdec-biomedical-pmic/xschem/ldo-core/schematics/ldo-top.sch
+.subckt ldo-top VFB VREF IBIAS_200uA VIN VSS VREG
+*.PININFO VFB:I VREF:I IBIAS_200uA:I VIN:I VSS:B VREG:O
+x2 VIN VSS net1 VREG power-fet
+XR3 net3 VFB VSS sky130_fd_pr__res_high_po_0p35 L=23.5 mult=1 m=1
+XR1 VFB VREG VSS sky130_fd_pr__res_high_po_2p85 L=0.35 mult=1 m=1
+x3 VIN net1 VREF VFB IBIAS_200uA VSS two-stage-miller
+XM3 VREG VREG VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2560 nf=128 m=1
+XC2 net2 net1 sky130_fd_pr__cap_mim_m3_1 W=25 L=25 m=8
+XM1 VREG VSS net2 VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=40 nf=8 m=1
+XR2 net4 net3 VSS sky130_fd_pr__res_high_po_0p35 L=23.5 mult=1 m=1
+XR4 net5 net4 VSS sky130_fd_pr__res_high_po_0p35 L=23.5 mult=1 m=1
+XR5 net6 net5 VSS sky130_fd_pr__res_high_po_0p35 L=23.5 mult=1 m=1
+XR6 net7 net6 VSS sky130_fd_pr__res_high_po_0p35 L=23.5 mult=1 m=1
+XR7 net8 net7 VSS sky130_fd_pr__res_high_po_0p35 L=23.5 mult=1 m=1
+XR8 net9 net8 VSS sky130_fd_pr__res_high_po_0p35 L=23.5 mult=1 m=1
+XR9 VSS net9 VSS sky130_fd_pr__res_high_po_0p35 L=23.5 mult=1 m=1
+.ends
+
+* expanding   symbol:  icdec-biomedical-pmic/xschem/power-fet/power-fet.sym # of pins=4
+** sym_path: /foss/designs/icdec-biomedical-pmic/xschem/power-fet/power-fet.sym
+** sch_path: /foss/designs/icdec-biomedical-pmic/xschem/power-fet/power-fet.sch
+.subckt power-fet VIN VSS EA_OUTPUT VREG
+*.PININFO VIN:I EA_OUTPUT:I VSS:B VREG:O
+XM1 VREG EA_OUTPUT VIN VSS sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=660 nf=64 m=1
+.ends
+
+
+* expanding   symbol:  icdec-biomedical-pmic/xschem/error-amplifier/schematics/two-stage-miller.sym # of pins=6
+** sym_path: /foss/designs/icdec-biomedical-pmic/xschem/error-amplifier/schematics/two-stage-miller.sym
+** sch_path: /foss/designs/icdec-biomedical-pmic/xschem/error-amplifier/schematics/two-stage-miller.sch
+.subckt two-stage-miller VDD OUT VP VN IBIAS VSS
+*.PININFO VDD:B VSS:B IBIAS:I VP:I VN:I OUT:O
+XM1 net3 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=75.2 nf=8 m=1
+XM2 net2 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=75.2 nf=8 m=1
+XM3 net3 VN net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=37.7 nf=8 m=1
+XM4 net2 VP net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=37.7 nf=8 m=1
+XM5 net1 IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=8 m=1
+XM6 IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=8 m=1
+XM7 OUT net3 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=160 nf=16 m=1
+XM8 OUT IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=8 m=1
+XC1 net4 net3 sky130_fd_pr__cap_mim_m3_1 W=25 L=25 m=8
+XM9 OUT VSS net4 net4 sky130_fd_pr__pfet_g5v0d10v5 L=0.9 W=20 nf=4 m=1
+.ends
+

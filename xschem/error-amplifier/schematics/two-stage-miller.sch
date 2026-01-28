@@ -41,7 +41,8 @@ N 560 -190 570 -190 {lab=VN}
 N 710 -250 740 -250 {lab=OUT}
 N 250 -140 330 -140 {lab=IBIAS}
 N 330 -140 330 -100 {lab=IBIAS}
-N 640 -250 680 -250 {lab=#net4}
+N 640 -250 650 -250 {lab=#net4}
+N 680 -250 680 -210 {lab=VDD}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 500 -320 0 0 {name=M1
 W=75.2
 L=1.25
@@ -177,3 +178,4 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {lab_wire.sym} 680 -290 0 0 {name=p5 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 680 -210 2 0 {name=p9 sig_type=std_logic lab=VDD}

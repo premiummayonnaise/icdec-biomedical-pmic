@@ -1,0 +1,14 @@
+** sch_path: /foss/designs/icdec-biomedical-pmic/xschem/error-amplifier/schematics/two-stage-miller.sch
+.subckt two-stage-miller VDD OUT VP VN IBIAS VSS
+*.PININFO VDD:B VSS:B IBIAS:I VP:I VN:I OUT:O
+XM1 net3 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=75.2 nf=8 m=1
+XM2 net2 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=75.2 nf=8 m=1
+XM3 net3 VN net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=37.7 nf=8 m=1
+XM4 net2 VP net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=37.7 nf=8 m=1
+XM5 net1 IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=8 m=1
+XM6 IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=8 m=1
+XM7 OUT net3 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=160 nf=16 m=1
+XM8 OUT IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=8 m=1
+XC1 net4 net3 sky130_fd_pr__cap_mim_m3_1 W=25 L=25 m=8
+XM9 OUT VSS net4 VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.9 W=20 nf=4 m=1
+.ends
