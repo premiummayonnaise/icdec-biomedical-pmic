@@ -166,8 +166,8 @@ C {opin.sym} 800 -250 0 0 {name=p8 lab=OUT}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 680 -270 3 1 {name=M9
 W=20
 L=0.9
-nf=4
-mult=1
+nf=1
+mult=4
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
