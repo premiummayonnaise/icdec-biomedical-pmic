@@ -1,0 +1,43 @@
+* NGSPICE file created from tail-bias.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_R5DZJA a_n953_n781# a_n587_n807# a_645_n807#
++ a_29_n807# a_279_n781# a_895_n781# a_n29_n781# a_n645_n781# a_n279_n807# a_n895_n807#
++ a_337_n807# a_587_n781# a_n337_n781# VSUBS
+X0 a_895_n781# a_645_n807# a_587_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=2.175 pd=15.58 as=1.0875 ps=7.79 w=7.5 l=1.25
+X1 a_n645_n781# a_n895_n807# a_n953_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=2.175 ps=15.58 w=7.5 l=1.25
+X2 a_n29_n781# a_n279_n807# a_n337_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X3 a_587_n781# a_337_n807# a_279_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X4 a_n337_n781# a_n587_n807# a_n645_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X5 a_279_n781# a_29_n807# a_n29_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_986LJA a_n587_n807# a_645_n807# a_587_n719# a_29_n807#
++ a_n337_n719# a_n953_n719# a_n279_n807# a_n895_n807# a_337_n807# a_279_n719# a_895_n719#
++ a_n29_n719# a_n645_n719# VSUBS
+X0 a_895_n719# a_645_n807# a_587_n719# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=2.175 pd=15.58 as=1.0875 ps=7.79 w=7.5 l=1.25
+X1 a_n645_n719# a_n895_n807# a_n953_n719# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=2.175 ps=15.58 w=7.5 l=1.25
+X2 a_n29_n719# a_n279_n807# a_n337_n719# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X3 a_587_n719# a_337_n807# a_279_n719# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X4 a_n337_n719# a_n587_n807# a_n645_n719# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X5 a_279_n719# a_29_n807# a_n29_n719# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+.ends
+
+.subckt tail-bias IBIAS S VSS
+Xsky130_fd_pr__nfet_g5v0d10v5_R5DZJA_0 S IBIAS S IBIAS VSS S S S IBIAS S IBIAS S VSS
++ VSS sky130_fd_pr__nfet_g5v0d10v5_R5DZJA
+Xsky130_fd_pr__nfet_g5v0d10v5_R5DZJA_1 IBIAS IBIAS IBIAS IBIAS VSS IBIAS IBIAS IBIAS
++ IBIAS IBIAS IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_R5DZJA
+Xsky130_fd_pr__nfet_g5v0d10v5_986LJA_0 IBIAS IBIAS IBIAS IBIAS VSS IBIAS IBIAS IBIAS
++ IBIAS VSS IBIAS IBIAS IBIAS VSS sky130_fd_pr__nfet_g5v0d10v5_986LJA
+Xsky130_fd_pr__nfet_g5v0d10v5_R5DZJA_2 IBIAS IBIAS IBIAS IBIAS VSS IBIAS IBIAS IBIAS
++ IBIAS IBIAS IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_R5DZJA
+Xsky130_fd_pr__nfet_g5v0d10v5_986LJA_1 IBIAS S S IBIAS VSS S IBIAS S IBIAS VSS S S
++ S VSS sky130_fd_pr__nfet_g5v0d10v5_986LJA
+Xsky130_fd_pr__nfet_g5v0d10v5_R5DZJA_3 S IBIAS S IBIAS VSS S S S IBIAS S IBIAS S VSS
++ VSS sky130_fd_pr__nfet_g5v0d10v5_R5DZJA
+Xsky130_fd_pr__nfet_g5v0d10v5_986LJA_2 IBIAS S S IBIAS VSS S IBIAS S IBIAS VSS S S
++ S VSS sky130_fd_pr__nfet_g5v0d10v5_986LJA
+Xsky130_fd_pr__nfet_g5v0d10v5_986LJA_3 IBIAS IBIAS IBIAS IBIAS VSS IBIAS IBIAS IBIAS
++ IBIAS VSS IBIAS IBIAS IBIAS VSS sky130_fd_pr__nfet_g5v0d10v5_986LJA
+.ends
+

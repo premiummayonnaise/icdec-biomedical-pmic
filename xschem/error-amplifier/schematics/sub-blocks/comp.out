@@ -1,0 +1,40 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_7GKDBD in circuit tail-bias (0)(1 instance)
+
+Class tail-bias (0):  Merged 15 parallel devices.
+Class tail-bias (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: tail-bias                       |Circuit 2: tail-bias                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_g5v0d10v5 (18->3)       |sky130_fd_pr__nfet_g5v0d10v5 (4->3)        
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: tail-bias                       |Circuit 2: tail-bias                       
+-------------------------------------------|-------------------------------------------
+S                                          |S                                          
+IBIAS                                      |IBIAS                                      
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tail-bias and tail-bias are equivalent.
+
+Final result: Circuits match uniquely.
+.
