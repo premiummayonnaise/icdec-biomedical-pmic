@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1769412267
+timestamp 1770023980
 << error_p >>
 rect -1214 512 -1156 518
 rect -1056 512 -998 518
@@ -485,13 +485,23 @@ rect -141 -490 -135 428
 rect -181 -502 -135 -490
 rect -23 428 23 440
 rect -23 -490 -17 428
-rect 17 -490 23 428
-rect -23 -502 23 -490
+rect 17 200 23 428
 rect 135 428 181 440
-rect 135 -490 141 428
-rect 175 -490 181 428
-rect 135 -502 181 -490
+rect 135 200 141 428
+rect 17 0 141 200
+rect 17 -200 23 0
+rect 135 -200 141 0
+rect 17 -400 141 -200
+rect 17 -490 23 -400
+rect -23 -502 23 -490
+rect 135 -490 141 -400
+rect 175 200 181 428
 rect 293 428 339 440
+rect 175 0 200 200
+rect 175 -200 181 0
+rect 175 -400 200 -200
+rect 175 -490 181 -400
+rect 135 -502 181 -490
 rect 293 -490 299 428
 rect 333 -490 339 428
 rect 293 -502 339 -490
@@ -519,6 +529,171 @@ rect 1241 428 1287 440
 rect 1241 -490 1247 428
 rect 1281 -490 1287 428
 rect 1241 -502 1287 -490
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+rect 0 -3600 200 -3400
+rect 0 -4000 200 -3800
+rect 0 -4400 200 -4200
+rect 0 -4800 200 -4600
+rect 0 -5200 200 -5000
+rect 0 -5600 200 -5400
+rect 0 -6000 200 -5800
+rect 0 -6400 200 -6200
+rect 0 -6800 200 -6600
+rect 0 -7200 200 -7000
+rect 0 -7600 200 -7400
+rect 0 -8000 200 -7800
+rect 0 -8400 200 -8200
+rect 0 -8800 200 -8600
+rect 0 -9200 200 -9000
+rect 0 -9600 200 -9400
+rect 0 -10000 200 -9800
+rect 0 -10400 200 -10200
+rect 0 -10800 200 -10600
+rect 0 -11200 200 -11000
+rect 0 -11600 200 -11400
+rect 0 -12000 200 -11800
+rect 0 -12400 200 -12200
+rect 0 -12800 200 -12600
+rect 0 -13200 200 -13000
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X0
+timestamp 0
+transform 1 0 -1080 0 1 -12536
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X1
+timestamp 0
+transform 1 0 -589 0 1 -12601
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X2
+timestamp 0
+transform 1 0 -98 0 1 -12666
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X3
+timestamp 0
+transform 1 0 393 0 1 -12731
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X4
+timestamp 0
+transform 1 0 884 0 1 -12796
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X5
+timestamp 0
+transform 1 0 1375 0 1 -12861
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X6
+timestamp 0
+transform 1 0 1866 0 1 -12926
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X7
+timestamp 0
+transform 1 0 2357 0 1 -12991
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X8
+timestamp 0
+transform 1 0 2848 0 1 -13056
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_CJYKFD  X9
+timestamp 0
+transform 1 0 3339 0 1 -13121
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_JAZF34  X10
+timestamp 0
+transform 1 0 3830 0 1 -13186
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X11
+timestamp 0
+transform 1 0 4321 0 1 -13251
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X12
+timestamp 0
+transform 1 0 4812 0 1 -13316
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X13
+timestamp 0
+transform 1 0 5303 0 1 -13381
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X14
+timestamp 0
+transform 1 0 5794 0 1 -13446
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_HGUXL5  X15
+timestamp 0
+transform 1 0 6285 0 1 -13511
+box 0 0 1 1
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 a_n819_n502#
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 a_n1135_n502#
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 a_129_n502#
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 {}
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 a_n503_n502#
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 a_n1293_n502#
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 256 0 0 0 a_29_n528#
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 256 0 0 0 a_n129_n528#
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 256 0 0 0 a_n661_n502#
+port 8 nsew
+flabel metal1 0 -3600 200 -3400 0 FreeSans 256 0 0 0 a_187_n528#
+port 9 nsew
+flabel metal1 0 -4000 200 -3800 0 FreeSans 256 0 0 0 a_819_n528#
+port 10 nsew
+flabel metal1 0 -4400 200 -4200 0 FreeSans 256 0 0 0 {}
+port 11 nsew
+flabel metal1 0 -4800 200 -4600 0 FreeSans 256 0 0 0 a_n287_n528#
+port 12 nsew
+flabel metal1 0 -5200 200 -5000 0 FreeSans 256 0 0 0 a_n1077_n528#
+port 13 nsew
+flabel metal1 0 -5600 200 -5400 0 FreeSans 256 0 0 0 a_445_n502#
+port 14 nsew
+flabel metal1 0 -6000 200 -5800 0 FreeSans 256 0 0 0 a_345_n528#
+port 15 nsew
+flabel metal1 0 -6400 200 -6200 0 FreeSans 256 0 0 0 a_n919_n528#
+port 16 nsew
+flabel metal1 0 -6800 200 -6600 0 FreeSans 256 0 0 0 a_977_n528#
+port 17 nsew
+flabel metal1 0 -7200 200 -7000 0 FreeSans 256 0 0 0 a_n445_n528#
+port 18 nsew
+flabel metal1 0 -7600 200 -7400 0 FreeSans 256 0 0 0 {}
+port 19 nsew
+flabel metal1 0 -8000 200 -7800 0 FreeSans 256 0 0 0 a_1077_n502#
+port 20 nsew
+flabel metal1 0 -8400 200 -8200 0 FreeSans 256 0 0 0 a_n1235_n528#
+port 21 nsew
+flabel metal1 0 -8800 200 -8600 0 FreeSans 256 0 0 0 a_603_n502#
+port 22 nsew
+flabel metal1 0 -9200 200 -9000 0 FreeSans 256 0 0 0 a_503_n528#
+port 23 nsew
+flabel metal1 0 -9600 200 -9400 0 FreeSans 256 0 0 0 a_n603_n528#
+port 24 nsew
+flabel metal1 0 -10000 200 -9800 0 FreeSans 256 0 0 0 a_1235_n502#
+port 25 nsew
+flabel metal1 0 -10400 200 -10200 0 FreeSans 256 0 0 0 a_1135_n528#
+port 26 nsew
+flabel metal1 0 -10800 200 -10600 0 FreeSans 256 0 0 0 {}
+port 27 nsew
+flabel metal1 0 -11200 200 -11000 0 FreeSans 256 0 0 0 a_661_n528#
+port 28 nsew
+flabel metal1 0 -11600 200 -11400 0 FreeSans 256 0 0 0 a_761_n502#
+port 29 nsew
+flabel metal1 0 -12000 200 -11800 0 FreeSans 256 0 0 0 a_n29_n502#
+port 30 nsew
+flabel metal1 0 -12400 200 -12200 0 FreeSans 256 0 0 0 a_n761_n528#
+port 31 nsew
+flabel metal1 0 -12800 200 -12600 0 FreeSans 256 0 0 0 a_n187_n502#
+port 32 nsew
+flabel metal1 0 -13200 200 -13000 0 FreeSans 256 0 0 0 VSUBS
+port 33 nsew
 << properties >>
 string gencell sky130_fd_pr__nfet_g5v0d10v5
 string library sky130

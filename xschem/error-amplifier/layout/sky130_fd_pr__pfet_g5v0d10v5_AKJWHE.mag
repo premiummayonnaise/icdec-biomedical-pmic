@@ -1,12 +1,16 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1769417084
+timestamp 1770023980
 << error_p >>
 rect -571 598 571 602
 rect -571 -530 -541 598
 rect -505 532 505 536
 rect -505 -464 -475 532
+rect 187 0 200 200
+rect 215 -28 228 228
+rect 187 -400 200 -200
+rect 215 -428 228 -172
 rect 475 -464 505 532
 rect 541 -530 571 598
 << nwell >>
@@ -109,9 +113,13 @@ rect -221 -452 -215 524
 rect -261 -464 -215 -452
 rect -23 524 23 536
 rect -23 -452 -17 524
-rect 17 -452 23 524
-rect -23 -464 23 -452
+rect 17 200 23 524
 rect 215 524 261 536
+rect 17 0 200 200
+rect 17 -200 23 0
+rect 17 -400 200 -200
+rect 17 -452 23 -400
+rect -23 -464 23 -452
 rect 215 -452 221 524
 rect 255 -452 261 524
 rect 215 -464 261 -452
@@ -135,6 +143,45 @@ rect 271 -511 443 -505
 rect 271 -545 283 -511
 rect 431 -545 443 -511
 rect 271 -551 443 -545
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+use sky130_fd_pr__pfet_g5v0d10v5_ATDWR3  X0
+timestamp 0
+transform 1 0 -318 0 1 -2098
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_ATDWR3  X1
+timestamp 0
+transform 1 0 283 0 1 -2193
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_EMS6BD  X2
+timestamp 0
+transform 1 0 884 0 1 -2288
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_XPZ695  X3
+timestamp 0
+transform 1 0 1485 0 1 -2383
+box 0 0 1 1
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 a_n267_n464#
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 a_29_n561#
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 a_209_n464#
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 a_n447_n561#
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 {}
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 w_n541_n564#
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 256 0 0 0 a_n209_n561#
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 256 0 0 0 a_267_n561#
+port 7 nsew
 << properties >>
 string gencell sky130_fd_pr__pfet_g5v0d10v5
 string library sky130

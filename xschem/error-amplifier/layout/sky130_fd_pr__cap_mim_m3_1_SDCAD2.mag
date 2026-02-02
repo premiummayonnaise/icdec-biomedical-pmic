@@ -2,12 +2,6 @@ magic
 tech sky130A
 magscale 1 2
 timestamp 1770023980
-<< metal1 >>
-rect 0 0 200 200
-rect 0 -400 200 -200
-rect 0 -800 200 -600
-rect 0 -1200 200 -1000
-rect 0 -1600 200 -1400
 << metal3 >>
 rect -5492 10492 -120 10520
 rect -5492 5468 -204 10492
@@ -161,52 +155,9 @@ rect 2608 -10640 2712 -10441
 rect 5388 -10492 5408 -5468
 rect 5472 -10492 5492 -5468
 rect 5388 -10640 5492 -10492
-use sky130_fd_pr__cap_mim_m3_1_RMS84X  X0
-timestamp 0
-transform 1 0 -2806 0 1 -8100
-box 0 0 1 1
-use sky130_fd_pr__cap_mim_m3_1_RMS84X  X1
-timestamp 0
-transform 1 0 2566 0 1 -8100
-box 0 0 1 1
-use sky130_fd_pr__cap_mim_m3_1_RMS84X  X2
-timestamp 0
-transform 1 0 7938 0 1 -8100
-box 0 0 1 1
-use sky130_fd_pr__cap_mim_m3_1_RMS84X  X3
-timestamp 0
-transform 1 0 13310 0 1 -8100
-box 0 0 1 1
-use sky130_fd_pr__cap_mim_m3_1_RMS84X  X4
-timestamp 0
-transform 1 0 18682 0 1 -8100
-box 0 0 1 1
-use sky130_fd_pr__cap_mim_m3_1_RMS84X  X5
-timestamp 0
-transform 1 0 24054 0 1 -8100
-box 0 0 1 1
-use sky130_fd_pr__cap_mim_m3_1_RMS84X  X6
-timestamp 0
-transform 1 0 29426 0 1 -8100
-box 0 0 1 1
-use sky130_fd_pr__cap_mim_m3_1_RMS84X  X7
-timestamp 0
-transform 1 0 34798 0 1 -8100
-box 0 0 1 1
-<< labels >>
-flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 m3_120_n10520#
-port 0 nsew
-flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 c1_n5452_n10480#
-port 1 nsew
-flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 m3_n5492_n10520#
-port 2 nsew
-flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 {}
-port 3 nsew
-flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 c1_160_n10480#
-port 4 nsew
 << properties >>
 string FIXED_BBOX 120 5440 5200 10520
 string gencell sky130_fd_pr__cap_mim_m3_1
 string library sky130
-string parameters w 25.0 l 25.0 val 1.269k carea 2.00 cperi 0.19 class capacitor nx 2 ny 4 dummy 0 square 0 lmin 2.00 wmin 2.00 lmax 30.0 wmax 30.0 dc 0 bconnect 1 tconnect 1 ccov 100
+string parameters w 25 l 25 val 1.269k carea 2.00 cperi 0.19 class capacitor nx 2 ny 4 dummy 0 square 0 lmin 2.00 wmin 2.00 lmax 30.0 wmax 30.0 dc 0 bconnect 1 tconnect 1 ccov 100
 << end >>

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1769412267
+timestamp 1770023980
 << error_p >>
 rect -2559 1098 2559 1102
 rect -2559 -1030 -2529 1098
@@ -16,7 +16,6 @@ rect -1112 -1011 -1044 -1005
 rect -804 -1011 -736 -1005
 rect -496 -1011 -428 -1005
 rect -188 -1011 -120 -1005
-rect 120 -1011 188 -1005
 rect 428 -1011 496 -1005
 rect 736 -1011 804 -1005
 rect 1044 -1011 1112 -1005
@@ -32,7 +31,6 @@ rect -1112 -1045 -1100 -1011
 rect -804 -1045 -792 -1011
 rect -496 -1045 -484 -1011
 rect -188 -1045 -176 -1011
-rect 120 -1045 132 -1011
 rect 428 -1045 440 -1011
 rect 736 -1045 748 -1011
 rect 1044 -1045 1056 -1011
@@ -49,7 +47,6 @@ rect -1112 -1051 -1044 -1045
 rect -804 -1051 -736 -1045
 rect -496 -1051 -428 -1045
 rect -188 -1051 -120 -1045
-rect 120 -1051 188 -1045
 rect 428 -1051 496 -1045
 rect 736 -1051 804 -1045
 rect 1044 -1051 1112 -1045
@@ -429,9 +426,15 @@ rect -291 -952 -285 1024
 rect -331 -964 -285 -952
 rect -23 1024 23 1036
 rect -23 -952 -17 1024
-rect 17 -952 23 1024
-rect -23 -964 23 -952
+rect 17 200 23 1024
 rect 285 1024 331 1036
+rect 17 0 200 200
+rect 17 -200 23 0
+rect 17 -400 200 -200
+rect 17 -600 23 -400
+rect 17 -800 200 -600
+rect 17 -952 23 -800
+rect -23 -964 23 -952
 rect 285 -952 291 1024
 rect 325 -952 331 1024
 rect 285 -964 331 -952
@@ -495,10 +498,10 @@ rect -188 -1011 -120 -1005
 rect -188 -1045 -176 -1011
 rect -132 -1045 -120 -1011
 rect -188 -1051 -120 -1045
-rect 120 -1011 188 -1005
-rect 120 -1045 132 -1011
-rect 176 -1045 188 -1011
-rect 120 -1051 188 -1045
+rect 0 -1011 200 -1000
+rect 0 -1045 132 -1011
+rect 176 -1045 200 -1011
+rect 0 -1200 200 -1045
 rect 428 -1011 496 -1005
 rect 428 -1045 440 -1011
 rect 484 -1045 496 -1011
@@ -527,6 +530,184 @@ rect 2276 -1011 2344 -1005
 rect 2276 -1045 2288 -1011
 rect 2332 -1045 2344 -1011
 rect 2276 -1051 2344 -1045
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+rect 0 -3600 200 -3400
+rect 0 -4000 200 -3800
+rect 0 -4400 200 -4200
+rect 0 -4800 200 -4600
+rect 0 -5200 200 -5000
+rect 0 -5600 200 -5400
+rect 0 -6000 200 -5800
+rect 0 -6400 200 -6200
+rect 0 -6800 200 -6600
+rect 0 -7200 200 -7000
+rect 0 -7600 200 -7400
+rect 0 -8000 200 -7800
+rect 0 -8400 200 -8200
+rect 0 -8800 200 -8600
+rect 0 -9200 200 -9000
+rect 0 -9600 200 -9400
+rect 0 -10000 200 -9800
+rect 0 -10400 200 -10200
+rect 0 -10800 200 -10600
+rect 0 -11200 200 -11000
+rect 0 -11600 200 -11400
+rect 0 -12000 200 -11800
+rect 0 -12400 200 -12200
+rect 0 -12800 200 -12600
+rect 0 -13200 200 -13000
+rect 0 -13600 200 -13400
+rect 0 -14000 200 -13800
+rect 0 -14400 200 -14200
+rect 0 -14800 200 -14600
+rect 0 -15200 200 -15000
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X0
+timestamp 0
+transform 1 0 -2271 0 1 -13998
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X1
+timestamp 0
+transform 1 0 -1600 0 1 -14093
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X2
+timestamp 0
+transform 1 0 -929 0 1 -14188
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X3
+timestamp 0
+transform 1 0 -258 0 1 -14283
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X4
+timestamp 0
+transform 1 0 413 0 1 -14378
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X5
+timestamp 0
+transform 1 0 1084 0 1 -14473
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X6
+timestamp 0
+transform 1 0 1755 0 1 -14568
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X7
+timestamp 0
+transform 1 0 2426 0 1 -14663
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_XJB3AQ  X8
+timestamp 0
+transform 1 0 3097 0 1 -14758
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X9
+timestamp 0
+transform 1 0 3768 0 1 -14853
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X10
+timestamp 0
+transform 1 0 4439 0 1 -14948
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_UUE6JB  X11
+timestamp 0
+transform 1 0 5110 0 1 -15043
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X12
+timestamp 0
+transform 1 0 5781 0 1 -15138
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X13
+timestamp 0
+transform 1 0 6452 0 1 -15233
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X14
+timestamp 0
+transform 1 0 7123 0 1 -15328
+box 0 0 1 1
+use sky130_fd_pr__pfet_g5v0d10v5_Y5UTF8  X15
+timestamp 0
+transform 1 0 7794 0 1 -15423
+box 0 0 1 1
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 a_2127_n964#
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 a_n2493_n964#
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 a_n2127_n1028#
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 {}
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 a_587_n964#
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 a_1569_n1028#
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 256 0 0 0 a_1203_n964#
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 256 0 0 0 a_n1877_n964#
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 256 0 0 0 a_953_n1028#
+port 8 nsew
+flabel metal1 0 -3600 200 -3400 0 FreeSans 256 0 0 0 a_337_n1028#
+port 9 nsew
+flabel metal1 0 -4000 200 -3800 0 FreeSans 256 0 0 0 a_n279_n1028#
+port 10 nsew
+flabel metal1 0 -4400 200 -4200 0 FreeSans 256 0 0 0 {}
+port 11 nsew
+flabel metal1 0 -4800 200 -4600 0 FreeSans 256 0 0 0 a_n895_n1028#
+port 12 nsew
+flabel metal1 0 -5200 200 -5000 0 FreeSans 256 0 0 0 a_n1819_n1028#
+port 13 nsew
+flabel metal1 0 -5600 200 -5400 0 FreeSans 256 0 0 0 a_n337_n964#
+port 14 nsew
+flabel metal1 0 -6000 200 -5800 0 FreeSans 256 0 0 0 a_n1203_n1028#
+port 15 nsew
+flabel metal1 0 -6400 200 -6200 0 FreeSans 256 0 0 0 a_n953_n964#
+port 16 nsew
+flabel metal1 0 -6800 200 -6600 0 FreeSans 256 0 0 0 a_2185_n1028#
+port 17 nsew
+flabel metal1 0 -7200 200 -7000 0 FreeSans 256 0 0 0 {}
+port 18 nsew
+flabel metal1 0 -7600 200 -7400 0 FreeSans 256 0 0 0 a_29_n1028#
+port 19 nsew
+flabel metal1 0 -8000 200 -7800 0 FreeSans 256 0 0 0 w_n2529_n1064#
+port 20 nsew
+flabel metal1 0 -8400 200 -8200 0 FreeSans 256 0 0 0 a_2435_n964#
+port 21 nsew
+flabel metal1 0 -8800 200 -8600 0 FreeSans 256 0 0 0 a_n2185_n964#
+port 22 nsew
+flabel metal1 0 -9200 200 -9000 0 FreeSans 256 0 0 0 a_n2435_n1028#
+port 23 nsew
+flabel metal1 0 -9600 200 -9400 0 FreeSans 256 0 0 0 a_279_n964#
+port 24 nsew
+flabel metal1 0 -10000 200 -9800 0 FreeSans 256 0 0 0 {}
+port 25 nsew
+flabel metal1 0 -10400 200 -10200 0 FreeSans 256 0 0 0 a_1877_n1028#
+port 26 nsew
+flabel metal1 0 -10800 200 -10600 0 FreeSans 256 0 0 0 a_895_n964#
+port 27 nsew
+flabel metal1 0 -11200 200 -11000 0 FreeSans 256 0 0 0 a_1261_n1028#
+port 28 nsew
+flabel metal1 0 -11600 200 -11400 0 FreeSans 256 0 0 0 a_n1261_n964#
+port 29 nsew
+flabel metal1 0 -12000 200 -11800 0 FreeSans 256 0 0 0 a_1511_n964#
+port 30 nsew
+flabel metal1 0 -12400 200 -12200 0 FreeSans 256 0 0 0 a_n1569_n964#
+port 31 nsew
+flabel metal1 0 -12800 200 -12600 0 FreeSans 256 0 0 0 {}
+port 32 nsew
+flabel metal1 0 -13200 200 -13000 0 FreeSans 256 0 0 0 a_1819_n964#
+port 33 nsew
+flabel metal1 0 -13600 200 -13400 0 FreeSans 256 0 0 0 a_645_n1028#
+port 34 nsew
+flabel metal1 0 -14000 200 -13800 0 FreeSans 256 0 0 0 a_n587_n1028#
+port 35 nsew
+flabel metal1 0 -14400 200 -14200 0 FreeSans 256 0 0 0 a_n645_n964#
+port 36 nsew
+flabel metal1 0 -14800 200 -14600 0 FreeSans 256 0 0 0 a_n1511_n1028#
+port 37 nsew
+flabel metal1 0 -15200 200 -15000 0 FreeSans 256 0 0 0 a_n29_n964#
+port 38 nsew
 << properties >>
 string gencell sky130_fd_pr__pfet_g5v0d10v5
 string library sky130

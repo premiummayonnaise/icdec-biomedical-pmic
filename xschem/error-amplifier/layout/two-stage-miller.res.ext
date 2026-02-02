@@ -1,0 +1,425 @@
+scale 1000 1 500000
+rnode "5t-ota_top_0/y_0/IBIAS.n0" 0 1089.02 -25704 -59320 0
+rnode "5t-ota_top_0/y_0/IBIAS.t11" 0 48.2816 -28132 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.t15" 0 48.2816 -28190 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n1" 0 102.257 -28161 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n2" 0 555.221 -28161 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.t20" 0 688.184 -24003 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.t2" 0 687.628 -24311 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n3" 0 481.376 -24311 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t3" 0 48.2816 -24436 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.t7" 0 48.2816 -24494 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n4" 0 102.257 -24465 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n5" 0 555.221 -24465 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n6" 0 155.918 -24554 -57871 0
+rnode "5t-ota_top_0/y_0/IBIAS.t6" 0 687.628 -24619 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n7" 0 231.892 -24619 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t16" 0 687.628 -24927 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n8" 0 253.862 -24927 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t22" 0 687.628 -25235 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n9" 0 253.862 -25235 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t12" 0 687.628 -25543 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n10" 0 234.258 -25543 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t13" 0 48.2816 -25668 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.t5" 0 48.2816 -25726 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n11" 0 102.257 -25697 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n12" 0 438.892 -25697 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n13" 0 155.918 -25774 -57871 0
+rnode "5t-ota_top_0/y_0/IBIAS.t4" 0 687.628 -25851 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n14" 0 232.984 -25851 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t23" 0 687.628 -26159 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n15" 0 253.862 -26159 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t18" 0 687.628 -26467 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n16" 0 253.862 -26467 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t0" 0 687.628 -26775 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n17" 0 233.166 -26775 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t21" 0 688.183 -28623 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.t14" 0 687.628 -28315 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n18" 0 479.019 -28315 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.n19" 0 155.918 -28234 -57871 0
+rnode "5t-ota_top_0/y_0/IBIAS.t10" 0 687.628 -28007 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n20" 0 233.894 -28007 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t17" 0 687.628 -27699 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n21" 0 253.862 -27699 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t19" 0 687.628 -27391 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n22" 0 253.862 -27391 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.t8" 0 687.628 -27083 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n23" 0 234.076 -27083 -57889 0
+rnode "5t-ota_top_0/y_0/IBIAS.n24" 0 155.918 -26994 -57871 0
+rnode "5t-ota_top_0/y_0/IBIAS.t1" 0 48.2816 -26900 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.t9" 0 48.2816 -26958 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n25" 0 102.257 -26929 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n26" 0 438.905 -26929 -58694 0
+rnode "5t-ota_top_0/y_0/IBIAS.n27" 0 1089.01 -26924 -59120 0
+rnode "5t-ota_top_0/y_0/IBIAS.n28" 0 833.719 -26314 -59370 0
+rnode "5t-ota_top_0/y_0/IBIAS" 0 194.069 -26414 -60570 0
+resist "5t-ota_top_0/y_0/IBIAS.n7" "5t-ota_top_0/y_0/IBIAS.n6" 0.0990854
+resist "5t-ota_top_0/y_0/IBIAS.n14" "5t-ota_top_0/y_0/IBIAS.n13" 0.117378
+resist "5t-ota_top_0/y_0/IBIAS.n24" "5t-ota_top_0/y_0/IBIAS.n17" 0.120427
+resist "5t-ota_top_0/y_0/IBIAS.n19" "5t-ota_top_0/y_0/IBIAS.n18" 0.123476
+resist "5t-ota_top_0/y_0/IBIAS.n20" "5t-ota_top_0/y_0/IBIAS.n19" 0.132622
+resist "5t-ota_top_0/y_0/IBIAS.n24" "5t-ota_top_0/y_0/IBIAS.n23" 0.135671
+resist "5t-ota_top_0/y_0/IBIAS.n13" "5t-ota_top_0/y_0/IBIAS.n10" 0.13872
+resist "5t-ota_top_0/y_0/IBIAS.n6" "5t-ota_top_0/y_0/IBIAS.n3" 0.157012
+resist "5t-ota_top_0/y_0/IBIAS.n28" "5t-ota_top_0/y_0/IBIAS.n27" 0.254167
+resist "5t-ota_top_0/y_0/IBIAS.n28" "5t-ota_top_0/y_0/IBIAS.n0" 0.254167
+resist "5t-ota_top_0/y_0/IBIAS.n21" "5t-ota_top_0/y_0/IBIAS.n20" 0.472027
+resist "5t-ota_top_0/y_0/IBIAS.n22" "5t-ota_top_0/y_0/IBIAS.n21" 0.472027
+resist "5t-ota_top_0/y_0/IBIAS.n23" "5t-ota_top_0/y_0/IBIAS.n22" 0.472027
+resist "5t-ota_top_0/y_0/IBIAS.n15" "5t-ota_top_0/y_0/IBIAS.n14" 0.472027
+resist "5t-ota_top_0/y_0/IBIAS.n16" "5t-ota_top_0/y_0/IBIAS.n15" 0.472027
+resist "5t-ota_top_0/y_0/IBIAS.n17" "5t-ota_top_0/y_0/IBIAS.n16" 0.472027
+resist "5t-ota_top_0/y_0/IBIAS.n10" "5t-ota_top_0/y_0/IBIAS.n9" 0.472027
+resist "5t-ota_top_0/y_0/IBIAS.n9" "5t-ota_top_0/y_0/IBIAS.n8" 0.472027
+resist "5t-ota_top_0/y_0/IBIAS.n8" "5t-ota_top_0/y_0/IBIAS.n7" 0.472027
+resist "5t-ota_top_0/y_0/IBIAS.n19" "5t-ota_top_0/y_0/IBIAS.n2" 0.734821
+resist "5t-ota_top_0/y_0/IBIAS.n26" "5t-ota_top_0/y_0/IBIAS.n24" 0.734821
+resist "5t-ota_top_0/y_0/IBIAS.n13" "5t-ota_top_0/y_0/IBIAS.n12" 0.734821
+resist "5t-ota_top_0/y_0/IBIAS.n6" "5t-ota_top_0/y_0/IBIAS.n5" 0.734821
+resist "5t-ota_top_0/y_0/IBIAS" "5t-ota_top_0/y_0/IBIAS.n28" 1.84456
+resist "5t-ota_top_0/y_0/IBIAS.n27" "5t-ota_top_0/y_0/IBIAS.n26" 1.93049
+resist "5t-ota_top_0/y_0/IBIAS.n12" "5t-ota_top_0/y_0/IBIAS.n0" 1.93084
+resist "5t-ota_top_0/y_0/IBIAS.n1" "5t-ota_top_0/y_0/IBIAS.t15" 2.204
+resist "5t-ota_top_0/y_0/IBIAS.n1" "5t-ota_top_0/y_0/IBIAS.t11" 2.204
+resist "5t-ota_top_0/y_0/IBIAS.n4" "5t-ota_top_0/y_0/IBIAS.t7" 2.204
+resist "5t-ota_top_0/y_0/IBIAS.n4" "5t-ota_top_0/y_0/IBIAS.t3" 2.204
+resist "5t-ota_top_0/y_0/IBIAS.n11" "5t-ota_top_0/y_0/IBIAS.t5" 2.204
+resist "5t-ota_top_0/y_0/IBIAS.n11" "5t-ota_top_0/y_0/IBIAS.t13" 2.204
+resist "5t-ota_top_0/y_0/IBIAS.n25" "5t-ota_top_0/y_0/IBIAS.t9" 2.204
+resist "5t-ota_top_0/y_0/IBIAS.n25" "5t-ota_top_0/y_0/IBIAS.t1" 2.204
+resist "5t-ota_top_0/y_0/IBIAS.n5" "5t-ota_top_0/y_0/IBIAS.n0" 2.43739
+resist "5t-ota_top_0/y_0/IBIAS.n27" "5t-ota_top_0/y_0/IBIAS.n2" 2.44751
+resist "5t-ota_top_0/y_0/IBIAS.n2" "5t-ota_top_0/y_0/IBIAS.n1" 8.85195
+resist "5t-ota_top_0/y_0/IBIAS.n5" "5t-ota_top_0/y_0/IBIAS.n4" 8.85195
+resist "5t-ota_top_0/y_0/IBIAS.n12" "5t-ota_top_0/y_0/IBIAS.n11" 8.85195
+resist "5t-ota_top_0/y_0/IBIAS.n26" "5t-ota_top_0/y_0/IBIAS.n25" 8.85195
+resist "5t-ota_top_0/y_0/IBIAS.n18" "5t-ota_top_0/y_0/IBIAS.t14" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n17" "5t-ota_top_0/y_0/IBIAS.t0" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n16" "5t-ota_top_0/y_0/IBIAS.t18" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n15" "5t-ota_top_0/y_0/IBIAS.t23" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n14" "5t-ota_top_0/y_0/IBIAS.t4" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n3" "5t-ota_top_0/y_0/IBIAS.t2" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n7" "5t-ota_top_0/y_0/IBIAS.t6" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n8" "5t-ota_top_0/y_0/IBIAS.t16" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n9" "5t-ota_top_0/y_0/IBIAS.t22" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n10" "5t-ota_top_0/y_0/IBIAS.t12" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n23" "5t-ota_top_0/y_0/IBIAS.t8" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n22" "5t-ota_top_0/y_0/IBIAS.t19" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n21" "5t-ota_top_0/y_0/IBIAS.t17" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n20" "5t-ota_top_0/y_0/IBIAS.t10" 208.971
+resist "5t-ota_top_0/y_0/IBIAS.n18" "5t-ota_top_0/y_0/IBIAS.t21" 209.443
+resist "5t-ota_top_0/y_0/IBIAS.n3" "5t-ota_top_0/y_0/IBIAS.t20" 209.443
+rnode "5t-ota_top_0/mirror-load_0/D1.n0" 0 21.3705 -26468 -53398 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n1" 0 79.783 -26328 -53258 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n2" 0 56.9879 -26428 -53358 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n3" 0 0 -26228 -53358 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n4" 0 203.406 -26478 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t41" 0 360.478 -23598 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t7" 0 125.166 -23906 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n5" 0 804.509 -23877 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t40" 0 1103.77 -23723 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n6" 0 1030.26 -23728 -52812 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t6" 0 1103.11 -24031 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n7" 0 327.348 -24031 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t51" 0 1103.11 -24339 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n8" 0 327.98 -24339 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t49" 0 1103.11 -24647 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n9" 0 327.98 -24647 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t0" 0 1103.11 -24955 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n10" 0 304.615 -24955 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t1" 0 77.6745 -25080 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t9" 0 77.6745 -25138 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n11" 0 362.99 -25109 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n12" 0 250.838 -25178 -52888 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t8" 0 1103.11 -25263 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n13" 0 302.563 -25263 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t46" 0 1103.11 -25571 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n14" 0 327.98 -25571 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t50" 0 1103.11 -25879 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n15" 0 327.353 -25879 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t4" 0 1103.11 -26187 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n16" 0 366.178 -26187 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t14" 0 1103.11 -26495 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t52" 0 1103.11 -26803 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t48" 0 1103.11 -27111 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t10" 0 1103.11 -27419 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t2" 0 1103.11 -27727 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t47" 0 1103.11 -28035 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t45" 0 1103.11 -28343 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t12" 0 1103.11 -28651 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t42" 0 1103.11 -28959 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t13" 0 77.6745 -28776 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t43" 0 77.6745 -28834 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n17" 0 155.349 -28805 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t44" 0 282.804 -29084 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n18" 0 924.243 -29113 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n19" 0 806.373 -28959 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n20" 0 327.489 -28651 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n21" 0 327.98 -28343 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n22" 0 327.98 -28035 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n23" 0 303.019 -27727 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t11" 0 77.6745 -27544 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t3" 0 77.6745 -27602 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n24" 0 362.99 -27573 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n25" 0 250.838 -27518 -52888 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n26" 0 304.159 -27419 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n27" 0 327.98 -27111 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n28" 0 327.98 -26803 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n29" 0 351.037 -26495 -52872 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t5" 0 77.6745 -26312 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t15" 0 77.6745 -26370 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n30" 0 155.349 -26341 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n31" 0 631.292 -26341 -51868 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n32" 0 253.127 -26338 -52748 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n33" 0 164.98 -26338 -52908 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n34" 0 39.7088 -26388 -53298 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n35" 0 21.3705 -26228 -53358 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n36" 0 36.4593 -26478 -53348 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t22" 0 236.696 -25336 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t23" 0 140.975 -25286 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t24" 0 140.975 -25386 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n37" 0 772.484 -25415 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n38" 0 2224.95 -25288 -56598 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t28" 0 236.608 -24136 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t29" 0 140.975 -24086 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t30" 0 140.975 -24186 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n39" 0 426.64 -24215 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n40" 0 349.763 -24068 -54398 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t32" 0 140.975 -24560 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t33" 0 140.975 -24660 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n41" 0 411.276 -24689 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t31" 0 236.61 -24610 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n42" 0 331.963 -24688 -54298 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t34" 0 236.601 -28036 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t35" 0 140.975 -27986 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t36" 0 140.975 -28086 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n43" 0 426.64 -28115 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n44" 0 335.842 -27968 -54398 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t37" 0 236.603 -28510 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t38" 0 140.975 -28460 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t39" 0 140.975 -28560 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n45" 0 412.718 -28589 -54547 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n46" 0 327.997 -28568 -54398 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n47" 0 227.952 -29768 -54398 0
+rnode "5t-ota_top_0/differential-pair_0/D1" 0 181.291 -29778 -57448 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t25" 0 236.7 -25810 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t26" 0 140.975 -25760 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t27" 0 140.975 -25860 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n48" 0 750.768 -25889 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n49" 0 463.515 -25868 -56698 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t16" 0 236.696 -26836 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t17" 0 140.975 -26786 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t18" 0 140.975 -26886 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n50" 0 772.484 -26915 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n51" 0 463.572 -26788 -56598 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t19" 0 236.7 -27310 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t20" 0 140.975 -27260 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.t21" 0 140.975 -27360 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n52" 0 750.768 -27389 -56447 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n53" 0 1410.64 -27368 -56698 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n54" 0 1387.3 -29768 -56598 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n55" 0 669.911 -29668 -54398 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n56" 0 1202.86 -26468 -53298 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n57" 0 1241.92 -29768 -54298 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n58" 0 0 -29768 -54298 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n59" 0 341.927 -29668 -54398 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n60" 0 516.725 -28568 -54398 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n61" 0 1137.9 -27968 -54398 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n62" 0 1143.59 -24688 -54298 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n63" 0 956.125 -24068 -54398 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n64" 0 2798.8 -22868 -54298 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n65" 0 1218.38 -26168 -53398 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n66" 0 22.9778 -26468 -53398 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n67" 0 62.6867 -26248 -53298 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n68" 0 38.4668 -26468 -53298 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n69" 0 0 -26428 -53358 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n70" 0 166.69 -26428 -53258 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n71" 0 45.5903 -26228 -53258 0
+rnode "5t-ota_top_0/mirror-load_0/D1.n72" 0 64.1114 -26228 -53458 0
+rnode "5t-ota_top_0/mirror-load_0/D1" 0 25.6445 -26378 -53408 0
+resist "5t-ota_top_0/mirror-load_0/D1" "5t-ota_top_0/mirror-load_0/D1.n0" 0.00416667
+resist "5t-ota_top_0/mirror-load_0/D1.n36" "5t-ota_top_0/mirror-load_0/D1.n35" 0.00416667
+resist "5t-ota_top_0/mirror-load_0/D1.n33" "5t-ota_top_0/mirror-load_0/D1.n4" 0.015
+resist "5t-ota_top_0/mirror-load_0/D1.n35" "5t-ota_top_0/mirror-load_0/D1.n0" 0.0166667
+resist "5t-ota_top_0/mirror-load_0/D1.n70" "5t-ota_top_0/mirror-load_0/D1.n68" 0.0166667
+resist "5t-ota_top_0/mirror-load_0/D1" "5t-ota_top_0/mirror-load_0/D1.n72" 0.0208333
+resist "5t-ota_top_0/mirror-load_0/D1.n68" "5t-ota_top_0/mirror-load_0/D1.n36" 0.0208333
+resist "5t-ota_top_0/mirror-load_0/D1.n59" "5t-ota_top_0/mirror-load_0/D1.n47" 0.0235
+resist "5t-ota_top_0/mirror-load_0/D1.n56" "5t-ota_top_0/mirror-load_0/D1.n34" 0.0253619
+resist "5t-ota_top_0/mirror-load_0/D1.n58" "5t-ota_top_0/mirror-load_0/D1.n57" 0.0314662
+resist "5t-ota_top_0/mirror-load_0/D1.n58" "5t-ota_top_0/mirror-load_0/D1.n55" 0.0314662
+resist "5t-ota_top_0/mirror-load_0/D1.n67" "5t-ota_top_0/mirror-load_0/D1.n66" 0.0438287
+resist "5t-ota_top_0/mirror-load_0/D1.n67" "5t-ota_top_0/mirror-load_0/D1.n65" 0.05
+resist "5t-ota_top_0/mirror-load_0/D1.n66" "5t-ota_top_0/mirror-load_0/D1.n34" 0.0691906
+resist "5t-ota_top_0/mirror-load_0/D1.n40" "5t-ota_top_0/mirror-load_0/D1.n39" 0.113392
+resist "5t-ota_top_0/mirror-load_0/D1.n44" "5t-ota_top_0/mirror-load_0/D1.n43" 0.113392
+resist "5t-ota_top_0/mirror-load_0/D1.n42" "5t-ota_top_0/mirror-load_0/D1.n41" 0.118759
+resist "5t-ota_top_0/mirror-load_0/D1.n46" "5t-ota_top_0/mirror-load_0/D1.n45" 0.118759
+resist "5t-ota_top_0/mirror-load_0/D1.n53" "5t-ota_top_0/mirror-load_0/D1.n51" 0.1363
+resist "5t-ota_top_0/mirror-load_0/D1.n49" "5t-ota_top_0/mirror-load_0/D1.n38" 0.1363
+resist "5t-ota_top_0/mirror-load_0/D1.n61" "5t-ota_top_0/mirror-load_0/D1.n60" 0.141
+resist "5t-ota_top_0/mirror-load_0/D1.n63" "5t-ota_top_0/mirror-load_0/D1.n62" 0.1457
+resist "5t-ota_top_0/mirror-load_0/D1.n70" "5t-ota_top_0/mirror-load_0/D1.n33" 0.145833
+resist "5t-ota_top_0/mirror-load_0/D1.n51" "5t-ota_top_0/mirror-load_0/D1.n49" 0.2162
+resist "5t-ota_top_0/mirror-load_0/D1.n60" "5t-ota_top_0/mirror-load_0/D1.n59" 0.2585
+resist "5t-ota_top_0/mirror-load_0/D1.n62" "5t-ota_top_0/mirror-load_0/D1.n61" 0.7708
+resist "5t-ota_top_0/mirror-load_0/D1.n64" "5t-ota_top_0/mirror-load_0/D1.n63" 1.10318
+resist "5t-ota_top_0/mirror-load_0/D1.n54" "5t-ota_top_0/mirror-load_0/D1.n53" 1.38518
+resist "5t-ota_top_0/mirror-load_0/D1.n55" "5t-ota_top_0/mirror-load_0/D1.n54" 1.40618
+resist "5t-ota_top_0/mirror-load_0/D1.n5" "5t-ota_top_0/mirror-load_0/D1.t41" 1.47364
+resist "5t-ota_top_0/mirror-load_0/D1.n54" "5t-ota_top_0/differential-pair_0/D1" 1.59451
+resist "5t-ota_top_0/mirror-load_0/D1.n59" "5t-ota_top_0/mirror-load_0/D1.n58" 1.69002
+resist "5t-ota_top_0/mirror-load_0/D1.n69" "5t-ota_top_0/mirror-load_0/D1.n1" 1.83527
+resist "5t-ota_top_0/mirror-load_0/D1.n71" "5t-ota_top_0/mirror-load_0/D1.n3" 1.83527
+resist "5t-ota_top_0/mirror-load_0/D1.n69" "5t-ota_top_0/mirror-load_0/D1.n2" 1.83527
+resist "5t-ota_top_0/mirror-load_0/D1.n3" "5t-ota_top_0/mirror-load_0/D1.n1" 1.83527
+resist "5t-ota_top_0/mirror-load_0/D1.n66" "5t-ota_top_0/mirror-load_0/D1.n0" 2.22884
+resist "5t-ota_top_0/mirror-load_0/D1.n68" "5t-ota_top_0/mirror-load_0/D1.n34" 2.23807
+resist "5t-ota_top_0/mirror-load_0/D1.n65" "5t-ota_top_0/mirror-load_0/D1.n36" 2.30308
+resist "5t-ota_top_0/mirror-load_0/D1.n57" "5t-ota_top_0/mirror-load_0/D1.n56" 2.5625
+resist "5t-ota_top_0/mirror-load_0/D1.n65" "5t-ota_top_0/mirror-load_0/D1.n64" 2.59368
+resist "5t-ota_top_0/mirror-load_0/D1.n31" "5t-ota_top_0/mirror-load_0/D1.n4" 2.80066
+resist "5t-ota_top_0/mirror-load_0/D1.n64" "5t-ota_top_0/mirror-load_0/D1.n38" 2.82732
+resist "5t-ota_top_0/mirror-load_0/D1.n30" "5t-ota_top_0/mirror-load_0/D1.t15" 2.94628
+resist "5t-ota_top_0/mirror-load_0/D1.n30" "5t-ota_top_0/mirror-load_0/D1.t5" 2.94628
+resist "5t-ota_top_0/mirror-load_0/D1.n11" "5t-ota_top_0/mirror-load_0/D1.t9" 2.94628
+resist "5t-ota_top_0/mirror-load_0/D1.n11" "5t-ota_top_0/mirror-load_0/D1.t1" 2.94628
+resist "5t-ota_top_0/mirror-load_0/D1.n24" "5t-ota_top_0/mirror-load_0/D1.t3" 2.94628
+resist "5t-ota_top_0/mirror-load_0/D1.n24" "5t-ota_top_0/mirror-load_0/D1.t11" 2.94628
+resist "5t-ota_top_0/mirror-load_0/D1.n17" "5t-ota_top_0/mirror-load_0/D1.t43" 2.94628
+resist "5t-ota_top_0/mirror-load_0/D1.n17" "5t-ota_top_0/mirror-load_0/D1.t13" 2.94628
+resist "5t-ota_top_0/mirror-load_0/D1.n55" "5t-ota_top_0/mirror-load_0/D1.n47" 3.41
+resist "5t-ota_top_0/mirror-load_0/D1.n57" "5t-ota_top_0/mirror-load_0/D1.n47" 3.41
+resist "5t-ota_top_0/mirror-load_0/D1.n70" "5t-ota_top_0/mirror-load_0/D1.n69" 3.73311
+resist "5t-ota_top_0/mirror-load_0/D1.n35" "5t-ota_top_0/mirror-load_0/D1.n3" 3.73311
+resist "5t-ota_top_0/mirror-load_0/D1.n62" "5t-ota_top_0/mirror-load_0/D1.n42" 3.94147
+resist "5t-ota_top_0/mirror-load_0/D1.n60" "5t-ota_top_0/mirror-load_0/D1.n46" 3.94147
+resist "5t-ota_top_0/mirror-load_0/D1.n63" "5t-ota_top_0/mirror-load_0/D1.n40" 3.94213
+resist "5t-ota_top_0/mirror-load_0/D1.n61" "5t-ota_top_0/mirror-load_0/D1.n44" 3.94213
+resist "5t-ota_top_0/mirror-load_0/D1.n51" "5t-ota_top_0/mirror-load_0/D1.n50" 4.05666
+resist "5t-ota_top_0/mirror-load_0/D1.n38" "5t-ota_top_0/mirror-load_0/D1.n37" 4.05666
+resist "5t-ota_top_0/mirror-load_0/D1.n49" "5t-ota_top_0/mirror-load_0/D1.n48" 4.06142
+resist "5t-ota_top_0/mirror-load_0/D1.n53" "5t-ota_top_0/mirror-load_0/D1.n52" 4.06142
+resist "5t-ota_top_0/mirror-load_0/D1.n5" "5t-ota_top_0/mirror-load_0/D1.t7" 4.24357
+resist "5t-ota_top_0/mirror-load_0/D1.n68" "5t-ota_top_0/mirror-load_0/D1.n67" 4.5
+resist "5t-ota_top_0/mirror-load_0/D1.n56" "5t-ota_top_0/mirror-load_0/D1.n0" 4.5
+resist "5t-ota_top_0/mirror-load_0/D1.n16" "5t-ota_top_0/mirror-load_0/D1.n4" 4.65
+resist "5t-ota_top_0/mirror-load_0/D1.n29" "5t-ota_top_0/mirror-load_0/D1.n4" 4.6962
+resist "5t-ota_top_0/mirror-load_0/D1.n32" "5t-ota_top_0/mirror-load_0/D1.n16" 8.78545
+resist "5t-ota_top_0/mirror-load_0/D1.n33" "5t-ota_top_0/mirror-load_0/D1.n32" 9.3
+resist "5t-ota_top_0/mirror-load_0/D1.n71" "5t-ota_top_0/mirror-load_0/D1.n70" 9.3
+resist "5t-ota_top_0/mirror-load_0/D1.n72" "5t-ota_top_0/mirror-load_0/D1.n71" 9.3
+resist "5t-ota_top_0/mirror-load_0/D1.n72" "5t-ota_top_0/mirror-load_0/D1.n1" 9.3
+resist "5t-ota_top_0/mirror-load_0/D1.n72" "5t-ota_top_0/mirror-load_0/D1.n2" 9.3
+resist "5t-ota_top_0/mirror-load_0/D1.n35" "5t-ota_top_0/mirror-load_0/D1.n2" 9.3
+resist "5t-ota_top_0/mirror-load_0/D1.n32" "5t-ota_top_0/mirror-load_0/D1.n29" 10.8655
+resist "5t-ota_top_0/mirror-load_0/D1.n13" "5t-ota_top_0/mirror-load_0/D1.n12" 13.6
+resist "5t-ota_top_0/mirror-load_0/D1.n25" "5t-ota_top_0/mirror-load_0/D1.n23" 14.24
+resist "5t-ota_top_0/mirror-load_0/D1.n26" "5t-ota_top_0/mirror-load_0/D1.n25" 15.84
+resist "5t-ota_top_0/mirror-load_0/D1.n12" "5t-ota_top_0/mirror-load_0/D1.n10" 16.48
+resist "5t-ota_top_0/mirror-load_0/D1.n37" "5t-ota_top_0/mirror-load_0/D1.t23" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n37" "5t-ota_top_0/mirror-load_0/D1.t24" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n48" "5t-ota_top_0/mirror-load_0/D1.t26" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n48" "5t-ota_top_0/mirror-load_0/D1.t27" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n50" "5t-ota_top_0/mirror-load_0/D1.t17" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n50" "5t-ota_top_0/mirror-load_0/D1.t18" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n52" "5t-ota_top_0/mirror-load_0/D1.t20" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n52" "5t-ota_top_0/mirror-load_0/D1.t21" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n39" "5t-ota_top_0/mirror-load_0/D1.t29" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n39" "5t-ota_top_0/mirror-load_0/D1.t30" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n41" "5t-ota_top_0/mirror-load_0/D1.t32" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n41" "5t-ota_top_0/mirror-load_0/D1.t33" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n43" "5t-ota_top_0/mirror-load_0/D1.t35" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n43" "5t-ota_top_0/mirror-load_0/D1.t36" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n45" "5t-ota_top_0/mirror-load_0/D1.t38" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n45" "5t-ota_top_0/mirror-load_0/D1.t39" 21.2282
+resist "5t-ota_top_0/mirror-load_0/D1.n31" "5t-ota_top_0/mirror-load_0/D1.n30" 21.6667
+resist "5t-ota_top_0/mirror-load_0/D1.n18" "5t-ota_top_0/mirror-load_0/D1.n17" 21.6667
+resist "5t-ota_top_0/mirror-load_0/D1.n18" "5t-ota_top_0/mirror-load_0/D1.t44" 24.6129
+resist "5t-ota_top_0/mirror-load_0/D1.n19" "5t-ota_top_0/mirror-load_0/D1.n18" 36.3241
+resist "5t-ota_top_0/mirror-load_0/D1.n7" "5t-ota_top_0/mirror-load_0/D1.n6" 41.0317
+resist "5t-ota_top_0/mirror-load_0/D1.n20" "5t-ota_top_0/mirror-load_0/D1.n19" 42.2786
+resist "5t-ota_top_0/mirror-load_0/D1.n6" "5t-ota_top_0/mirror-load_0/D1.n5" 46.1648
+resist "5t-ota_top_0/mirror-load_0/D1.n16" "5t-ota_top_0/mirror-load_0/D1.n15" 48.3636
+resist "5t-ota_top_0/mirror-load_0/D1.n15" "5t-ota_top_0/mirror-load_0/D1.n14" 49.28
+resist "5t-ota_top_0/mirror-load_0/D1.n14" "5t-ota_top_0/mirror-load_0/D1.n13" 49.28
+resist "5t-ota_top_0/mirror-load_0/D1.n10" "5t-ota_top_0/mirror-load_0/D1.n9" 49.28
+resist "5t-ota_top_0/mirror-load_0/D1.n9" "5t-ota_top_0/mirror-load_0/D1.n8" 49.28
+resist "5t-ota_top_0/mirror-load_0/D1.n8" "5t-ota_top_0/mirror-load_0/D1.n7" 49.28
+resist "5t-ota_top_0/mirror-load_0/D1.n27" "5t-ota_top_0/mirror-load_0/D1.n26" 49.28
+resist "5t-ota_top_0/mirror-load_0/D1.n28" "5t-ota_top_0/mirror-load_0/D1.n27" 49.28
+resist "5t-ota_top_0/mirror-load_0/D1.n29" "5t-ota_top_0/mirror-load_0/D1.n28" 49.28
+resist "5t-ota_top_0/mirror-load_0/D1.n21" "5t-ota_top_0/mirror-load_0/D1.n20" 49.28
+resist "5t-ota_top_0/mirror-load_0/D1.n22" "5t-ota_top_0/mirror-load_0/D1.n21" 49.28
+resist "5t-ota_top_0/mirror-load_0/D1.n23" "5t-ota_top_0/mirror-load_0/D1.n22" 49.28
+resist "5t-ota_top_0/mirror-load_0/D1.n32" "5t-ota_top_0/mirror-load_0/D1.n31" 93.8667
+resist "5t-ota_top_0/mirror-load_0/D1.n12" "5t-ota_top_0/mirror-load_0/D1.n11" 130.467
+resist "5t-ota_top_0/mirror-load_0/D1.n25" "5t-ota_top_0/mirror-load_0/D1.n24" 130.467
+resist "5t-ota_top_0/mirror-load_0/D1.n7" "5t-ota_top_0/mirror-load_0/D1.t6" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n8" "5t-ota_top_0/mirror-load_0/D1.t51" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n9" "5t-ota_top_0/mirror-load_0/D1.t49" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n10" "5t-ota_top_0/mirror-load_0/D1.t0" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n13" "5t-ota_top_0/mirror-load_0/D1.t8" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n14" "5t-ota_top_0/mirror-load_0/D1.t46" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n15" "5t-ota_top_0/mirror-load_0/D1.t50" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n19" "5t-ota_top_0/mirror-load_0/D1.t42" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n23" "5t-ota_top_0/mirror-load_0/D1.t2" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n22" "5t-ota_top_0/mirror-load_0/D1.t47" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n21" "5t-ota_top_0/mirror-load_0/D1.t45" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n20" "5t-ota_top_0/mirror-load_0/D1.t12" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n29" "5t-ota_top_0/mirror-load_0/D1.t14" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n28" "5t-ota_top_0/mirror-load_0/D1.t52" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n27" "5t-ota_top_0/mirror-load_0/D1.t48" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n26" "5t-ota_top_0/mirror-load_0/D1.t10" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n16" "5t-ota_top_0/mirror-load_0/D1.t4" 257.232
+resist "5t-ota_top_0/mirror-load_0/D1.n6" "5t-ota_top_0/mirror-load_0/D1.t40" 257.784
+resist "5t-ota_top_0/mirror-load_0/D1.n40" "5t-ota_top_0/mirror-load_0/D1.t28" 416.967
+resist "5t-ota_top_0/mirror-load_0/D1.n44" "5t-ota_top_0/mirror-load_0/D1.t34" 416.967
+resist "5t-ota_top_0/mirror-load_0/D1.n42" "5t-ota_top_0/mirror-load_0/D1.t31" 416.972
+resist "5t-ota_top_0/mirror-load_0/D1.n46" "5t-ota_top_0/mirror-load_0/D1.t37" 416.972
+resist "5t-ota_top_0/mirror-load_0/D1.n37" "5t-ota_top_0/mirror-load_0/D1.t22" 417.08
+resist "5t-ota_top_0/mirror-load_0/D1.n50" "5t-ota_top_0/mirror-load_0/D1.t16" 417.08
+resist "5t-ota_top_0/mirror-load_0/D1.n48" "5t-ota_top_0/mirror-load_0/D1.t25" 417.09
+resist "5t-ota_top_0/mirror-load_0/D1.n52" "5t-ota_top_0/mirror-load_0/D1.t19" 417.09
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -26284 -59444 -26283 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t23" 500 0 "5t-ota_top_0/y_0/S" 1500 43500,1558 "VSUBS" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -26900 -59444 -26899 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t0" 500 0 "5t-ota_top_0/y_0/IBIAS.t1" 1500 43500,1558 "VSUBS" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -24436 -59444 -24435 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t2" 500 0 "5t-ota_top_0/y_0/IBIAS.t3" 1500 43500,1558 "VSUBS" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -25976 -59444 -25975 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t4" 500 0 "VSUBS" 1500 43500,1558 "5t-ota_top_0/y_0/IBIAS.t5" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -25360 -59444 -25359 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t22" 500 0 "VSUBS" 1500 43500,1558 "5t-ota_top_0/y_0/S" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -28748 -59444 -28747 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t21" 500 0 "5t-ota_top_0/y_0/S" 1500 43500,1558 "VSUBS" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -24128 -59444 -24127 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t20" 500 0 "VSUBS" 1500 43500,1558 "5t-ota_top_0/y_0/S" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -27516 -59444 -27515 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t19" 500 0 "5t-ota_top_0/y_0/S" 1500 43500,1558 "VSUBS" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -26592 -59444 -26591 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t18" 500 0 "VSUBS" 1500 43500,1558 "5t-ota_top_0/y_0/S" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -24744 -59444 -24743 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t6" 500 0 "VSUBS" 1500 43500,1558 "5t-ota_top_0/y_0/IBIAS.t7" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -27208 -59444 -27207 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t8" 500 0 "VSUBS" 1500 43500,1558 "5t-ota_top_0/y_0/IBIAS.t9" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -28132 -59444 -28131 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t10" 500 0 "5t-ota_top_0/y_0/IBIAS.t11" 1500 43500,1558 "VSUBS" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -25668 -59444 -25667 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t12" 500 0 "5t-ota_top_0/y_0/IBIAS.t13" 1500 43500,1558 "VSUBS" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -28440 -59444 -28439 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t14" 500 0 "VSUBS" 1500 43500,1558 "5t-ota_top_0/y_0/IBIAS.t15" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -27824 -59444 -27823 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t17" 500 0 "VSUBS" 1500 43500,1558 "5t-ota_top_0/y_0/S" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -25052 -59444 -25051 -59443  "VSUBS" "5t-ota_top_0/y_0/IBIAS.t16" 500 0 "5t-ota_top_0/y_0/S" 1500 43500,1558 "VSUBS" 1500 43500,1558
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -26886 -56922 -26885 -56921  "VSUBS" "5t-ota_top_0/mirror-load_0/D1.t16" 200 0 "5t-ota_top_0/mirror-load_0/D1.t17" 950 27550,1008 "5t-ota_top_0/mirror-load_0/D1.t18" 950 55100,2016
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -27360 -56922 -27359 -56921  "VSUBS" "5t-ota_top_0/mirror-load_0/D1.t19" 200 0 "5t-ota_top_0/mirror-load_0/D1.t20" 950 55100,2016 "5t-ota_top_0/mirror-load_0/D1.t21" 950 27550,1008
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -25386 -56922 -25385 -56921  "VSUBS" "5t-ota_top_0/mirror-load_0/D1.t22" 200 0 "5t-ota_top_0/mirror-load_0/D1.t23" 950 27550,1008 "5t-ota_top_0/mirror-load_0/D1.t24" 950 55100,2016
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -25860 -56922 -25859 -56921  "VSUBS" "5t-ota_top_0/mirror-load_0/D1.t25" 200 0 "5t-ota_top_0/mirror-load_0/D1.t26" 950 55100,2016 "5t-ota_top_0/mirror-load_0/D1.t27" 950 27550,1008
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -24186 -55022 -24185 -55021  "VSUBS" "5t-ota_top_0/mirror-load_0/D1.t28" 200 0 "5t-ota_top_0/mirror-load_0/D1.t29" 950 27550,1008 "5t-ota_top_0/mirror-load_0/D1.t30" 950 55100,2016
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -24660 -55022 -24659 -55021  "VSUBS" "5t-ota_top_0/mirror-load_0/D1.t31" 200 0 "5t-ota_top_0/mirror-load_0/D1.t32" 950 55100,2016 "5t-ota_top_0/mirror-load_0/D1.t33" 950 27550,1008
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -28086 -55022 -28085 -55021  "VSUBS" "5t-ota_top_0/mirror-load_0/D1.t34" 200 0 "5t-ota_top_0/mirror-load_0/D1.t35" 950 27550,1008 "5t-ota_top_0/mirror-load_0/D1.t36" 950 55100,2016
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 -28560 -55022 -28559 -55021  "VSUBS" "5t-ota_top_0/mirror-load_0/D1.t37" 200 0 "5t-ota_top_0/mirror-load_0/D1.t38" 950 55100,2016 "5t-ota_top_0/mirror-load_0/D1.t39" 950 27550,1008
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -23848 -52808 -23847 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t40" 500 0 "5t-ota_top_0/mirror-load_0/D1.t41" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/D1.t41" 1880 109040,3876
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -25080 -52808 -25079 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t0" 500 0 "5t-ota_top_0/mirror-load_0/D1.t1" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -27852 -52808 -27851 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t2" 500 0 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/D1.t3" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -26312 -52808 -26311 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t4" 500 0 "5t-ota_top_0/mirror-load_0/D1.t5" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -26928 -52808 -26927 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t52" 500 0 "5t-ota_top_0/mirror-load_0/D2" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -24464 -52808 -24463 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t51" 500 0 "5t-ota_top_0/mirror-load_0/D2" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -26004 -52808 -26003 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t50" 500 0 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/D2" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -24156 -52808 -24155 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t6" 500 0 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/D1.t7" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -25388 -52808 -25387 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t8" 500 0 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/D1.t9" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -27544 -52808 -27543 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t10" 500 0 "5t-ota_top_0/mirror-load_0/D1.t11" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -28776 -52808 -28775 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t12" 500 0 "5t-ota_top_0/mirror-load_0/D1.t13" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -26620 -52808 -26619 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t14" 500 0 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/D1.t15" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -24772 -52808 -24771 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t49" 500 0 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/D2" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -27236 -52808 -27235 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t48" 500 0 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/D2" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -28160 -52808 -28159 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t47" 500 0 "5t-ota_top_0/mirror-load_0/D2" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -25696 -52808 -25695 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t46" 500 0 "5t-ota_top_0/mirror-load_0/D2" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -28468 -52808 -28467 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t45" 500 0 "5t-ota_top_0/mirror-load_0/VDD" 1880 54520,1938 "5t-ota_top_0/mirror-load_0/D2" 1880 54520,1938
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 -29084 -52808 -29083 -52807  "5t-ota_top_0/mirror-load_0/VDD" "5t-ota_top_0/mirror-load_0/D1.t42" 500 0 "5t-ota_top_0/mirror-load_0/D1.t43" 1880 109040,3876 "5t-ota_top_0/mirror-load_0/D1.t44" 1880 54520,1938

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1769412267
+timestamp 1770023980
 << error_p >>
 rect -1112 791 -1044 797
 rect -804 791 -736 797
@@ -253,9 +253,14 @@ rect -291 -769 -285 707
 rect -331 -781 -285 -769
 rect -23 707 23 719
 rect -23 -769 -17 707
-rect 17 -769 23 707
-rect -23 -781 23 -769
+rect 17 200 23 707
 rect 285 707 331 719
+rect 17 0 200 200
+rect 17 -200 23 0
+rect 17 -400 200 -200
+rect 17 -600 23 -400
+rect 17 -769 200 -600
+rect -23 -781 200 -769
 rect 285 -769 291 707
 rect 325 -769 331 707
 rect 285 -781 331 -769
@@ -271,6 +276,100 @@ rect 1209 707 1255 719
 rect 1209 -769 1215 707
 rect 1249 -769 1255 707
 rect 1209 -781 1255 -769
+rect 0 -800 200 -781
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+rect 0 -3600 200 -3400
+rect 0 -4000 200 -3800
+rect 0 -4400 200 -4200
+rect 0 -4800 200 -4600
+rect 0 -5200 200 -5000
+rect 0 -5600 200 -5400
+rect 0 -6000 200 -5800
+rect 0 -6400 200 -6200
+rect 0 -6800 200 -6600
+rect 0 -7200 200 -7000
+rect 0 -7600 200 -7400
+rect 0 -8000 200 -7800
+use sky130_fd_pr__nfet_g5v0d10v5_ZX75FA  X0
+timestamp 0
+transform 1 0 -973 0 1 -7057
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_ZX75FA  X1
+timestamp 0
+transform 1 0 -332 0 1 -7122
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_ZX75FA  X2
+timestamp 0
+transform 1 0 309 0 1 -7187
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_X6YUYU  X3
+timestamp 0
+transform 1 0 950 0 1 -7252
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_XZ8YPJ  X4
+timestamp 0
+transform 1 0 1591 0 1 -7317
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_ZX75FA  X5
+timestamp 0
+transform 1 0 2232 0 1 -7382
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_ZX75FA  X6
+timestamp 0
+transform 1 0 2873 0 1 -7447
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_ZX75FA  X7
+timestamp 0
+transform 1 0 3514 0 1 -7512
+box 0 0 1 1
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 a_n953_n781#
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 a_n587_n807#
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 a_645_n807#
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 {}
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 a_29_n807#
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 a_279_n781#
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 256 0 0 0 a_895_n781#
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 256 0 0 0 a_n1261_n781#
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 256 0 0 0 a_n29_n781#
+port 8 nsew
+flabel metal1 0 -3600 200 -3400 0 FreeSans 256 0 0 0 a_n645_n781#
+port 9 nsew
+flabel metal1 0 -4000 200 -3800 0 FreeSans 256 0 0 0 a_n279_n807#
+port 10 nsew
+flabel metal1 0 -4400 200 -4200 0 FreeSans 256 0 0 0 {}
+port 11 nsew
+flabel metal1 0 -4800 200 -4600 0 FreeSans 256 0 0 0 a_n895_n807#
+port 12 nsew
+flabel metal1 0 -5200 200 -5000 0 FreeSans 256 0 0 0 a_337_n807#
+port 13 nsew
+flabel metal1 0 -5600 200 -5400 0 FreeSans 256 0 0 0 a_953_n807#
+port 14 nsew
+flabel metal1 0 -6000 200 -5800 0 FreeSans 256 0 0 0 a_587_n781#
+port 15 nsew
+flabel metal1 0 -6400 200 -6200 0 FreeSans 256 0 0 0 a_1203_n781#
+port 16 nsew
+flabel metal1 0 -6800 200 -6600 0 FreeSans 256 0 0 0 a_n337_n781#
+port 17 nsew
+flabel metal1 0 -7200 200 -7000 0 FreeSans 256 0 0 0 a_n1203_n807#
+port 18 nsew
+flabel metal1 0 -7600 200 -7400 0 FreeSans 256 0 0 0 {}
+port 19 nsew
+flabel metal1 0 -8000 200 -7800 0 FreeSans 256 0 0 0 VSUBS
+port 20 nsew
 << properties >>
 string gencell sky130_fd_pr__nfet_g5v0d10v5
 string library sky130
