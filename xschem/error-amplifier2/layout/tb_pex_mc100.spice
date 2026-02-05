@@ -1,5 +1,5 @@
-=============================================================
-* tb_ac_pex_mc_final.spice  (PEX-backed, adapted to x1st-stage wrapper)
+* =============================================================
+* tb_pex_mc_100.spice  (PEX-backed, brute-force 100 runs)
 * =============================================================
 
 .GLOBAL GND
@@ -8,53 +8,48 @@
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice mc
 
 * --- Include extracted PEX netlist ---
-* Must contain: .subckt x1st-stage VP VN IBIAS VSS OUT VDD
 .include "1st-stage_pex.spice"
 
-* =============================================================
-* WRAPPER (KEEP YOUR SCHEM SYMBOL PIN ORDER)
-* Schematic:  .subckt 1st-stage VDD OUT VN VP IBIAS VSS
-* PEX cell:   .subckt x1st-stage VP VN IBIAS VSS OUT VDD
-* =============================================================
+* -------------------------------------------------------------
+* WRAPPER: keep schematic symbol pin order unchanged
+* Schematic wants:  .subckt 1st-stage VDD OUT VN VP IBIAS VSS
+* PEX provides:     .subckt x1st-stage VP VN IBIAS VSS OUT VDD
+* -------------------------------------------------------------
 .subckt 1st-stage VDD OUT VN VP IBIAS VSS
 XPEX VP VN IBIAS VSS OUT VDD x1st-stage
 .ends 1st-stage
 
-
 * =============================================================
-* TOP-LEVEL TESTBENCH (KEEP EXACT SETUP KAMU)
+* TOP-LEVEL TESTBENCH
 * =============================================================
 
 * Differential inputs
-V2 VN   VSS  AC -1m  DC 1.25
-V3 VP   VSS  AC  1m  DC 1.25
+V2  VN   VSS  AC -1m  DC 0.9
+V3  VP   VSS  AC  1m  DC 0.9
 
 * Supplies
-V5 VDD  VSS  5
-V7 VSS  GND  0
+V5  VDD  VSS  1.8
+V7  VSS  GND  0
 
 * Bias
-I4 VDD  IBIAS 200u
+I4  VDD  IBIAS 10u
 
 * Output load
-C2 OUT  VSS  1p
+C2  OUT  VSS  0p
 
 * Common-mode / CMRR path
-V1 VCM  VSS  AC 1m  DC 1.25
-C1 OUT2 VSS  5p
+V1  VCM  VSS  AC 1m  DC 0.9
+C1  OUT2 VSS  0p
 
 * PSRR path: inject AC on VDDr supply feeding x3
-V4 VDDr VSS  DC 5  AC 1
-C3 OUT3 VSS  10p
-R1 OUT3 VN   1k
+V4  VDDr VSS  DC 1.8  AC 1
+C3  OUT3 VSS  1
+R1  OUT3 VN   100k
 
-* DUT instances (WRAPPER subckt)
-* Wrapper pin order matches your original schematic:
-* .subckt 1st-stage VDD OUT VN VP IBIAS VSS
-x1 VDDr OUT3 VN VP IBIAS VSS 1st-stage
-x2 VDD  OUT2 VCM VCM IBIAS VSS 1st-stage
-x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
-
+* DUT instances (through wrapper)
+x1  VDD  OUT  VN  VP  IBIAS VSS  1st-stage
+x2  VDD  OUT2 VCM VCM IBIAS VSS  1st-stage
+x3  VDDr OUT3 VN  VP  IBIAS VSS  1st-stage
 
 .control
   set noaskquit
@@ -65,7 +60,7 @@ x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
   let mc_runs = 100
   let run = 0
 
-  * --- allocate vectors (100 zeros) ---
+  * ---- init vectors (100 entries) ----
   compose a0_gain_vec values \
   0 0 0 0 0 0 0 0 0 0 \
   0 0 0 0 0 0 0 0 0 0 \
@@ -121,7 +116,7 @@ x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
 
     op
 
-    * ---------------- DIFF GAIN + PHASE MARGIN ----------------
+    * --- Gain/PM (differential) ---
     alter v1 acmag = 0
     alter v4 acmag = 0
 
@@ -139,7 +134,7 @@ x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
     meas ac p_unity find p_inst when g_inst = 0
     let pm_val_vec[run] = 180 + p_unity
 
-    * ---------------- CMRR ----------------
+    * --- CMRR (common-mode) ---
     alter v2 acmag = 0
     alter v3 acmag = 0
     alter v1 acmag = 1m
@@ -149,7 +144,7 @@ x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
     let a_cm = db( v(out2) / v(vcm) )
     let cmrr_val_vec[run] = a0_gain_vec[run] - a_cm[0]
 
-    * ---------------- PSRR ----------------
+    * --- PSRR (supply injection) ---
     alter v1 acmag = 0
     alter v2 acmag = 0
     alter v3 acmag = 0
@@ -166,7 +161,7 @@ x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
   echo "---------------- FINAL STATISTICAL REPORT (PEX) ----------------"
   print mean(a0_gain_vec) mean(pm_val_vec) mean(cmrr_val_vec) mean(psrr_val_vec)
 
-  * ---------------- CSV OUTPUT (NO BULLSHIT VERSION) ----------------
+  * --- CSV output ---
   shell rm -f mc_results.csv
   shell echo "run,A0_dB,PM_deg,CMRR_dB,PSRR_dB" > mc_results.csv
 
@@ -176,10 +171,11 @@ x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
     let tmp_pm   = pm_val_vec[i]
     let tmp_cmrr = cmrr_val_vec[i]
     let tmp_psrr = psrr_val_vec[i]
-
-    shell echo "$&i,$&tmp_a0,$&tmp_pm,$&tmp_cmrr,$&tmp_psrr" >> mc_results.csv
+    echo "$&i, $&tmp_a0, $&tmp_pm, $&tmp_cmrr, $&tmp_psrr" >> mc_results.csv
     let i = i + 1
   end
 
   echo "CSV WRITTEN: mc_results.csv"
 .endc
+
+.end

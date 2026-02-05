@@ -1,4 +1,4 @@
-=============================================================
+* =============================================================
 * tb_ac_pex_mc_final.spice  (PEX-backed, adapted to x1st-stage wrapper)
 * =============================================================
 
@@ -65,54 +65,11 @@ x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
   let mc_runs = 100
   let run = 0
 
-  * --- allocate vectors (100 zeros) ---
-  compose a0_gain_vec values \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0
-
-  compose pm_val_vec values \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0
-
-  compose cmrr_val_vec values \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0
-
-  compose psrr_val_vec values \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0 \
-  0 0 0 0 0 0 0 0 0 0
+  * init vectors (100 entries)
+  compose a0_gain_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose pm_val_vec   values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose cmrr_val_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose psrr_val_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
   dowhile run < mc_runs
     reset
@@ -121,7 +78,7 @@ x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
 
     op
 
-    * ---------------- DIFF GAIN + PHASE MARGIN ----------------
+    * --- Gain/PM (differential) ---
     alter v1 acmag = 0
     alter v4 acmag = 0
 
@@ -139,7 +96,7 @@ x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
     meas ac p_unity find p_inst when g_inst = 0
     let pm_val_vec[run] = 180 + p_unity
 
-    * ---------------- CMRR ----------------
+    * --- CMRR (common-mode) ---
     alter v2 acmag = 0
     alter v3 acmag = 0
     alter v1 acmag = 1m
@@ -149,7 +106,7 @@ x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
     let a_cm = db( v(out2) / v(vcm) )
     let cmrr_val_vec[run] = a0_gain_vec[run] - a_cm[0]
 
-    * ---------------- PSRR ----------------
+    * --- PSRR (supply injection) ---
     alter v1 acmag = 0
     alter v2 acmag = 0
     alter v3 acmag = 0
@@ -166,18 +123,23 @@ x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
   echo "---------------- FINAL STATISTICAL REPORT (PEX) ----------------"
   print mean(a0_gain_vec) mean(pm_val_vec) mean(cmrr_val_vec) mean(psrr_val_vec)
 
-  * ---------------- CSV OUTPUT (NO BULLSHIT VERSION) ----------------
+  * =============================================================
+  * RE-FIXED CSV OUTPUT BLOCK (INDEX EVALUATION)
+  * =============================================================
   shell rm -f mc_results.csv
   shell echo "run,A0_dB,PM_deg,CMRR_dB,PSRR_dB" > mc_results.csv
 
   let i = 0
   dowhile i < mc_runs
+    * Pull values into temp scalars so echo can find them easily
     let tmp_a0   = a0_gain_vec[i]
     let tmp_pm   = pm_val_vec[i]
     let tmp_cmrr = cmrr_val_vec[i]
     let tmp_psrr = psrr_val_vec[i]
 
-    shell echo "$&i,$&tmp_a0,$&tmp_pm,$&tmp_cmrr,$&tmp_psrr" >> mc_results.csv
+    * Now echo the scalars
+    echo "$&i, $&tmp_a0, $&tmp_pm, $&tmp_cmrr, $&tmp_psrr" >> mc_results.csv
+
     let i = i + 1
   end
 
