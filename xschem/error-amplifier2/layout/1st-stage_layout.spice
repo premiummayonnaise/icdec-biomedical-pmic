@@ -1,0 +1,109 @@
+* NGSPICE file created from 5t-ota_top.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_ZPXM7F a_n337_n904# a_n587_n968# a_n953_n904#
++ a_645_n968# a_29_n968# a_1261_n968# a_1569_n968# a_n2185_n904# a_2435_n904# a_n2435_n968#
++ a_279_n904# a_895_n904# a_n2801_n904# a_1511_n904# a_n1261_n904# a_n1569_n904# a_n1511_n968#
++ a_1819_n904# a_2493_n968# a_n1819_n968# a_n279_n968# a_n29_n904# a_n645_n904# a_n895_n968#
++ a_337_n968# a_953_n968# w_n2837_n1004# a_2127_n904# a_1877_n968# a_2743_n904# a_n2493_n904#
++ a_n2127_n968# a_n2743_n968# a_587_n904# a_1203_n904# a_n1203_n968# a_n1877_n904#
++ a_2185_n968#
+X0 a_n2493_n904# a_n2743_n968# a_n2801_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=2.726 ps=19.38 w=9.4 l=1.25
+X1 a_n1877_n904# a_n2127_n968# a_n2185_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X2 a_895_n904# a_645_n968# a_587_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X3 a_n1569_n904# a_n1819_n968# a_n1877_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X4 a_n645_n904# a_n895_n968# a_n953_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X5 a_1819_n904# a_1569_n968# a_1511_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X6 a_n29_n904# a_n279_n968# a_n337_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X7 a_n2185_n904# a_n2435_n968# a_n2493_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X8 a_n953_n904# a_n1203_n968# a_n1261_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X9 a_1203_n904# a_953_n968# a_895_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X10 a_2435_n904# a_2185_n968# a_2127_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X11 a_587_n904# a_337_n968# a_279_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X12 a_2127_n904# a_1877_n968# a_1819_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X13 a_n337_n904# a_n587_n968# a_n645_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X14 a_279_n904# a_29_n968# a_n29_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X15 a_n1261_n904# a_n1511_n968# a_n1569_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X16 a_1511_n904# a_1261_n968# a_1203_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X17 a_2743_n904# a_2493_n968# a_2435_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=2.726 pd=19.38 as=1.363 ps=9.69 w=9.4 l=1.25
+.ends
+
+.subckt mirror-load VDD D1 D2
+XXM2 VDD D1 VDD D1 D1 D1 D1 VDD D1 D1 VDD VDD D1 VDD D1 VDD D1 D2 D1 D1 D1 D1 D2 D1
++ D1 D1 VDD VDD D1 D1 D1 D1 D1 D2 D1 D1 D2 D1 sky130_fd_pr__pfet_g5v0d10v5_ZPXM7F
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_X57ESK a_n187_n506# a_n345_n506# a_129_n506#
++ a_287_n506# a_29_n532# a_n129_n532# a_187_n532# a_n287_n532# a_n29_n506# VSUBS
+X0 a_n187_n506# a_n287_n532# a_n345_n506# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=1.3775 ps=10.08 w=4.75 l=0.5
+X1 a_287_n506# a_187_n532# a_129_n506# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.3775 pd=10.08 as=0.68875 ps=5.04 w=4.75 l=0.5
+X2 a_129_n506# a_29_n532# a_n29_n506# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+X3 a_n29_n506# a_n129_n532# a_n187_n506# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_SNDLS5 a_n29_n444# a_n187_n444# a_n345_n444#
++ a_29_n532# a_n129_n532# a_187_n532# a_129_n444# a_n287_n532# a_287_n444# VSUBS
+X0 a_129_n444# a_29_n532# a_n29_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+X1 a_n29_n444# a_n129_n532# a_n187_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+X2 a_n187_n444# a_n287_n532# a_n345_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=1.3775 ps=10.08 w=4.75 l=0.5
+X3 a_287_n444# a_187_n532# a_129_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.3775 pd=10.08 as=0.68875 ps=5.04 w=4.75 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_CQ6KSH a_n29_n444# a_n187_n444# a_n345_n444#
++ a_29_n532# a_n129_n532# a_187_n532# a_129_n444# a_n287_n532# a_287_n444# VSUBS
+X0 a_129_n444# a_29_n532# a_n29_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+X1 a_n29_n444# a_n129_n532# a_n187_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+X2 a_n187_n444# a_n287_n532# a_n345_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=1.3775 ps=10.08 w=4.75 l=0.5
+X3 a_287_n444# a_187_n532# a_129_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.3775 pd=10.08 as=0.68875 ps=5.04 w=4.75 l=0.5
+.ends
+
+.subckt differential-pair VP VN S D2 D1 VSS
+Xsky130_fd_pr__nfet_g5v0d10v5_X57ESK_0 D1 D1 D1 D1 VP VP D1 D1 S VSS sky130_fd_pr__nfet_g5v0d10v5_X57ESK
+Xsky130_fd_pr__nfet_g5v0d10v5_X57ESK_2 D1 D1 D1 D1 VP VP D1 D1 S VSS sky130_fd_pr__nfet_g5v0d10v5_X57ESK
+Xsky130_fd_pr__nfet_g5v0d10v5_X57ESK_1 D1 D1 D1 D1 VP VP D1 D1 S VSS sky130_fd_pr__nfet_g5v0d10v5_X57ESK
+Xsky130_fd_pr__nfet_g5v0d10v5_SNDLS5_0 S D2 D2 VN VN D2 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5_SNDLS5
+Xsky130_fd_pr__nfet_g5v0d10v5_X57ESK_3 D1 D1 D1 D1 VP VP D1 D1 S VSS sky130_fd_pr__nfet_g5v0d10v5_X57ESK
+Xsky130_fd_pr__nfet_g5v0d10v5_CQ6KSH_0 S D2 D2 VN VN D2 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5_CQ6KSH
+Xsky130_fd_pr__nfet_g5v0d10v5_CQ6KSH_1 S D2 D2 VN VN D2 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5_CQ6KSH
+Xsky130_fd_pr__nfet_g5v0d10v5_CQ6KSH_2 S D2 D2 VN VN D2 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5_CQ6KSH
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_7GKDBD a_n953_n781# a_2185_n807# a_n587_n807#
++ a_645_n807# a_29_n807# a_2435_n781# a_n2185_n781# a_1261_n807# a_1569_n807# a_279_n781#
++ a_n2801_n781# a_895_n781# a_n2435_n807# a_n1261_n781# a_1511_n781# a_1819_n781#
++ a_n1569_n781# a_n29_n781# a_n645_n781# a_n1511_n807# a_2493_n807# a_n279_n807# a_n1819_n807#
++ a_n895_n807# a_337_n807# a_953_n807# a_2127_n781# a_n2493_n781# a_2743_n781# a_587_n781#
++ a_1877_n807# a_n2127_n807# a_n2743_n807# a_1203_n781# a_n1877_n781# a_n337_n781#
++ a_n1203_n807# VSUBS
+X0 a_1511_n781# a_1261_n807# a_1203_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X1 a_n2493_n781# a_n2743_n807# a_n2801_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=2.175 ps=15.58 w=7.5 l=1.25
+X2 a_n1261_n781# a_n1511_n807# a_n1569_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X3 a_2743_n781# a_2493_n807# a_2435_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=2.175 pd=15.58 as=1.0875 ps=7.79 w=7.5 l=1.25
+X4 a_n1877_n781# a_n2127_n807# a_n2185_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X5 a_895_n781# a_645_n807# a_587_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X6 a_n1569_n781# a_n1819_n807# a_n1877_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X7 a_n645_n781# a_n895_n807# a_n953_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X8 a_1819_n781# a_1569_n807# a_1511_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X9 a_n29_n781# a_n279_n807# a_n337_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X10 a_n953_n781# a_n1203_n807# a_n1261_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X11 a_2435_n781# a_2185_n807# a_2127_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X12 a_n2185_n781# a_n2435_n807# a_n2493_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X13 a_1203_n781# a_953_n807# a_895_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X14 a_587_n781# a_337_n807# a_279_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X15 a_2127_n781# a_1877_n807# a_1819_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X16 a_n337_n781# a_n587_n807# a_n645_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+X17 a_279_n781# a_29_n807# a_n29_n781# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.0875 pd=7.79 as=1.0875 ps=7.79 w=7.5 l=1.25
+.ends
+
+.subckt y IBIAS S VSS
+XXM6 VSS IBIAS IBIAS IBIAS IBIAS S VSS IBIAS IBIAS VSS S VSS IBIAS S VSS IBIAS VSS
++ S IBIAS IBIAS S IBIAS IBIAS IBIAS IBIAS IBIAS VSS S S IBIAS IBIAS IBIAS S S IBIAS
++ VSS IBIAS VSS sky130_fd_pr__nfet_g5v0d10v5_7GKDBD
+.ends
+
+.subckt x5t-ota_top
+Xmirror-load_0 mirror-load_0/D1 mirror-load_0/D1 mirror-load_0/D2 mirror-load
+Xdifferential-pair_0 differential-pair_0/VP differential-pair_0/VN y_0/S mirror-load_0/D2
++ mirror-load_0/D1 y_0/VSS differential-pair
+Xy_0 y_0/IBIAS y_0/S y_0/VSS y
+.ends
+
