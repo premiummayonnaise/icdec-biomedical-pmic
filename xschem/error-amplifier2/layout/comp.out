@@ -1,18 +1,16 @@
 
-Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
 
 Subcircuit pins:
-Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
 -------------------------------------------|-------------------------------------------
 1                                          |1                                          
 2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
@@ -28,73 +26,57 @@ Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d1
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
-Flattening unmatched subcell mirror-load in circuit x5t-ota_top (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_ZPXM7F in circuit x5t-ota_top (0)(1 instance)
-Flattening unmatched subcell differential-pair in circuit x5t-ota_top (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_X57ESK in circuit x5t-ota_top (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_SNDLS5 in circuit x5t-ota_top (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CQ6KSH in circuit x5t-ota_top (0)(3 instances)
-Flattening unmatched subcell y in circuit x5t-ota_top (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_7GKDBD in circuit x5t-ota_top (0)(1 instance)
 
-Class x5t-ota_top (0):  Merged 59 parallel devices.
-Class 1st-stage (1):  Merged 16 parallel devices.
-Subcircuit summary:
-Circuit 1: x5t-ota_top                     |Circuit 2: 1st-stage                       
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_g5v0d10v5 (18->2)       |sky130_fd_pr__pfet_g5v0d10v5 (4->3) **Mism 
-sky130_fd_pr__nfet_g5v0d10v5 (50->7)       |sky130_fd_pr__nfet_g5v0d10v5 (22->7)       
-Number of devices: 9 **Mismatch**          |Number of devices: 10 **Mismatch**         
-Number of nets: 7 **Mismatch**             |Number of nets: 8 **Mismatch**             
----------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: x5t-ota_top                     |Circuit 2: 1st-stage                       
-
----------------------------------------------------------------------------------------
-Net: mirror-load_0/D1                      |Net: VDD                                   
-  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 3   |  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 2   
-  sky130_fd_pr__pfet_g5v0d10v5/2 = 2       |  sky130_fd_pr__pfet_g5v0d10v5/4 = 3       
-  sky130_fd_pr__pfet_g5v0d10v5/4 = 2       |                                           
-  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 3   |                                           
-  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       |                                           
-                                           |                                           
-(no matching net)                          |Net: D1                                    
-                                           |  sky130_fd_pr__pfet_g5v0d10v5/2 = 3       
-                                           |  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 3   
-                                           |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 3   
-                                           |  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: x5t-ota_top                     |Circuit 2: 1st-stage                       
-
----------------------------------------------------------------------------------------
-Instance: mirror-load_0/sky130_fd_pr__pfet |Instance: sky130_fd_pr__pfet_g5v0d10v5:M2  
-  (1,3) = (11,11)                          |  (1,3) = (10,5)                           
-  2 = 11                                   |  2 = 10                                   
-  4 = 11                                   |  4 = 5                                    
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_g5v0d10v5:M3  
-                                           |  (1,3) = (10,10)                          
-                                           |  2 = 10                                   
-                                           |  4 = 5                                    
-                                           |                                           
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
 
 Subcircuit pins:
-Circuit 1: x5t-ota_top                     |Circuit 2: 1st-stage                       
+Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
 -------------------------------------------|-------------------------------------------
-(no pin, node is mirror-load_0/D1)         |VDD                                        
-(no pin, node is mirror-load_0/D1)         |D1                                         
-(no pin, node is mirror-load_0/D2)         |D2                                         
-(no pin, node is differential-pair_0/VP)   |VP                                         
-(no pin, node is differential-pair_0/VN)   |VN                                         
-(no pin, node is y_0/S)                    |S                                          
-(no pin, node is y_0/VSS)                  |VSS                                        
-(no pin, node is y_0/IBIAS)                |IBIAS                                      
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for x5t-ota_top and 1st-stage altered to match.
-Device classes x5t-ota_top and 1st-stage are equivalent.
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_RK594X in circuit x1st-stage (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_QN6TJ7 in circuit x1st-stage (0)(12 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_838SN6 in circuit x1st-stage (0)(12 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_DQUD5W in circuit x1st-stage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_DNNC3W in circuit x1st-stage (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_DETAA8 in circuit x1st-stage (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_686LYQ in circuit x1st-stage (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_DU7D3Y in circuit x1st-stage (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_Y7F49Y in circuit x1st-stage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_AXYYHE in circuit x1st-stage (0)(2 instances)
 
-Final result: Top level cell failed pin matching.
+Class x1st-stage (0):  Merged 112 parallel devices.
+Class 1st-stage (1):  Merged 18 parallel devices.
+Subcircuit summary:
+Circuit 1: x1st-stage                      |Circuit 2: 1st-stage                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_mim_m3_1 (8->1)          |sky130_fd_pr__cap_mim_m3_1 (8->1)          
+sky130_fd_pr__nfet_g5v0d10v5 (76->6)       |sky130_fd_pr__nfet_g5v0d10v5 (23->6)       
+sky130_fd_pr__pfet_g5v0d10v5 (40->5)       |sky130_fd_pr__pfet_g5v0d10v5 (6->5)        
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: x1st-stage                      |Circuit 2: 1st-stage                       
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+OUT                                        |OUT                                        
+VP                                         |VP                                         
+VN                                         |VN                                         
+VSS                                        |VSS                                        
+IBIAS                                      |IBIAS                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes x1st-stage and 1st-stage are equivalent.
+
+Final result: Circuits match uniquely.
+.
