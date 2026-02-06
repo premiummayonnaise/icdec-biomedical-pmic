@@ -1,0 +1,39 @@
+** sch_path: /foss/designs/kerjapraktik/test/serpentine_res/res_259k.sch
+.subckt res_259k VSS A B
+*.PININFO A:B B:B VSS:B
+XR1 A net1 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR2 net1 net2 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR3 net2 net3 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR4 net3 net4 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR5 net4 net29 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR6 net30 net5 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR7 net5 net6 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR8 net6 net7 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR9 net7 net8 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR10 net8 net29 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR11 net30 net9 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR12 net9 net10 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR13 net10 net11 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR14 net11 net12 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR15 net12 net31 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR16 net32 net13 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR17 net13 net14 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR18 net14 net15 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR19 net15 net16 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR20 net16 net31 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR21 net32 net17 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR22 net17 net18 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR23 net18 net19 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR24 net19 net20 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR25 net20 net33 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR26 net34 net21 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR27 net21 net22 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR28 net22 net23 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR29 net23 net24 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR30 net24 net33 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR31 net34 net25 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR32 net25 net26 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR33 net26 net27 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR34 net27 net28 VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+XR35 net28 B VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.65 mult=1 m=1
+.ends
