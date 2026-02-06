@@ -1,0 +1,320 @@
+timestamp 1769421018
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR8 1 0 6341 0 1 423
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR9 1 0 7190 0 1 370
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR10 1 0 8039 0 1 317
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR11 1 0 8888 0 1 264
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR12 1 0 9737 0 1 211
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR13 1 0 10586 0 1 158
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR14 1 0 11435 0 1 105
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR15 1 0 12284 0 1 52
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR16 1 0 13133 0 1 -1
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR17 1 0 13982 0 1 -54
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR18 1 0 14831 0 1 -107
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR19 1 0 15680 0 1 -160
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR20 1 0 16529 0 1 -213
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR21 1 0 17378 0 1 -266
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR22 1 0 18227 0 1 -319
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR23 1 0 19076 0 1 -372
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR24 1 0 19925 0 1 -425
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR25 1 0 20774 0 1 -478
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR26 1 0 21623 0 1 -531
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR27 1 0 22472 0 1 -584
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR28 1 0 23321 0 1 -637
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR29 1 0 24170 0 1 -690
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR30 1 0 25019 0 1 -743
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR31 1 0 25868 0 1 -796
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR32 1 0 26717 0 1 -849
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR33 1 0 27566 0 1 -902
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR34 1 0 28415 0 1 -955
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR35 1 0 29264 0 1 -1008
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR1 1 0 -4242 0 1 25850
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR2 1 0 -3254 0 1 25847
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR3 1 0 -2242 0 1 25851
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR4 1 0 -1253 0 1 25848
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR5 1 0 -246 0 1 25850
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR6 1 0 749 0 1 25845
+use sky130_fd_pr__res_xhigh_po_2p85_WT6ZUJ XR7 1 0 1763 0 1 25855
+port "B" 2 -6325 1662 -6125 1862 m1
+port "A" 1 -6308 2624 -6108 2824 m1
+port "VSS" 0 -6356 3554 -6156 3754 m1
+node "B" 0 176.932 -6325 1662 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "A" 0 167.344 -6308 2624 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 178.472 -6356 3554 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VSS" "A" 8.57436
+cap "A" "B" 9.91626
+cap "XR10/B" "XR13/R2" 0.928771
+cap "XR12/R2" "XR13/R2" 0.845652
+cap "XR10/B" "XR12/R2" 0.0964611
+cap "XR11/B" "XR14/R2" 3.44099
+cap "XR11/B" "XR13/R2" 0.86842
+cap "XR15/R2" "XR14/R2" 7.19707
+cap "XR13/R2" "XR14/R2" 7.84464
+cap "XR13/B" "XR15/R2" 5.08478
+cap "XR13/B" "XR16/R2" 3.39446
+cap "XR16/R2" "XR15/R2" 21.8426
+cap "XR14/R2" "XR15/R2" 7.64655
+cap "XR18/R2" "XR15/B" 5.03826
+cap "XR17/R2" "XR16/R2" 28.8416
+cap "XR17/R2" "XR18/R2" 35.8406
+cap "XR17/R2" "XR15/B" 8.37237
+cap "XR15/B" "XR16/R2" 3.33411
+cap "XR18/R2" "XR19/R2" 42.8396
+cap "XR20/R2" "XR19/R2" 23.9181
+cap "XR18/R2" "XR16/B" 4.97791
+cap "XR19/R2" "XR16/B" 11.6805
+cap "XR20/R2" "XR21/R2" 47.8736
+cap "XR21/R2" "XR18/B" 6.40292
+cap "XR19/R2" "XR20/R2" 23.9555
+cap "XR20/R2" "XR18/B" 12.8058
+cap "XR21/R2" "XR20/B" 6.40292
+cap "XR23/R2" "XR20/B" 6.40292
+cap "XR21/R2" "XR22/R2" 47.8736
+cap "XR22/R2" "XR20/B" 12.8058
+cap "XR23/R2" "XR22/R2" 47.8736
+cap "XR23/R2" "XR21/B" 6.40292
+cap "XR24/R2" "XR21/B" 12.8058
+cap "XR25/R2" "XR24/R2" 23.9181
+cap "XR23/R2" "XR24/R2" 47.8736
+cap "XR24/R2" "XR25/R2" 23.9555
+cap "XR26/R2" "XR25/R2" 47.8736
+cap "XR23/B" "XR25/R2" 12.8058
+cap "XR23/B" "XR26/R2" 6.40292
+cap "XR28/R2" "XR27/R2" 47.8736
+cap "XR26/R2" "XR27/R2" 47.8736
+cap "XR25/B" "XR27/R2" 12.8058
+cap "XR25/B" "XR28/R2" 6.40292
+cap "XR25/B" "XR26/R2" 6.40292
+cap "XR26/B" "XR28/R2" 6.40292
+cap "XR29/R2" "XR28/R2" 47.8736
+cap "XR26/B" "XR29/R2" 6.40292
+cap "XR29/R2" "XR28/B" 6.40292
+cap "XR30/R2" "XR28/B" 12.8058
+cap "XR28/B" "XR31/R2" 6.40292
+cap "XR29/R2" "XR30/R2" 47.8736
+cap "XR30/R2" "XR31/R2" 47.8736
+cap "XR33/R2" "XR32/R2" 23.9181
+cap "XR30/B" "XR31/R2" 6.40292
+cap "XR32/R2" "XR30/B" 12.8058
+cap "XR32/R2" "XR31/R2" 47.8736
+cap "XR32/R2" "XR33/R2" 23.9555
+cap "XR33/R2" "XR31/B" 12.8058
+cap "XR34/R2" "XR33/R2" 47.8736
+cap "XR34/R2" "XR31/B" 6.40292
+cap "XR34/R2" "XR33/B" 6.37434
+cap "XR35/R2" "XR34/R2" 47.8736
+cap "XR35/R2" "XR33/B" 6.40292
+cap "XR10/R2" "XR9/R2" 23.9181
+cap "XR9/R2" "XR8/B" 12.7773
+cap "XR8/R2" "XR8/B" 6.40292
+cap "XR8/R2" "XR9/R2" 47.8736
+cap "XR11/R2" "XR8/B" 6.40292
+cap "XR10/R2" "XR8/B" 12.8058
+cap "XR10/R2" "XR9/R2" 23.9555
+cap "XR11/R2" "XR10/R2" 47.8736
+cap "XR11/R2" "XR12/R2" 47.8736
+cap "XR10/B" "XR13/R2" 5.47415
+cap "XR12/R2" "XR10/B" 12.7094
+cap "XR11/R2" "XR10/B" 6.40292
+cap "XR12/R2" "XR13/R2" 47.0279
+cap "XR15/R2" "XR14/R2" 16.721
+cap "XR13/R2" "XR11/B" 5.5345
+cap "XR14/R2" "XR13/R2" 40.0289
+cap "XR14/R2" "XR11/B" 9.36486
+cap "XR15/R2" "XR16/R2" 26.031
+cap "XR15/R2" "XR14/R2" 16.309
+cap "XR13/B" "XR16/R2" 3.00846
+cap "XR13/B" "XR15/R2" 7.72106
+cap "XR15/B" "XR18/R2" 1.36466
+cap "XR15/B" "XR17/R2" 4.43347
+cap "XR16/R2" "XR17/R2" 19.032
+cap "XR17/R2" "XR18/R2" 12.033
+cap "XR15/B" "XR16/R2" 3.06881
+cap "XR18/R2" "XR16/B" 1.42501
+cap "XR18/R2" "XR19/R2" 5.034
+cap "XR19/R2" "XR16/B" 1.12538
+cap "XR34/R1" "XR31/B" 0.665848
+cap "XR33/B" "XR35/R1" 1.50255
+cap "XR33/B" "XR34/R1" 0.6203
+cap "XR34/R1" "XR35/R1" 5.69428
+cap "XR8/B" "XR8/R1" 0.961466
+cap "XR9/R1" "XR8/R1" 8.59952
+cap "XR9/R1" "XR8/B" 3.5985
+cap "XR9/R1" "XR10/R1" 7.59324
+cap "XR10/R1" "XR9/R1" 8.00527
+cap "XR11/R1" "XR10/R1" 22.5975
+cap "XR10/R1" "XR8/B" 5.27087
+cap "XR11/R1" "XR8/B" 3.48751
+cap "XR12/R1" "XR10/B" 8.55847
+cap "XR13/R1" "XR12/R1" 36.5955
+cap "XR11/R1" "XR12/R1" 29.5965
+cap "XR13/R1" "XR10/B" 5.13131
+cap "XR11/R1" "XR10/B" 3.42716
+cap "XR13/R1" "XR14/R1" 43.5945
+cap "XR15/R1" "XR14/R1" 23.9555
+cap "XR11/B" "XR14/R1" 11.8734
+cap "XR13/R1" "XR11/B" 5.07096
+cap "XR13/B" "XR16/R1" 6.40292
+cap "XR15/R1" "XR16/R1" 47.8736
+cap "XR14/R1" "XR15/R1" 23.9181
+cap "XR15/R1" "XR13/B" 12.8058
+cap "XR14/B" "XR18/R1" 6.40292
+cap "XR14/B" "XR17/R1" 12.8058
+cap "XR16/R1" "XR14/B" 6.40292
+cap "XR17/R1" "XR18/R1" 47.8736
+cap "XR16/R1" "XR17/R1" 47.8736
+cap "XR20/R1" "XR19/R1" 23.9555
+cap "XR18/R1" "XR19/R1" 47.8736
+cap "XR18/R1" "XR16/B" 6.40292
+cap "XR16/B" "XR19/R1" 12.8058
+cap "XR19/R1" "XR20/R1" 23.9181
+cap "XR18/B" "XR20/R1" 12.8058
+cap "XR18/B" "XR21/R1" 6.40292
+cap "XR21/R1" "XR20/R1" 47.8736
+cap "XR19/B" "XR22/R1" 12.8058
+cap "XR21/R1" "XR22/R1" 47.8736
+cap "XR19/B" "XR21/R1" 6.40292
+cap "XR22/R1" "XR23/R1" 47.8736
+cap "XR19/B" "XR23/R1" 6.40292
+cap "XR21/B" "XR23/R1" 6.40292
+cap "XR24/R1" "XR23/R1" 47.8736
+cap "XR24/R1" "XR21/B" 12.8058
+cap "XR24/R1" "XR25/R1" 23.9555
+cap "XR26/R1" "XR23/B" 6.40292
+cap "XR24/R1" "XR25/R1" 23.9181
+cap "XR23/B" "XR25/R1" 12.8058
+cap "XR26/R1" "XR25/R1" 47.8736
+cap "XR27/R1" "XR26/R1" 47.8736
+cap "XR27/R1" "XR24/B" 12.8058
+cap "XR24/B" "XR28/R1" 6.40292
+cap "XR24/B" "XR26/R1" 6.40292
+cap "XR27/R1" "XR28/R1" 47.8736
+cap "XR28/R1" "XR26/B" 6.40292
+cap "XR26/B" "XR29/R1" 6.40292
+cap "XR28/R1" "XR29/R1" 47.8736
+cap "XR27/B" "XR29/R1" 6.40292
+cap "XR29/R1" "XR30/R1" 47.8736
+cap "XR27/B" "XR30/R1" 12.8058
+cap "XR27/B" "XR31/R1" 6.40292
+cap "XR31/R1" "XR30/R1" 47.8736
+cap "XR31/R1" "XR29/B" 6.40292
+cap "XR33/R1" "XR32/R1" 23.9555
+cap "XR32/R1" "XR31/R1" 47.8736
+cap "XR32/R1" "XR29/B" 12.8058
+cap "XR33/R1" "XR32/R1" 23.9181
+cap "XR34/R1" "XR31/B" 5.73707
+cap "XR33/R1" "XR31/B" 12.8058
+cap "XR33/R1" "XR34/R1" 47.8736
+cap "XR32/B" "XR35/R1" 4.90037
+cap "XR34/R1" "XR32/B" 5.75404
+cap "XR34/R1" "XR35/R1" 42.1793
+cap "XR9/R1" "XR10/R1" 16.3623
+cap "XR8/B" "XR9/R1" 9.17877
+cap "XR9/R1" "XR8/R1" 39.274
+cap "XR8/B" "XR8/R1" 5.44146
+cap "XR8/B" "XR10/R1" 7.53497
+cap "XR11/R1" "XR10/R1" 25.2761
+cap "XR8/B" "XR11/R1" 2.91541
+cap "XR9/R1" "XR10/R1" 15.9128
+cap "XR9/B" "XR12/R1" 4.24738
+cap "XR9/B" "XR13/R1" 1.27162
+cap "XR13/R1" "XR12/R1" 11.2781
+cap "XR11/R1" "XR12/R1" 18.2771
+cap "XR9/B" "XR11/R1" 2.97576
+cap "XR14/R1" "XR11/B" 0.932458
+cap "XR14/R1" "XR13/R1" 4.27912
+cap "XR13/R1" "XR11/B" 1.33197
+cap "XR1/B" "XR1/R2" 2.24376
+cap "XR3/R2" "XR1/R2" 0.044451
+cap "XR2/R2" "XR1/R2" 18.9746
+cap "XR2/R2" "XR1/B" 4.19538
+cap "XR1/R2" "XR2/R2" 18.9746
+cap "XR3/R2" "XR1/B" 1.95258
+cap "XR3/R2" "XR1/R2" 0.0456468
+cap "XR3/R2" "XR2/R2" 36.0613
+cap "XR4/R2" "XR2/R2" 0.0456089
+cap "XR4/R2" "XR3/R2" 37.8688
+cap "XR2/B" "XR3/R2" 2.23036
+cap "XR2/B" "XR4/R2" 4.23745
+cap "XR5/R2" "XR3/R2" 0.0309421
+cap "XR4/R2" "XR2/R2" 0.0444211
+cap "XR5/R2" "XR4/R2" 18.2628
+cap "XR4/R2" "XR6/R2" 0.0295941
+cap "XR5/R2" "XR4/R2" 18.2628
+cap "XR6/R2" "XR4/R2" 0.0331335
+cap "XR7/R2" "XR5/R2" 0.0736386
+cap "XR5/R2" "XR3/B" 4.16097
+cap "XR5/R2" "XR6/R2" 37.2962
+cap "XR6/R2" "XR3/B" 2.15389
+cap "XR5/R2" "XR3/R2" 0.0297141
+cap "XR7/R2" "XR5/R2" 0.0792584
+cap "XR5/B" "XR7/R2" 1.93533
+cap "XR6/R2" "XR5/B" 1.93215
+cap "XR6/R2" "XR7/R2" 35.6301
+cap "XR2/R1" "XR1/R1" 18.9746
+cap "XR1/B" "XR1/R1" 2.24376
+cap "XR3/R1" "XR1/R1" 0.044451
+cap "XR3/R1" "XR2/R1" 36.0613
+cap "XR4/R1" "XR2/R1" 0.0456089
+cap "XR1/B" "XR3/R1" 1.95258
+cap "XR1/B" "XR2/R1" 4.19538
+cap "XR1/R1" "XR3/R1" 0.0456468
+cap "XR1/R1" "XR2/R1" 18.9746
+cap "XR2/R1" "XR4/R1" 0.0444211
+cap "XR5/R1" "XR4/R1" 18.2628
+cap "XR4/R1" "XR3/R1" 37.8688
+cap "XR2/B" "XR4/R1" 4.23745
+cap "XR5/R1" "XR3/R1" 0.0309421
+cap "XR2/B" "XR3/R1" 2.23036
+cap "XR6/R1" "XR4/R1" 0.0295941
+cap "XR4/R1" "XR6/R1" 0.0331335
+cap "XR4/R1" "XR5/R1" 18.2628
+cap "XR5/R1" "XR3/R1" 0.0297141
+cap "XR3/B" "XR6/R1" 2.15389
+cap "XR5/R1" "XR6/R1" 37.2962
+cap "XR5/R1" "XR7/R1" 0.0736386
+cap "XR3/B" "XR5/R1" 4.16097
+cap "XR6/R1" "XR4/B" 1.93215
+cap "XR7/R1" "XR5/R1" 0.0792584
+cap "XR7/R1" "XR6/R1" 35.6301
+cap "XR7/R1" "XR4/B" 1.93533
+merge "XR7/B" "XR6/B" -29506.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "XR6/B" "XR5/B"
+merge "XR5/B" "XR4/B"
+merge "XR4/B" "XR3/B"
+merge "XR3/B" "XR2/B"
+merge "XR2/B" "XR1/B"
+merge "XR1/B" "XR35/B"
+merge "XR35/B" "XR34/B"
+merge "XR34/B" "XR33/B"
+merge "XR33/B" "XR32/B"
+merge "XR32/B" "XR31/B"
+merge "XR31/B" "XR30/B"
+merge "XR30/B" "XR29/B"
+merge "XR29/B" "XR28/B"
+merge "XR28/B" "XR27/B"
+merge "XR27/B" "XR26/B"
+merge "XR26/B" "XR25/B"
+merge "XR25/B" "XR24/B"
+merge "XR24/B" "XR23/B"
+merge "XR23/B" "XR22/B"
+merge "XR22/B" "XR21/B"
+merge "XR21/B" "XR20/B"
+merge "XR20/B" "XR19/B"
+merge "XR19/B" "XR18/B"
+merge "XR18/B" "XR17/B"
+merge "XR17/B" "XR16/B"
+merge "XR16/B" "XR15/B"
+merge "XR15/B" "XR14/B"
+merge "XR14/B" "XR13/B"
+merge "XR13/B" "XR12/B"
+merge "XR12/B" "XR11/B"
+merge "XR11/B" "XR10/B"
+merge "XR10/B" "XR9/B"
+merge "XR9/B" "XR8/B"
+merge "XR8/B" "VSUBS"
