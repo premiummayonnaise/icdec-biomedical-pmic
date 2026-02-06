@@ -22,22 +22,22 @@ N 380 -530 380 -490 {lab=VSS}
 N 230 -490 380 -490 {lab=VSS}
 N 90 -610 90 -570 {lab=VCM}
 N 110 -330 140 -330 {lab=VP}
-N 110 -290 140 -290 {lab=VCM}
+N 110 -290 140 -290 {lab=#net1}
 N 380 -310 400 -310 {lab=OUT3}
 N 350 -310 380 -310 {lab=OUT3}
 N 250 -220 250 -200 {lab=VSS}
 N 140 -400 220 -400 {lab=IBIAS}
-N 120 -290 120 -120 {lab=VCM}
+N 120 -290 120 -120 {lab=#net1}
 N 380 -310 380 -120 {lab=OUT3}
 N 250 -120 380 -120 {lab=OUT3}
-N 120 -120 190 -120 {lab=VCM}
+N 120 -120 190 -120 {lab=#net1}
 C {vsource.sym} 560 -440 0 0 {name=V2 value="ac -1m dc 1.25" savecurrent=false}
 C {vsource.sym} 560 -350 0 0 {name=V3 value="ac 1m dc 1.25" savecurrent=false}
 C {lab_pin.sym} 560 -410 0 0 {name=p8 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 560 -320 0 0 {name=p9 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 560 -470 0 0 {name=p11 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 560 -380 0 0 {name=p12 sig_type=std_logic lab=VP}
-C {devices/code_shown.sym} 800 -800 0 0 {name=NGSPICE only_toplevel=true
+C {devices/code_shown.sym} 830 -780 0 0 {name=NGSPICE only_toplevel=true
 value=".control
   .temp 27
   op
@@ -105,10 +105,9 @@ device=polarized_capacitor}
 C {lab_pin.sym} 250 -680 0 1 {name=p18 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 230 -480 0 0 {name=p19 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 120 -680 0 0 {name=p20 lab=IBIAS}
-C {vsource.sym} 560 -670 0 0 {name=V1 value="ac 1m DC 0.9" savecurrent=false}
+C {vsource.sym} 560 -670 0 0 {name=V1 value="ac 1m DC 1.25" savecurrent=false}
 C {lab_pin.sym} 560 -640 0 0 {name=p10 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 560 -700 0 0 {name=p21 sig_type=std_logic lab=VCM}
-C {lab_pin.sym} 110 -290 0 0 {name=p23 sig_type=std_logic lab=VCM}
 C {lab_pin.sym} 110 -330 0 0 {name=p24 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 400 -310 0 1 {name=p25 sig_type=std_logic lab=OUT3}
 C {lab_pin.sym} 270 -400 0 1 {name=p26 sig_type=std_logic lab=VDDr}
@@ -120,11 +119,8 @@ C {lab_pin.sym} 560 -280 0 0 {name=p31 sig_type=std_logic lab=VDDr}
 C {icdec-biomedical-pmic/xschem/error-amplifier2/schematics/1st-stage.sym} -30 -130 0 0 {name=x1}
 C {icdec-biomedical-pmic/xschem/error-amplifier2/schematics/1st-stage.sym} -50 -410 0 0 {name=x2}
 C {icdec-biomedical-pmic/xschem/error-amplifier2/schematics/1st-stage.sym} -50 -660 0 0 {name=x3}
-C {ind.sym} 220 -120 3 1 {name=L1
+C {ind.sym} 220 -120 1 0 {name=L1
 m=1
 value=1G
 footprint=1206
 device=inductor}
-C {vsource.sym} 560 -130 0 0 {name=V6 value="dc 1.25" savecurrent=false}
-C {lab_pin.sym} 560 -100 0 0 {name=p29 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 560 -160 0 0 {name=p32 sig_type=std_logic lab=VCM}
