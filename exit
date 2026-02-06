@@ -1,0 +1,33 @@
+* [33m032b8dc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m add
+[31m|[m * [33m53635bf[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #6 from premiummayonnaise/bandgap
+[31m|[m[31m/[m[33m|[m 
+[31m|[m * [33m7e0e727[m[33m ([m[1;31morigin/bandgap[m[33m)[m serpentine resistor with the value of 259k ohm
+[31m|[m * [33m0221f7f[m Updated comparatir 5v
+* [33m|[m [33m8811623[m added mc script
+* [33m|[m [33m24fe7bf[m added monte carlo script
+* [33m|[m [33m753b9be[m update error amplifier layout
+* [33m|[m [33meaa7f6d[m test
+* [33m|[m [33m89de6a5[m updated layout
+* [33m|[m [33mbe897b6[m added layout
+* [33m|[m [33m5f7fa73[m updated 5t ota layout
+* [33m|[m [33mae0e405[m updated error amp
+* [33m|[m [33m838e350[m added monte carlo script
+* [33m|[m [33m1d90d5a[m added error-amp layout
+* [33m|[m [33m98b1bd8[m added bgr ota layout
+* [33m|[m [33mffd7a7a[m updated bgr
+* [33m|[m [33mba4a810[m added bandgap
+* [33m|[m [33m1eee64a[m contoh layout komparator
+* [33m|[m [33mc0e4912[m added comparator layout
+* [33m|[m [33m8d5ab23[m Merge pull request #5 from premiummayonnaise/bandgap
+[34m|[m[33m\[m[33m|[m 
+[34m|[m * [33mc7dadd3[m Add comparator using 5V mosfet.
+* [35m|[m [33m75ca3c0[m added ldo testbenches
+* [35m|[m [33m022e7a4[m bandgap fiks
+* [35m|[m [33m94648db[m puyuh
+* [35m|[m [33md5c9ea6[m added LDO testbench
+* [35m|[m [33m3a88f8f[m added new testbench
+* [35m|[m [33mb12b936[m added testbenches and 2 stage miller ota
+* [35m|[m [33m68ae941[m Merge pull request #4 from premiummayonnaise/bandgap
+[36m|[m[35m\[m[35m|[m 
+[36m|[m * [33mfbd2147[m Update bandgap using 5v mosfet
+* [1;31m|[m [33m0e4e050[m brow
