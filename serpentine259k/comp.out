@@ -1,0 +1,42 @@
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_2p85 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_2p85 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_2p85 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_2p85 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_xhigh_po_2p85 |Circuit 2: sky130_fd_pr__res_xhigh_po_2p85 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_xhigh_po_2p85 and sky130_fd_pr__res_xhigh_po_2p85 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_2p85_5UZ72C in circuit res_259k (0)(7 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_2p85_WPR7JU in circuit res_259k (0)(28 instances)
+
+Class res_259k (0):  Merged 34 series devices.
+Class res_259k (1):  Merged 34 series devices.
+Subcircuit summary:
+Circuit 1: res_259k                        |Circuit 2: res_259k                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_xhigh_po_2p85 (35->1)    |sky130_fd_pr__res_xhigh_po_2p85 (35->1)    
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: res_259k                        |Circuit 2: res_259k                        
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+B                                          |B                                          
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes res_259k and res_259k are equivalent.
+
+Final result: Circuits match uniquely.
+.
