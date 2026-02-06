@@ -1,8 +1,9 @@
-v {xschem version=3.4.7 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 1180 -290 1180 -280 {lab=GND}
 N 230 -500 650 -500 {lab=VIN}
@@ -125,6 +126,6 @@ L=0.35
 model=res_high_po_2p85
 spiceprefix=X
 mult=1}
-C {icdec-biomedical-pmic/xschem/5t-ota/5t-ota.sym} 160 -240 0 0 {name=x1}
-C {icdec-biomedical-pmic/xschem/error-amplifier/schematics/error-amplifier.sym} 190 -70 0 0 {name=x2}
 C {lab_pin.sym} 340 -60 0 0 {name=p3 sig_type=std_logic lab=VSS}
+C {/foss/designs/kerjapraktik/icdec-biomedical-pmic/xschem/5t-ota/5t-ota.sym} 160 -240 0 0 {name=x3}
+C {/foss/designs/kerjapraktik/icdec-biomedical-pmic/xschem/error-amplifier/schematics/error-amplifier.sym} 190 -70 0 0 {name=x1}
