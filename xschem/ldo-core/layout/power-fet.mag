@@ -1,18 +1,15 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1769436194
-<< error_s >>
-rect 111 -998 157 -972
-rect 83 -1026 185 -1000
+timestamp 1770370310
 << metal1 >>
 rect 0 0 200 200
 rect 0 -400 200 -200
 rect 0 -800 200 -600
 rect 0 -1200 200 -1000
 use sky130_fd_pr__pfet_g5v0d10v5_YYQDC9  XM1
-timestamp 1769436194
-transform 1 0 5190 0 1 33
+timestamp 1770370310
+transform 1 0 5095 0 1 -62
 box -5285 -1328 5285 1328
 << labels >>
 flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 VIN
