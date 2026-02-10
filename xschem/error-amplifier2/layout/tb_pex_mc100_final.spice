@@ -34,7 +34,7 @@ V5 VDD  VSS  5
 V7 VSS  GND  0
 
 * Bias
-I4 VDD  IBIAS 200u
+I4 VDD  IBIAS 20u
 
 * Output load
 C2 OUT  VSS  1p
