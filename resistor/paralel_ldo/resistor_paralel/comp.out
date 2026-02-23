@@ -1,0 +1,41 @@
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_2p85 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_2p85 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_2p85 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_2p85 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_xhigh_po_2p85 |Circuit 2: sky130_fd_pr__res_xhigh_po_2p85 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_xhigh_po_2p85 and sky130_fd_pr__res_xhigh_po_2p85 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_2p85_36JPKQ in circuit resistor180 (0)(40 instances)
+
+Class resistor180 (0):  Merged 39 parallel devices.
+Class resistor180 (1):  Merged 39 parallel devices.
+Subcircuit summary:
+Circuit 1: resistor180                     |Circuit 2: resistor180                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_xhigh_po_2p85 (40->1)    |sky130_fd_pr__res_xhigh_po_2p85 (40->1)    
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: resistor180                     |Circuit 2: resistor180                     
+-------------------------------------------|-------------------------------------------
+B                                          |B                                          
+A                                          |A                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes resistor180 and resistor180 are equivalent.
+
+Final result: Circuits match uniquely.
+.

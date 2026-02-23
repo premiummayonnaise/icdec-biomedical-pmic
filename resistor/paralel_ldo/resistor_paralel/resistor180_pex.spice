@@ -1,0 +1,54 @@
+* NGSPICE file created from resistor180.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_xhigh_po_2p85_36JPKQ R1 R2 VSUBS
+X0 R1 R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.15
+C0 R2 VSUBS 1.16235f
+C1 R1 VSUBS 1.16235f
+.ends
+
+.subckt resistor180  A VSS B
+XXR30 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR1 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR20 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR31 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR2 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR10 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR21 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR32 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR3 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR11 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR22 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR33 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR5 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR4 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR12 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR23 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR34 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR6 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR14 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR13 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR24 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR25 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR36 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR35 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR7 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR15 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR26 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR37 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR8 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR16 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR27 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR38 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR9 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR17 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR39 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR18 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR29 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+XXR19 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+Xsky130_fd_pr__res_xhigh_po_2p85_36JPKQ_0 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+Xsky130_fd_pr__res_xhigh_po_2p85_36JPKQ_1 A B VSS sky130_fd_pr__res_xhigh_po_2p85_36JPKQ
+C0 B A 18.62655f
+C1 B VSS 42.49529f
+C2 A VSS 33.45254f
+.ends
+
