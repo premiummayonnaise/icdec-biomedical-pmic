@@ -1,0 +1,5 @@
+** sch_path: /foss/designs/kerjapraktik/test/serpentine_res/topology2/serpentine259k.sch
+.subckt serpentine259k VSS A B
+*.PININFO VSS:I A:I B:I
+XR1 B A VSS sky130_fd_pr__res_xhigh_po W=5 L=643.6 mult=1 m=1
+.ends

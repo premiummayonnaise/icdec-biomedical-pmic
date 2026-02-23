@@ -1,0 +1,44 @@
+** sch_path: /foss/designs/kerjapraktik/test/resistor_paralel/resistor180.sch
+.subckt resistor180 A VSS B
+*.PININFO A:I B:I VSS:I
+XR1 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR2 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR3 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR4 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR5 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR6 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR7 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR8 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR9 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR10 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR11 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR12 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR13 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR14 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR15 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR16 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR17 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR18 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR19 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR20 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR21 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR22 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR23 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR24 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR25 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR26 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR27 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR28 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR29 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR30 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR31 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR32 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR33 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR34 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR35 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR36 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR37 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR38 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR39 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+XR40 B A VSS sky130_fd_pr__res_xhigh_po_2p85 L=10.15 mult=1 m=1
+.ends

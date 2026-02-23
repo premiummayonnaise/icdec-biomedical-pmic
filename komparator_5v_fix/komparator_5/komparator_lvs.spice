@@ -1,0 +1,39 @@
+* NGSPICE file created from komparator.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_9YPSFX B D0 G0 S1 G1 a_179_n411#
+X0 S1 G0 D0 B sky130_fd_pr__pfet_g5v0d10v5 ad=0.54375 pd=4.04 as=1.0875 ps=8.08 w=3.75 l=0.75
+X1 a_179_n411# G1 S1 B sky130_fd_pr__pfet_g5v0d10v5 ad=1.0875 pd=8.08 as=0.54375 ps=4.04 w=3.75 l=0.75
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_Q9M6JL B D S G
+X0 S G D B sky130_fd_pr__nfet_g5v0d10v5 ad=1.2064 pd=8.9 as=1.2064 ps=8.9 w=4.16 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_TMHSMU B D S G
+X0 S G D B sky130_fd_pr__nfet_g5v0d10v5 ad=1.2064 pd=8.9 as=1.2064 ps=8.9 w=4.16 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_M8BW5G B D0 G0 S1 G1 a_179_n269#
+X0 S1 G0 D0 B sky130_fd_pr__nfet_g5v0d10v5 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=0.75
+X1 a_179_n269# G1 S1 B sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=0.75
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_44FAKH B D0 G0 S1 G1 a_179_n331#
+X0 S1 G0 D0 B sky130_fd_pr__nfet_g5v0d10v5 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=0.75
+X1 a_179_n331# G1 S1 B sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=0.75
+.ends
+
+.subckt komparator VDD VSS OUT IN REF B1 B2
+XXM12 VDD XM2/D XM2/D VDD XM2/D XM2/D sky130_fd_pr__pfet_g5v0d10v5_9YPSFX
+Xsky130_fd_pr__nfet_g5v0d10v5_Q9M6JL_0 VSS XM6/G1 XM2/S IN sky130_fd_pr__nfet_g5v0d10v5_Q9M6JL
+XXM1 VDD XM6/G1 XM2/D VDD XM2/D XM6/G1 sky130_fd_pr__pfet_g5v0d10v5_9YPSFX
+XXM2 VSS XM2/D XM2/S REF sky130_fd_pr__nfet_g5v0d10v5_TMHSMU
+XXM3 VDD XM2/D XM6/G1 VDD XM6/G1 XM2/D sky130_fd_pr__pfet_g5v0d10v5_9YPSFX
+XXM4 VDD XM9/D0 XM2/D VDD XM2/D XM9/D0 sky130_fd_pr__pfet_g5v0d10v5_9YPSFX
+XXM6 VDD OUT XM6/G1 VDD XM6/G1 OUT sky130_fd_pr__pfet_g5v0d10v5_9YPSFX
+Xsky130_fd_pr__nfet_g5v0d10v5_M8BW5G_0 VSS OUT B2 VSS B2 OUT sky130_fd_pr__nfet_g5v0d10v5_M8BW5G
+XXM9 VSS XM9/D0 B2 VSS B2 XM9/D0 sky130_fd_pr__nfet_g5v0d10v5_M8BW5G
+XXM8 VSS XM2/S B1 VSS B1 XM2/S sky130_fd_pr__nfet_g5v0d10v5_44FAKH
+Xsky130_fd_pr__pfet_g5v0d10v5_9YPSFX_0 VDD XM6/G1 XM6/G1 VDD XM6/G1 XM6/G1 sky130_fd_pr__pfet_g5v0d10v5_9YPSFX
+.ends
+

@@ -1,0 +1,8 @@
+* NGSPICE file created from serpentine259k.ext - technology: sky130A
+
+.subckt serpentine259k A VSS B
+X0 A B VSS sky130_fd_pr__res_xhigh_po w=5 l=640.15997
+C0 B VSS 2.3062f
+C1 A VSS 2.3062f
+.ends
+
