@@ -1,0 +1,22 @@
+** sch_path: /foss/designs/icdec-biomedical-pmic/xschem/error-amplifier/schematics/sub-blocks/diff-pair.sch
+.subckt diff-pair VP VN S D2 D1 VSS
+*.PININFO VP:I VN:I S:B D2:B D1:B VSS:B
+XM3 D2 VN S VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=38 nf=2 m=1
+XM4 D1 VP S VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=38 nf=2 m=1
+XM1 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM2 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM5 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM6 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM7 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM8 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM9 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM10 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM11 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM12 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM13 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM14 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM15 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM16 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM17 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM18 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+.ends

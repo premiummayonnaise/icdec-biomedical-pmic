@@ -1,0 +1,127 @@
+* tb_ac_pex_mc30_with_dc_pm.spice
+* Uses extracted PEX via include ONLY
+
+.include "two-stage-miller_pex.spice"
+.GLOBAL GND
+
+* --- TESTBENCH ---
+V2   VN   VSS  ac -1m dc 1.25
+V3   VP   VSS  ac  1m dc 1.25
+V5   VDD  VSS  5
+V7   VSS  GND  0
+
+C2   OUT   VSS  1p
+C1   OUT2  VSS  5p
+C3   OUT3  VSS  10p
+R1   OUT3  VN   1k
+
+I4   VDD   IBIAS 200u
+V1   VCM   VSS  ac 1m dc 0.9
+V4   VDDr  VSS  dc 5 ac 1
+
+* --- DUT instances (PEX) ---
+x1 VDD OUT  VP  VN  IBIAS VSS two-stage-miller
+x2 VDD OUT2 VCM VCM IBIAS VSS two-stage-miller
+x3 VDDr OUT3 VP  VN  IBIAS VSS two-stage-miller
+
+.control
+  .temp 27
+
+  let mc_runs = 30
+  let run = 0
+
+  * ---- SPEC LIMITS for yield (EDIT THESE) ----
+  let spec_gain_db = 40
+  let spec_cmrr_db = 60
+  let spec_psrr_db = 50
+  let spec_pm_deg  = 45
+
+  * ---- vectors (30 entries) ----
+  compose dc_gain_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose pm_vec      values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose dc_cmrr_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose dc_psrr_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  compose pass_vec    values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+  let pass_count = 0
+
+  dowhile run < mc_runs
+    reset
+    op
+
+    * =========================================================
+    * 1) DIFF GAIN + PHASE MARGIN (from same run)
+    * =========================================================
+    alter v2 dc = 1.25
+    alter v2 acmag = 1m
+    alter v3 dc = 1.25
+    alter v3 acmag = 1m
+    alter v3 acphase = 180
+    alter v5 dc = 5
+    alter v5 acmag = 0
+    alter v4 acmag = 0
+
+    ac dec 100 1 100meg
+
+    * DC gain proxy = first point (1 Hz)
+    let g_inst = db(mag(v(out))/(mag(v(vp)-v(vn))))
+    let dc_gain_vec[run] = g_inst[0]
+
+    * Phase of diff transfer
+    let p_inst = (180/pi)*cph(v(out)/(v(vp)-v(vn)))
+    meas ac p_unity find p_inst when g_inst=0
+    let pm_vec[run] = 180 + p_unity
+
+    * =========================================================
+    * 2) DC CMRR proxy
+    * =========================================================
+    alter v3 acphase = 0
+    ac dec 100 1 100meg
+    let a_cm = db(mag(v(out2))/mag(v(vcm)))
+    let dc_cmrr_vec[run] = dc_gain_vec[run] - a_cm[0]
+
+    * =========================================================
+    * 3) DC PSRR proxy
+    * =========================================================
+    alter v2 acmag = 0
+    alter v3 acmag = 0
+    alter v4 acmag = 1
+    ac dec 100 1 100meg
+    let psrr_inst = dc_gain_vec[run] - db(mag(v(out3)))
+    let dc_psrr_vec[run] = psrr_inst[0]
+
+    * =========================================================
+    * 4) PASS/FAIL (yield)
+    * =========================================================
+    let pass_now = (dc_gain_vec[run] >= spec_gain_db) & (pm_vec[run] >= spec_pm_deg) & (dc_cmrr_vec[run] >= spec_cmrr_db) & (dc_psrr_vec[run] >= spec_psrr_db)
+    let pass_vec[run] = pass_now
+    let pass_count = pass_count + pass_now
+
+    * --- Print per run ---
+    echo "-------------------------------------------------"
+    echo "MC RUN $&run RESULTS (DC proxy @1Hz, PM @unity)"
+    print dc_gain_vec[run] pm_vec[run] dc_cmrr_vec[run] dc_psrr_vec[run] pass_vec[run]
+    echo "-------------------------------------------------"
+
+    let run = run + 1
+    echo "MC RUN $&run DONE"
+  endwhile
+
+  echo "==================== FINAL REPORT ===================="
+  echo "Mean DC Gain / PM / CMRR / PSRR:"
+  print mean(dc_gain_vec) mean(pm_vec) mean(dc_cmrr_vec) mean(dc_psrr_vec)
+
+  echo "Yield (based on thresholds):"
+  let yield = pass_count / mc_runs
+  print pass_count mc_runs yield
+
+  * Optional plots
+  plot dc_gain_vec title "DC Gain (dB, @1Hz)"
+  plot pm_vec      title "Phase Margin (deg)"
+  plot dc_cmrr_vec title "DC CMRR (dB, @1Hz)"
+  plot dc_psrr_vec title "DC PSRR (dB, @1Hz)"
+  plot pass_vec    title "Pass Vector (1=pass)"
+.endc
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice mc
+.end

@@ -1,0 +1,187 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_J76LUE in circuit two-stage-miller (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_AP3ZHE in circuit two-stage-miller (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_D6DL9T in circuit two-stage-miller (0)(2 instances)
+Flattening unmatched subcell x5t-ota_top in circuit two-stage-miller (0)(1 instance)
+Flattening unmatched subcell mirror-load in circuit two-stage-miller (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_ZPXM7F in circuit two-stage-miller (0)(1 instance)
+Flattening unmatched subcell differential-pair in circuit two-stage-miller (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_X57ESK in circuit two-stage-miller (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_SNDLS5 in circuit two-stage-miller (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CQ6KSH in circuit two-stage-miller (0)(3 instances)
+Flattening unmatched subcell y in circuit two-stage-miller (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_7GKDBD in circuit two-stage-miller (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_S7S847 in circuit two-stage-miller (0)(1 instance)
+
+Class two-stage-miller (0):  Merged 89 parallel devices.
+Class two-stage-miller (1):  Merged 16 parallel devices.
+Subcircuit summary:
+Circuit 1: two-stage-miller                |Circuit 2: two-stage-miller                
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_g5v0d10v5 (58->9)       |sky130_fd_pr__nfet_g5v0d10v5 (23->8) **Mis 
+sky130_fd_pr__pfet_g5v0d10v5 (38->5)       |sky130_fd_pr__pfet_g5v0d10v5 (9->5)        
+sky130_fd_pr__cap_mim_m3_1 (8->1)          |sky130_fd_pr__cap_mim_m3_1 (8->1)          
+Number of devices: 15 **Mismatch**         |Number of devices: 14 **Mismatch**         
+Number of nets: 12 **Mismatch**            |Number of nets: 13 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: two-stage-miller                |Circuit 2: two-stage-miller                
+
+---------------------------------------------------------------------------------------
+Net: 5t-ota_top_0/differential-pair_0/VP   |Net: net3                                  
+  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       |  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 1   
+                                           |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 1   
+                                           |  sky130_fd_pr__pfet_g5v0d10v5/2 = 1       
+                                           |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
+                                           |                                           
+Net: 5t-ota_top_0/differential-pair_0/VN   |Net: net2                                  
+  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       |  sky130_fd_pr__pfet_g5v0d10v5/2 = 2       
+                                           |  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 1   
+                                           |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 1   
+                                           |                                           
+Net: a_n32380_n54620#                      |Net: IBIAS                                 
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 2   |  sky130_fd_pr__nfet_g5v0d10v5/2 = 3       
+  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 2   |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 1   
+                                           |                                           
+Net: VSUBS                                 |Net: net1                                  
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 4   |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 3   
+  sky130_fd_pr__nfet_g5v0d10v5/4 = 9       |                                           
+  sky130_fd_pr__pfet_g5v0d10v5/2 = 1       |                                           
+                                           |                                           
+Net: 5t-ota_top_0/mirror-load_0/D2         |Net: OUT                                   
+  sky130_fd_pr__pfet_g5v0d10v5/2 = 1       |  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 2   
+  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 1   |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 1   
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 3   |                                           
+  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: x5t-ota_top:5t-ota_top_0/mirror-load_ |Net: D2                                    
+  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 3   |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 2   
+  sky130_fd_pr__pfet_g5v0d10v5/2 = 3       |  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 3   |                                           
+  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       |                                           
+                                           |                                           
+Net: x5t-ota_top:5t-ota_top_0/y_0/IBIAS    |Net: S                                     
+  sky130_fd_pr__nfet_g5v0d10v5/2 = 2       |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 2   
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 1   |  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       
+                                           |                                           
+(no matching net)                          |Net: VSS                                   
+                                           |  sky130_fd_pr__nfet_g5v0d10v5/4 = 8       
+                                           |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 3   
+                                           |  sky130_fd_pr__pfet_g5v0d10v5/2 = 1       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: (no pins)                             |Net: D1                                    
+  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 5   |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 2   
+  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       |  sky130_fd_pr__nfet_g5v0d10v5/2 = 1       
+                                           |  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 2   
+                                           |  sky130_fd_pr__pfet_g5v0d10v5/2 = 1       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: 5t-ota_top_0/mirror-load_0/VDD        |Net: VDD                                   
+  sky130_fd_pr__pfet_g5v0d10v5/4 = 5       |  sky130_fd_pr__pfet_g5v0d10v5/4 = 5       
+  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 3   |  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 3   
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: two-stage-miller                |Circuit 2: two-stage-miller                
+
+---------------------------------------------------------------------------------------
+Instance: x5t-ota_top:5t-ota_top_0//differ |Instance: sky130_fd_pr__nfet_g5v0d10v5:M5  
+  (1,3) = (10,10)                          |  (1,3) = (12,3)                           
+  2 = 10                                   |  2 = 4                                    
+  4 = 14                                   |  4 = 12                                   
+                                           |                                           
+Instance: x5t-ota_top:5t-ota_top_0//differ |Instance: sky130_fd_pr__nfet_g5v0d10v5:M6  
+  (1,3) = (7,7)                            |  (1,3) = (12,4)                           
+  2 = 7                                    |  2 = 4                                    
+  4 = 14                                   |  4 = 12                                   
+                                           |                                           
+Instance: x5t-ota_top:5t-ota_top_0//y_0/sk |Instance: sky130_fd_pr__nfet_g5v0d10v5:M8  
+  (1,3) = (14,3)                           |  (1,3) = (12,3)                           
+  2 = 3                                    |  2 = 4                                    
+  4 = 14                                   |  4 = 12                                   
+                                           |                                           
+Instance: x5t-ota_top:5t-ota_top_0//differ |Instance: sky130_fd_pr__nfet_g5v0d10v5:M10 
+  (1,3) = (10,6)                           |  (1,3) = (3,3)                            
+  2 = 1                                    |  2 = 3                                    
+  4 = 14                                   |  4 = 12                                   
+                                           |                                           
+Instance: x5t-ota_top:5t-ota_top_0//differ |Instance: sky130_fd_pr__nfet_g5v0d10v5:M26 
+  (1,3) = (7,6)                            |  (1,3) = (3,3)                            
+  2 = 1                                    |  2 = 3                                    
+  4 = 14                                   |  4 = 12                                   
+                                           |                                           
+Instance: x5t-ota_top:5t-ota_top_0//y_0/sk |(no matching instance)                     
+  (1,3) = (14,6)                           |                                           
+  2 = 3                                    |                                           
+  4 = 14                                   |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: x5t-ota_top:5t-ota_top_0//mirror |Instance: sky130_fd_pr__pfet_g5v0d10v5:M28 
+  (1,3) = (10,10)                          |  (1,3) = (6,6)                            
+  2 = 10                                   |  2 = 6                                    
+  4 = 8                                    |  4 = 8                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: two-stage-miller                |Circuit 2: two-stage-miller                
+-------------------------------------------|-------------------------------------------
+(no pin, node is 5t-ota_top_0/mirror-load_ |VDD                                        
+(no pin, node is x5t-ota_top:5t-ota_top_0/ |OUT                                        
+(no pin, node is m1_n20880_n59240#)        |VP                                         
+(no pin, node is m1_n20880_n59240#)        |VN                                         
+(no pin, node is x5t-ota_top:5t-ota_top_0/ |IBIAS                                      
+(no pin, node is x5t-ota_top:5t-ota_top_0/ |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for two-stage-miller and two-stage-miller altered to match.
+Device classes two-stage-miller and two-stage-miller are equivalent.
+
+Final result: Top level cell failed pin matching.

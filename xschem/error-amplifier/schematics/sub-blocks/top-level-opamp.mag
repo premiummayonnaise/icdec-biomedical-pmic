@@ -1,0 +1,32 @@
+magic
+tech sky130A
+timestamp 1769960946
+<< error_s >>
+rect 1860 86 1890 90
+rect 1850 83 1899 86
+rect 1837 73 1899 83
+rect 1910 83 1940 90
+rect 1910 73 1949 83
+rect 1833 60 1903 73
+rect 1910 60 1953 73
+rect 1833 43 1863 60
+rect 1873 43 1903 60
+rect 1923 43 1953 60
+rect 1860 36 1890 40
+rect 1910 36 1940 40
+rect 1837 13 1899 36
+rect 1910 13 1949 36
+rect 1833 10 1903 13
+rect 1910 10 1953 13
+rect 1833 0 1863 10
+rect 1873 0 1903 10
+rect 1923 0 1953 10
+use bias-mirror  bias-mirror_0
+timestamp 1769959185
+transform 1 0 -1157 0 1 -3117
+box 400 130 5750 3200
+use differential-pair  differential-pair_0
+timestamp 1769952370
+transform 1 0 -150 0 1 250
+box 150 -250 3950 1800
+<< end >>

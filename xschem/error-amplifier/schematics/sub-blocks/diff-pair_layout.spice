@@ -1,0 +1,37 @@
+* NGSPICE file created from diff-pair.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_X57ESK a_n187_n506# a_n345_n506# a_129_n506#
++ a_287_n506# a_29_n532# a_n129_n532# a_187_n532# a_n287_n532# a_n29_n506# VSUBS
+X0 a_n187_n506# a_n287_n532# a_n345_n506# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=1.3775 ps=10.08 w=4.75 l=0.5
+X1 a_287_n506# a_187_n532# a_129_n506# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.3775 pd=10.08 as=0.68875 ps=5.04 w=4.75 l=0.5
+X2 a_129_n506# a_29_n532# a_n29_n506# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+X3 a_n29_n506# a_n129_n532# a_n187_n506# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_SNDLS5 a_n29_n444# a_n187_n444# a_n345_n444#
++ a_29_n532# a_n129_n532# a_187_n532# a_129_n444# a_n287_n532# a_287_n444# VSUBS
+X0 a_129_n444# a_29_n532# a_n29_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+X1 a_n29_n444# a_n129_n532# a_n187_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+X2 a_n187_n444# a_n287_n532# a_n345_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=1.3775 ps=10.08 w=4.75 l=0.5
+X3 a_287_n444# a_187_n532# a_129_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.3775 pd=10.08 as=0.68875 ps=5.04 w=4.75 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_CQ6KSH a_n29_n444# a_n187_n444# a_n345_n444#
++ a_29_n532# a_n129_n532# a_187_n532# a_129_n444# a_n287_n532# a_287_n444# VSUBS
+X0 a_129_n444# a_29_n532# a_n29_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+X1 a_n29_n444# a_n129_n532# a_n187_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=0.68875 ps=5.04 w=4.75 l=0.5
+X2 a_n187_n444# a_n287_n532# a_n345_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.68875 pd=5.04 as=1.3775 ps=10.08 w=4.75 l=0.5
+X3 a_287_n444# a_187_n532# a_129_n444# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.3775 pd=10.08 as=0.68875 ps=5.04 w=4.75 l=0.5
+.ends
+
+.subckt diff-pair VP VN S D2 D1 VSS
+Xsky130_fd_pr__nfet_g5v0d10v5_X57ESK_0 D1 D1 D1 D1 VP VP D1 D1 S VSS sky130_fd_pr__nfet_g5v0d10v5_X57ESK
+Xsky130_fd_pr__nfet_g5v0d10v5_SNDLS5_0 S D2 D2 VN VN D2 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5_SNDLS5
+Xsky130_fd_pr__nfet_g5v0d10v5_X57ESK_1 D1 D1 D1 D1 VP VP D1 D1 S VSS sky130_fd_pr__nfet_g5v0d10v5_X57ESK
+Xsky130_fd_pr__nfet_g5v0d10v5_X57ESK_2 D1 D1 D1 D1 VP VP D1 D1 S VSS sky130_fd_pr__nfet_g5v0d10v5_X57ESK
+Xsky130_fd_pr__nfet_g5v0d10v5_X57ESK_3 D1 D1 D1 D1 VP VP D1 D1 S VSS sky130_fd_pr__nfet_g5v0d10v5_X57ESK
+Xsky130_fd_pr__nfet_g5v0d10v5_CQ6KSH_0 S D2 D2 VN VN D2 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5_CQ6KSH
+Xsky130_fd_pr__nfet_g5v0d10v5_CQ6KSH_1 S D2 D2 VN VN D2 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5_CQ6KSH
+Xsky130_fd_pr__nfet_g5v0d10v5_CQ6KSH_2 S D2 D2 VN VN D2 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5_CQ6KSH
+.ends
+

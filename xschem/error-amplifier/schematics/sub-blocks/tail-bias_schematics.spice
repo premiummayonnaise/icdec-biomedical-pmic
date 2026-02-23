@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/icdec-biomedical-pmic/xschem/error-amplifier/schematics/sub-blocks/tail-bias.sch
+.subckt tail-bias IBIAS S VSS
+*.PININFO IBIAS:I S:B VSS:B
+XM5 S IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=4 m=1
+XM6 IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=4 m=1
+XM2 S S S VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=7.5 nf=1 m=1
+XM14 S S S VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=7.5 nf=1 m=1
+.ends

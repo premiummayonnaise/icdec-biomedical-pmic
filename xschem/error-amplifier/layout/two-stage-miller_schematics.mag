@@ -1,0 +1,75 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1768988278
+<< checkpaint >>
+rect 4179 3149 12071 5755
+rect 3563 -1965 12071 3149
+rect 4179 -44645 12071 -1965
+<< error_s >>
+rect 588 -29 605 15427
+rect 642 -78 659 15378
+rect 1218 7765 1276 7917
+rect 1259 -124 1276 7765
+rect 1277 7765 1342 7801
+rect 1277 7707 1428 7765
+rect 1277 -124 1371 7707
+rect 1277 -190 1342 -124
+rect 1750 -219 1797 7754
+rect 1804 -273 1851 7700
+rect 2241 -284 2288 7700
+rect 2295 -338 2342 7754
+rect 2882 -349 2929 12084
+rect 3577 12066 3635 12182
+rect 2936 -403 2983 12030
+rect 3511 -414 3635 12066
+rect 3711 -248 3722 12182
+rect 4153 11870 4211 12022
+rect 3511 -450 3624 -414
+rect 3577 -468 3624 -450
+rect 4194 -479 4211 11870
+rect 4212 11870 4277 11906
+rect 4212 11812 4363 11870
+rect 4212 -479 4306 11812
+rect 4212 -545 4277 -479
+use sky130_fd_pr__cap_mim_m3_1_9X3E5K  XC1
+timestamp 0
+transform 1 0 8125 0 1 -19445
+box -2686 -23940 2686 23940
+use sky130_fd_pr__pfet_g5v0d10v5_X6F734  XM1
+timestamp 0
+transform 1 0 288 0 1 7722
+box -383 -7817 383 7817
+use sky130_fd_pr__pfet_g5v0d10v5_X6F734  XM2
+timestamp 0
+transform 1 0 959 0 1 7627
+box -383 -7817 383 7817
+use sky130_fd_pr__nfet_g5v0d10v5_MMLXMF  XM3
+timestamp 0
+transform 1 0 1555 0 1 3773
+box -278 -4028 278 4028
+use sky130_fd_pr__nfet_g5v0d10v5_MMLXMF  XM4
+timestamp 0
+transform 1 0 2046 0 1 3708
+box -278 -4028 278 4028
+use sky130_fd_pr__nfet_g5v0d10v5_VEM7HQ  XM5
+timestamp 0
+transform 1 0 2612 0 1 5873
+box -353 -6258 353 6258
+use sky130_fd_pr__nfet_g5v0d10v5_VEM7HQ  XM6
+timestamp 0
+transform 1 0 3253 0 1 5808
+box -353 -6258 353 6258
+use sky130_fd_pr__pfet_g5v0d10v5_MD8X64  XM7
+timestamp 0
+transform 1 0 3894 0 1 15752
+box -383 -16297 383 16297
+use sky130_fd_pr__nfet_g5v0d10v5_VEM7HQ  XM8
+timestamp 0
+transform 1 0 4565 0 1 5648
+box -353 -6258 353 6258
+use sky130_fd_pr__pfet_g5v0d10v5_35TCWC  XM9
+timestamp 0
+transform 1 0 5131 0 1 592
+box -308 -1297 308 1297
+<< end >>

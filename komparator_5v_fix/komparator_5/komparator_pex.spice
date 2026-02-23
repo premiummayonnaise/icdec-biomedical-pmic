@@ -1,0 +1,67 @@
+* SPICE3 file created from komparator.ext - technology: sky130A
+
+X0 VDD XM2/D XM2/D VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0.54375 pd=4.04 as=1.0875 ps=8.08 w=3.75 l=0.75
+X1 XM2/D XM2/D VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=1.0875 pd=8.08 as=0.54375 ps=4.04 w=3.75 l=0.75
+X2 XM2/S IN XM6/G1 VSS sky130_fd_pr__nfet_g5v0d10v5 ad=1.2064 pd=8.9 as=1.2064 ps=8.9 w=4.16 l=0.5
+X3 VDD XM2/D XM6/G1 VDD sky130_fd_pr__pfet_g5v0d10v5 ad=6.525 pd=48.48 as=4.35 ps=32.32 w=3.75 l=0.75
+X4 XM6/G1 XM2/D VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3.75 l=0.75
+X5 XM2/S REF XM2/D VSS sky130_fd_pr__nfet_g5v0d10v5 ad=1.2064 pd=8.9 as=1.2064 ps=8.9 w=4.16 l=0.5
+X6 VDD XM6/G1 XM2/D VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=4.35 ps=32.32 w=3.75 l=0.75
+X7 XM2/D XM6/G1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3.75 l=0.75
+X8 VDD XM2/D XM9/D0 VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=2.175 ps=16.16 w=3.75 l=0.75
+X9 XM9/D0 XM2/D VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3.75 l=0.75
+X10 VDD XM6/G1 OUT VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=2.175 ps=16.16 w=3.75 l=0.75
+X11 OUT XM6/G1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3.75 l=0.75
+X12 VSS B2 OUT VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=0.75
+X13 OUT B2 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=0.75
+X14 VSS B2 XM9/D0 VSS sky130_fd_pr__nfet_g5v0d10v5 ad=2.61 pd=19.74 as=1.74 ps=13.16 w=3 l=0.75
+X15 XM9/D0 B2 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3 l=0.75
+X16 VSS B1 XM2/S VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=0.75
+X17 XM2/S B1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=0.75
+X18 VDD XM6/G1 XM6/G1 VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3.75 l=0.75
+X19 XM6/G1 XM6/G1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3.75 l=0.75
+C0 XM9/D0 B2 0.35703f
+C1 VDD XM2/S 0.01981f
+C2 XM2/D REF 0.10964f
+C3 OUT XM6/G1 0.35488f
+C4 XM2/S B2 0.01585f
+C5 IN OUT 0.19865f
+C6 XM9/D0 XM2/S 0.05079f
+C7 OUT XM2/D 0.00863f
+C8 B1 XM6/G1 0.08321f
+C9 IN B1 0
+C10 XM2/D B1 0.16391f
+C11 IN XM6/G1 0.16871f
+C12 XM2/D XM6/G1 1.33334f
+C13 VDD REF 0.00316f
+C14 OUT VDD 1.98208f
+C15 B2 REF 0.00795f
+C16 XM9/D0 REF 0.18062f
+C17 VDD B1 0.10996f
+C18 VDD XM6/G1 11.79079f
+C19 IN VDD 0.00796f
+C20 OUT B2 0.23712f
+C21 VDD XM2/D 9.56333f
+C22 OUT XM9/D0 0.05022f
+C23 XM2/S REF 0.09033f
+C24 B1 B2 0
+C25 XM9/D0 B1 0.16506f
+C26 XM9/D0 XM6/G1 0
+C27 OUT XM2/S 0.05666f
+C28 XM9/D0 XM2/D 0.39835f
+C29 XM2/S B1 0.42791f
+C30 XM2/S XM6/G1 0.50452f
+C31 IN XM2/S 0.09029f
+C32 XM2/S XM2/D 0.50777f
+C33 XM9/D0 VDD 1.9461f
+C34 B1 REF 0.13517f
+C35 B1 VSS 2.44626f
+C36 XM9/D0 VSS 4.56176f
+C37 B2 VSS 5.10022f
+C38 OUT VSS 5.15311f
+C39 VDD VSS 37.21564f
+C40 XM2/S VSS 5.29165f
+C41 XM2/D VSS 2.33899f
+C42 REF VSS 1.35371f
+C43 XM6/G1 VSS 3.09251f
+C44 IN VSS 1.42138f

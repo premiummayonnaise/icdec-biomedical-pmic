@@ -1,0 +1,93 @@
+* =============================================================
+* Differential input stimulus (same as your schematic testbench)
+V2 VN VSS ac -1m dc 1.25
+V3 VP VSS ac 1m dc 1.25
+
+
+* Supplies and grounds
+V5 VDD VSS 5
+V7 VSS GND 0
+
+
+* Output loading / probes
+C2 OUT VSS 1p m=1
+
+
+* Bias current source
+I4 VDD IBIAS 200u
+
+
+* Common-mode injection path for Acm/CMRR
+V1 VCM VSS ac 1m DC 0.9
+C1 OUT2 VSS 5p m=1
+
+
+* PSRR injection path: supply ripple on VDDr, observe OUT3
+V4 VDDr VSS DC 5 AC 1
+C3 OUT3 VSS 10p m=1
+R1 OUT3 VN 1k m=1
+
+
+* DUT instances (PEX-backed)
+* x1: differential gain Av from OUT / (VP-VN)
+* x2: common-mode gain Acm from OUT2 / VCM
+* x3: PSRR: ripple on VDDr, output at OUT3
+x1 VDD OUT VP VN IBIAS VSS two-stage-miller
+x2 VDD OUT2 VCM VCM IBIAS VSS two-stage-miller
+x3 VDDr OUT3 VP VN IBIAS VSS two-stage-miller
+
+
+* =============================================================
+* Control block (copied exactly from your working testbench)
+* =============================================================
+.control
+.temp 27
+op
+ac dec 100 1 100MEG
+save all
+
+
+* --- Original Logic ---
+let vd = v(vp) - v(vn)
+let Av = db( v(OUT) / vd)
+let phase = 180*cph( v(OUT) )/pi
+
+
+* --- New Measurement Snippet ---
+* We use the 'Av' and 'phase' vectors created above
+meas ac f_0db when Av = 0
+meas ac phase_at_unity find phase when Av = 0
+
+
+* Note: p_total needs a definition to be plotted
+* Assuming p_total is VDD * Total Current:
+let p_total = v(vdd) * i(Vdd)
+
+
+* --- Original CMRR & PSRR calculation ---
+let Acm = db( v(OUT2)/vcm)
+let cmrr = Av - Acm
+let psrr = -20*log10(OUT3)
+
+
+* --- Output ---
+print f_0db phase_at_unity
+plot psrr
+plot av
+plot acm
+plot cmrr
+plot phase
+plot p_total
+.endc
+
+
+.ends tb_ac
+
+
+* =============================================================
+* Top-level instantiation
+* =============================================================
+XTB VDD OUT VP VN IBIAS VSS tb_ac
+
+
+.end

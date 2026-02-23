@@ -1,0 +1,15 @@
+** sch_path: /foss/designs/icdec-biomedical-pmic/cmos_comparator/komparator_histeris.sch
+.subckt komparator_histeris VDD REF IN OUT B1 B2 VSS
+*.PININFO VDD:B VSS:B IN:I REF:I B2:I B1:I OUT:O
+XM1 net1 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.75 W=3.9 nf=1 m=1
+XM2 net1 REF net3 net3 sky130_fd_pr__nfet_01v8 L=0.5 W=3.4 nf=1 m=1
+XM3 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.75 W=3.9 nf=1 m=1
+XM4 net4 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.75 W=3.9 nf=1 m=1
+XM5 net1 net2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.75 W=3.9 nf=1 m=1
+XM6 net2 net2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.75 W=3.9 nf=1 m=1
+XM7 OUT net2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.75 W=3.9 nf=1 m=1
+XM8 net2 IN net3 net3 sky130_fd_pr__nfet_01v8 L=0.5 W=3.4 nf=1 m=1
+XM9 net3 B1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.75 W=2.1 nf=1 m=1
+XM10 OUT B2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.75 W=2.1 nf=1 m=1
+XM11 net4 B2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.75 W=2.1 nf=1 m=1
+.ends

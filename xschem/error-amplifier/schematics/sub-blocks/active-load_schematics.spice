@@ -1,0 +1,34 @@
+* NGSPICE file created from active-load.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_ZPXM7F a_n337_n904# a_n587_n968# a_n953_n904#
++ a_645_n968# a_29_n968# a_1261_n968# a_1569_n968# a_n2185_n904# a_2435_n904# a_n2435_n968#
++ a_279_n904# a_895_n904# a_n2801_n904# a_1511_n904# a_n1261_n904# a_n1569_n904# a_n1511_n968#
++ a_1819_n904# a_2493_n968# a_n1819_n968# a_n279_n968# a_n29_n904# a_n645_n904# a_n895_n968#
++ a_337_n968# a_953_n968# w_n2837_n1004# a_2127_n904# a_1877_n968# a_2743_n904# a_n2493_n904#
++ a_n2127_n968# a_n2743_n968# a_587_n904# a_1203_n904# a_n1203_n968# a_n1877_n904#
++ a_2185_n968#
+X0 a_n2493_n904# a_n2743_n968# a_n2801_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=2.726 ps=19.38 w=9.4 l=1.25
+X1 a_n1877_n904# a_n2127_n968# a_n2185_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X2 a_895_n904# a_645_n968# a_587_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X3 a_n1569_n904# a_n1819_n968# a_n1877_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X4 a_n645_n904# a_n895_n968# a_n953_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X5 a_1819_n904# a_1569_n968# a_1511_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X6 a_n29_n904# a_n279_n968# a_n337_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X7 a_n2185_n904# a_n2435_n968# a_n2493_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X8 a_n953_n904# a_n1203_n968# a_n1261_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X9 a_1203_n904# a_953_n968# a_895_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X10 a_2435_n904# a_2185_n968# a_2127_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X11 a_587_n904# a_337_n968# a_279_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X12 a_2127_n904# a_1877_n968# a_1819_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X13 a_n337_n904# a_n587_n968# a_n645_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X14 a_279_n904# a_29_n968# a_n29_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X15 a_n1261_n904# a_n1511_n968# a_n1569_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X16 a_1511_n904# a_1261_n968# a_1203_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=1.363 pd=9.69 as=1.363 ps=9.69 w=9.4 l=1.25
+X17 a_2743_n904# a_2493_n968# a_2435_n904# w_n2837_n1004# sky130_fd_pr__pfet_g5v0d10v5 ad=2.726 pd=19.38 as=1.363 ps=9.69 w=9.4 l=1.25
+.ends
+
+.subckt active-load VDD D1 D2
+XXM2 VDD D1 VDD D1 D1 D1 D1 VDD D1 D1 VDD VDD D1 VDD D1 VDD D1 D2 D1 D1 D1 D1 D2 D1
++ D1 D1 VDD VDD D1 D1 D1 D1 D1 D2 D1 D1 D2 D1 sky130_fd_pr__pfet_g5v0d10v5_ZPXM7F
+.ends
+

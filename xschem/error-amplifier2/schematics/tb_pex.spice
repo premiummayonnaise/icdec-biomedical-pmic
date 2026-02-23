@@ -1,0 +1,61 @@
+* tb_ac_pex.spice
+
+.include 1st-stage_pex.spice
+* Your PEX file must contain the extracted subckt name (example: x1st-stage)
+
+* ---- Wrapper to keep your schematic symbol pin order unchanged ----
+* Schematic: .subckt 1st-stage VDD OUT VN VP IBIAS VSS
+* Extracted (EXAMPLE from your paste): .subckt x1st-stage VP VN IBIAS VSS OUT VDD
+.subckt 1st-stage VDD OUT VN VP IBIAS VSS
+XPEX VP VN IBIAS VSS OUT VDD x1st-stage
+.ends 1st-stage
+
+** sch_path: /foss/designs/icdec-biomedical-pmic/xschem/error-amplifier2/schematics/tb_ac.sch
+V2 VN   VSS ac -1m dc 1.25
+V3 VP   VSS ac  1m dc 1.25
+V5 VDD  VSS 5
+V7 VSS  GND 0
+C2 OUT  VSS 1p
+I4 VDD  IBIAS 200u
+C1 OUT2 VSS 5p
+V1 VCM  VSS ac 1m DC 0.9
+C3 OUT3 VSS 10p
+R1 OUT3 VN  1k
+V4 VDDr VSS DC 5 AC 1
+
+x1 VDDr OUT3 VN VP IBIAS VSS 1st-stage
+x2 VDD  OUT2 VCM VCM IBIAS VSS 1st-stage
+x3 VDD  OUT  VN  VP  IBIAS VSS 1st-stage
+
+.control
+  .temp 27
+  op
+  ac dec 100 1 100MEG
+  save all
+
+  let vd = v(vp) - v(vn)
+  let Av = db( v(OUT) / vd)
+  let phase = 180*cph( v(OUT) )/pi
+
+  meas ac f_0db when Av = 0
+  meas ac phase_at_unity find phase when Av = 0
+
+  let p_total = v(vdd) * i(Vdd)
+
+  let Acm = db( v(OUT2)/vcm)
+  let cmrr = Av - Acm
+  let psrr = -20*log10(OUT3)
+
+  print f_0db phase_at_unity
+  plot psrr
+  plot av
+  plot acm
+  plot cmrr
+  plot phase
+  plot p_total
+.endc
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice ss
+
+.GLOBAL GND
+.end
