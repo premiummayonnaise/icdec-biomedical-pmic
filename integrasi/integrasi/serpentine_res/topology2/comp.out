@@ -1,0 +1,38 @@
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po and Circuit 2 cell sky130_fd_pr__res_xhigh_po are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_xhigh_po      |Circuit 2: sky130_fd_pr__res_xhigh_po      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_xhigh_po and sky130_fd_pr__res_xhigh_po are equivalent.
+
+Subcircuit summary:
+Circuit 1: serpentine259k                  |Circuit 2: serpentine259k                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_xhigh_po (1)             |sky130_fd_pr__res_xhigh_po (1)             
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: serpentine259k                  |Circuit 2: serpentine259k                  
+-------------------------------------------|-------------------------------------------
+B                                          |B                                          
+A                                          |A                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes serpentine259k and serpentine259k are equivalent.
+
+Final result: Circuits match uniquely.
+.

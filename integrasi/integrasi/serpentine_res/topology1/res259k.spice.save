@@ -1,0 +1,37 @@
+* SPICE3 file created from res259k.ext - technology: sky130A
+
+X0 XR30/R1 XR30/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X1 XR1/R1 XR1/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X2 XR31/R1 XR31/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X3 XR20/R1 XR20/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X4 XR2/R1 XR2/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X5 XR32/R1 XR32/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X6 XR21/R1 XR21/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X7 XR10/R1 XR10/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X8 XR3/R1 XR3/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X9 XR33/R1 XR33/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X10 XR22/R1 XR22/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X11 XR11/R1 XR11/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X12 XR5/R1 XR5/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X13 XR4/R1 XR4/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X14 XR34/R1 XR34/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X15 XR23/R1 XR23/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X16 XR12/R1 XR12/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X17 XR6/R1 XR6/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X18 XR35/R1 XR35/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X19 XR25/R1 XR25/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X20 XR24/R1 XR24/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X21 XR14/R1 XR14/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X22 XR13/R1 XR13/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X23 XR7/R1 XR7/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X24 XR26/R1 XR26/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X25 XR15/R1 XR15/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X26 XR27/R1 XR27/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X27 XR16/R1 XR16/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X28 XR8/R1 XR8/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X29 XR28/R1 XR28/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X30 XR17/R1 XR17/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X31 XR9/R1 XR9/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X32 XR29/R1 XR29/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X33 XR18/R1 XR18/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+X34 XR19/R1 XR19/R2 VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=10.65

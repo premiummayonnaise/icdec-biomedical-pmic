@@ -1,0 +1,29 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1772005688
+use 1st-stage  1st-stage_1 /foss/designs/kerjapraktik/test/ldo/xschem/integrasi/error-amplifier2/layout
+timestamp 1770370310
+transform 1 0 -33756 0 1 44190
+box -4000 -11780 30784 1000
+use cap  cap_1
+timestamp 1771992498
+transform 1 0 22072 0 1 38778
+box -18294 -5560 5432 5240
+use pfet  pfet_1
+timestamp 1771992524
+transform 1 0 55265 0 1 24989
+box -95 -95 1627 1499
+use power-fet  power-fet_1 /foss/designs/kerjapraktik/test/ldo/xschem/integrasi/power-fet
+timestamp 1772001883
+transform 1 0 51636 0 1 62428
+box 764 -1328 11334 1328
+use resistor180  resistor180_1 /foss/designs/kerjapraktik/test/ldo/xschem/integrasi/resistor_paralel
+timestamp 1770865593
+transform 1 0 56988 0 1 54566
+box -4000 -17800 3000 -2300
+use serpentine259k  serpentine259k_1 /foss/designs/kerjapraktik/test/ldo/xschem/integrasi/serpentine_res/topology2
+timestamp 1770698081
+transform 0 -1 -43752 1 0 18204
+box -1500 -72500 10000 -5500
+<< end >>

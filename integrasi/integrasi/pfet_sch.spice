@@ -1,0 +1,5 @@
+** sch_path: /foss/designs/kerjapraktik/test/ldo/xschem/integrasi/pfet.sch
+.subckt pfet
+
+XM1 net1 net2 net3 net4 sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=40 nf=8 m=1
+.ends

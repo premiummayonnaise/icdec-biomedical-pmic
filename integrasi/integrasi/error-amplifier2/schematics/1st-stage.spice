@@ -1,0 +1,30 @@
+** sch_path: /foss/designs/icdec-biomedical-pmic/xschem/error-amplifier2/schematics/1st-stage.sch
+.subckt 1st-stage VDD D1 D2 VP VN S D2 D1 VSS IBIAS S VSS
+*.PININFO VDD:B D1:B D2:B VP:I VN:I S:B D2:B D1:B VSS:B IBIAS:I S:B VSS:B
+XM1 D2 D1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=75.2 nf=8 m=1
+XM2 D1 D1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=75.2 nf=8 m=1
+XM3 D1 D1 D1 VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=9.4 nf=1 m=1
+XM4 D1 D1 D1 VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=9.4 nf=1 m=1
+XM5 D2 VN S VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=38 nf=2 m=1
+XM6 D1 VP S VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=38 nf=2 m=1
+XM7 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM8 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM9 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM10 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM11 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM12 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM13 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM14 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM15 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM16 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM17 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM18 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM19 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM20 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM21 D2 D2 D2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM22 D1 D1 D1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4.75 nf=1 m=1
+XM23 S IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=4 m=1
+XM24 IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=4 m=1
+XM25 S S S VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=7.5 nf=1 m=1
+XM26 S S S VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=7.5 nf=1 m=1
+.ends

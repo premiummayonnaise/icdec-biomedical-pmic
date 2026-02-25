@@ -1,0 +1,51 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1770200475
+<< metal3 >>
+rect -5492 2512 -120 2540
+rect -5492 -2512 -204 2512
+rect -140 -2512 -120 2512
+rect -5492 -2540 -120 -2512
+rect 120 2512 5492 2540
+rect 120 -2512 5408 2512
+rect 5472 -2512 5492 2512
+rect 120 -2540 5492 -2512
+<< via3 >>
+rect -204 -2512 -140 2512
+rect 5408 -2512 5472 2512
+<< mimcap >>
+rect -5452 2460 -452 2500
+rect -5452 -2460 -5412 2460
+rect -492 -2460 -452 2460
+rect -5452 -2500 -452 -2460
+rect 160 2460 5160 2500
+rect 160 -2460 200 2460
+rect 5120 -2460 5160 2460
+rect 160 -2500 5160 -2460
+<< mimcapcontact >>
+rect -5412 -2460 -492 2460
+rect 200 -2460 5120 2460
+<< metal4 >>
+rect -220 2512 -124 2528
+rect -5413 2460 -491 2461
+rect -5413 -2460 -5412 2460
+rect -492 -2460 -491 2460
+rect -5413 -2461 -491 -2460
+rect -220 -2512 -204 2512
+rect -140 -2512 -124 2512
+rect 5392 2512 5488 2528
+rect 199 2460 5121 2461
+rect 199 -2460 200 2460
+rect 5120 -2460 5121 2460
+rect 199 -2461 5121 -2460
+rect -220 -2528 -124 -2512
+rect 5392 -2512 5408 2512
+rect 5472 -2512 5488 2512
+rect 5392 -2528 5488 -2512
+<< properties >>
+string FIXED_BBOX 120 -2540 5200 2540
+string gencell sky130_fd_pr__cap_mim_m3_1
+string library sky130
+string parameters w 25.0 l 25.0 val 1.269k carea 2.00 cperi 0.19 class capacitor nx 2 ny 1 dummy 0 square 0 lmin 2.00 wmin 2.00 lmax 30.0 wmax 30.0 dc 0 bconnect 1 tconnect 1 ccov 100
+<< end >>

@@ -1,0 +1,74 @@
+* NGSPICE file created from res259k.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_xhigh_po_2p85_789E74 B R1 R2
+X0 R1 R2 B sky130_fd_pr__res_xhigh_po_2p85 l=10.65
+.ends
+
+.subckt res259k VSS A B
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_0 VSS sky130_fd_pr__res_xhigh_po_2p85_789E74_0/R1
++ VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_14 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_1 VSS sky130_fd_pr__res_xhigh_po_2p85_789E74_1/R1
++ VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_16 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_15 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_3 VSS sky130_fd_pr__res_xhigh_po_2p85_789E74_3/R1
++ VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_2 VSS sky130_fd_pr__res_xhigh_po_2p85_789E74_2/R1
++ VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_17 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_4 VSS sky130_fd_pr__res_xhigh_po_2p85_789E74_4/R1
++ VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_18 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_5 VSS sky130_fd_pr__res_xhigh_po_2p85_789E74_5/R1
++ VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_19 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_6 VSS sky130_fd_pr__res_xhigh_po_2p85_789E74_6/R1
++ VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR30 VSS XR30/R1 XR31/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_7 VSS sky130_fd_pr__res_xhigh_po_2p85_789E74_7/R1
++ VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR1 VSS A XR2/R1 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR20 VSS XR20/R1 XR21/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR31 VSS XR32/R2 XR31/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_8 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR10 VSS XR15/R1 XR9/R1 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR2 VSS XR2/R1 XR3/R1 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR32 VSS XR33/R2 XR32/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR21 VSS XR22/R2 XR21/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_9 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR33 VSS XR34/R2 XR33/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR3 VSS XR3/R1 XR4/R1 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR22 VSS XR23/R2 XR22/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR11 VSS XR12/R2 XR16/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR34 VSS XR35/R2 XR34/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR23 VSS XR24/R2 XR23/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR12 VSS XR13/R2 XR12/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR4 VSS XR4/R1 XR5/R1 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR5 VSS XR5/R1 XR6/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR35 VSS B XR35/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR25 VSS XR26/R1 XR25/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR24 VSS XR25/R2 XR24/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR14 VSS XR15/R2 XR14/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR13 VSS XR14/R2 XR13/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR6 VSS XR7/R2 XR6/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR26 VSS XR26/R1 XR27/R1 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR15 VSS XR15/R1 XR15/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR7 VSS XR8/R2 XR7/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR27 VSS XR27/R1 XR28/R1 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR8 VSS XR9/R2 XR8/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR16 VSS XR17/R2 XR16/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR9 VSS XR9/R1 XR9/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR28 VSS XR28/R1 XR29/R1 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR17 VSS XR18/R2 XR17/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR18 VSS XR19/R1 XR18/R2 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR29 VSS XR29/R1 XR30/R1 sky130_fd_pr__res_xhigh_po_2p85_789E74
+XXR19 VSS XR19/R1 XR20/R1 sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_20 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_10 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_11 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_12 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+Xsky130_fd_pr__res_xhigh_po_2p85_789E74_13 VSS VSS VSS sky130_fd_pr__res_xhigh_po_2p85_789E74
+R0 sky130_fd_pr__res_xhigh_po_2p85_789E74_0/R1 sky130_fd_pr__res_xhigh_po_2p85_789E74_1/R1 sky130_fd_pr__res_generic_m3 w=2.17 l=4.86
+.ends
+

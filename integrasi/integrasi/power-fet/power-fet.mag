@@ -1,0 +1,9 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1772001883
+use sky130_fd_pr__pfet_g5v0d10v5_YYQDC9  XM1
+timestamp 1768724025
+transform 1 0 6049 0 1 0
+box -5285 -1328 5285 1328
+<< end >>

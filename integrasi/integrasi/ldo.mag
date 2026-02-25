@@ -1,0 +1,29 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1771992725
+use 1st-stage  1st-stage_1 error-amplifier2/layout
+timestamp 1770370310
+transform 1 0 -11600 0 1 19380
+box -4000 -11780 30784 1000
+use cap  cap_1
+timestamp 1771992498
+transform 1 0 80120 0 1 -1182
+box -18294 -5560 5432 5240
+use pfet  pfet_1
+timestamp 1771992524
+transform 1 0 40465 0 1 6343
+box -95 -95 1627 1499
+use power-fet  power-fet_1 power-fet
+timestamp 1768724025
+transform 1 0 62800 0 1 22128
+box 0 -1328 11334 1328
+use resistor180  resistor180_1 resistor_paralel
+timestamp 1770865593
+transform 1 0 40400 0 1 34600
+box -4000 -17800 3000 -2300
+use serpentine259k  serpentine259k_1 serpentine_res/topology2
+timestamp 1770698081
+transform 0 1 49280 -1 0 55952
+box -1500 -72500 10000 -5500
+<< end >>
