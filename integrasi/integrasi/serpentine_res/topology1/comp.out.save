@@ -1,0 +1,97 @@
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_2p85 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_2p85 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_2p85 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_2p85 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_xhigh_po_2p85 |Circuit 2: sky130_fd_pr__res_xhigh_po_2p85 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_xhigh_po_2p85 and sky130_fd_pr__res_xhigh_po_2p85 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_2p85_789E74 in circuit res259k (0)(56 instances)
+
+Class res259k (0):  Merged 17 parallel devices.
+Class res259k (0):  Merged 34 series devices.
+Class res259k (1):  Merged 34 series devices.
+Subcircuit summary:
+Circuit 1: res259k                         |Circuit 2: res259k                         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_xhigh_po_2p85 (56->5)    |sky130_fd_pr__res_xhigh_po_2p85 (35->1) ** 
+sky130_fd_pr__res_generic_m3 (1)           |(no matching element)                      
+Number of devices: 6 **Mismatch**          |Number of devices: 1 **Mismatch**          
+Number of nets: 6 **Mismatch**             |Number of nets: 3 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: res259k                         |Circuit 2: res259k                         
+
+---------------------------------------------------------------------------------------
+Net: VSS                                   |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po_2p85/(1|2) =  |                                           
+  sky130_fd_pr__res_xhigh_po_2p85/3 = 5    |                                           
+                                           |                                           
+Net: sky130_fd_pr__res_xhigh_po_2p85_789E7 |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po_2p85/(1|2) =  |                                           
+  sky130_fd_pr__res_generic_m3/(end_a|end_ |                                           
+                                           |                                           
+Net: sky130_fd_pr__res_xhigh_po_2p85_789E7 |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po_2p85/(1|2) =  |                                           
+  sky130_fd_pr__res_generic_m3/(end_a|end_ |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: B                                     |Net: B                                     
+  sky130_fd_pr__res_xhigh_po_2p85/(1|2) =  |  sky130_fd_pr__res_xhigh_po_2p85/(1|2) =  
+                                           |                                           
+Net: A                                     |Net: A                                     
+  sky130_fd_pr__res_xhigh_po_2p85/(1|2) =  |  sky130_fd_pr__res_xhigh_po_2p85/(1|2) =  
+                                           |                                           
+Net: sky130_fd_pr__res_xhigh_po_2p85_789E7 |Net: VSS                                   
+  sky130_fd_pr__res_xhigh_po_2p85/(1|2) =  |  sky130_fd_pr__res_xhigh_po_2p85/3 = 1    
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: res259k                         |Circuit 2: res259k                         
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__res_xhigh_po_2p85_ |Instance: sky130_fd_pr__res_xhigh_po_2p85: 
+  (1,2) = (10,2)                           |  (1,2) = (1,1)                            
+  3 = 10                                   |  3 = 1                                    
+                                           |                                           
+Instance: sky130_fd_pr__res_xhigh_po_2p85_ |(no matching instance)                     
+  (1,2) = (10,10)                          |                                           
+  3 = 10                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: sky130_fd_pr__res_xhigh_po_2p85_ |(no matching instance)                     
+  (1,2) = (10,2)                           |                                           
+  3 = 10                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: sky130_fd_pr__res_xhigh_po_2p85_ |(no matching instance)                     
+  (1,2) = (10,1)                           |                                           
+  3 = 10                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: sky130_fd_pr__res_xhigh_po_2p85_ |(no matching instance)                     
+  (1,2) = (1,1)                            |                                           
+  3 = 10                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: sky130_fd_pr__res_generic_m3:0   |(no matching instance)                     
+  (end_a,end_b) = (2,2)                    |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: res259k                         |Circuit 2: res259k                         
+-------------------------------------------|-------------------------------------------
+Cell pin lists are equivalent.
+Device classes res259k and res259k are equivalent.
+
+Final result: Netlists do not match.
+Port matching may fail to disambiguate symmetries.

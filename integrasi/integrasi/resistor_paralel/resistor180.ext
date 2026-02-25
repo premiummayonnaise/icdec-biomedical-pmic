@@ -1,0 +1,234 @@
+timestamp 1770865593
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR33 1 0 -2801 0 1 -15759
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR34 1 0 -2155 0 1 -15757
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR35 1 0 -1515 0 1 -15759
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR36 1 0 -875 0 1 -15759
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR37 1 0 -237 0 1 -15759
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR38 1 0 405 0 1 -15759
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR39 1 0 1045 0 1 -15759
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_1 1 0 1685 0 1 -15759
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR25 1 0 -2799 0 1 -12833
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR26 1 0 -2155 0 1 -12831
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR27 1 0 -1515 0 1 -12831
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_0 1 0 -875 0 1 -12833
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR29 1 0 -235 0 1 -12835
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR30 1 0 403 0 1 -12835
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR31 1 0 1045 0 1 -12835
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR32 1 0 1685 0 1 -12835
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR17 1 0 -2799 0 1 -9915
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR18 1 0 -2153 0 1 -9915
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR19 1 0 -1513 0 1 -9917
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR20 1 0 -875 0 1 -9917
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR21 1 0 -235 0 1 -9915
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR22 1 0 405 0 1 -9917
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR23 1 0 1045 0 1 -9917
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR24 1 0 1685 0 1 -9917
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR9 1 0 -2795 0 1 -6989
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR10 1 0 -2155 0 1 -6989
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR11 1 0 -1513 0 1 -6989
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR12 1 0 -873 0 1 -6989
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR13 1 0 -235 0 1 -6989
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR14 1 0 407 0 1 -6989
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR15 1 0 1047 0 1 -6989
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR16 1 0 1685 0 1 -6993
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR1 1 0 -2795 0 1 -4049
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR2 1 0 -2155 0 1 -4049
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR3 1 0 -1515 0 1 -4049
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR4 1 0 -875 0 1 -4049
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR5 1 0 -235 0 1 -4049
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR6 1 0 405 0 1 -4049
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR7 1 0 1045 0 1 -4049
+use sky130_fd_pr__res_xhigh_po_2p85_36JPKQ XR8 1 0 1685 0 1 -4049
+port "B" 2 2800 -5200 3000 -5000 m1
+port "A" 3 -3886 -2616 -3882 -2614 m1
+port "VSS" 1 -700 -17800 -500 -17600 m1
+node "B" 25 41093 2800 -5200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16080000 81200 16080000 81200 0 0 0 0 0 0 0 0
+node "A" 13 26474.2 -3886 -2616 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16080000 81200 0 0 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 -700 -17800 m1 0 0 0 0 0 0 0 0 0 0 8200000 82000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9910000 82600 2850000 12400 0 0 0 0 0 0 0 0 0 0
+cap "A" "B" 4776.94
+cap "VSS" "XR33/R2" 166.609
+cap "VSS" "XR33/R2" 157.808
+cap "XR33/R2" "VSS" 158.201
+cap "VSS" "XR35/R2" 163.388
+cap "XR37/R2" "VSS" 96.4144
+cap "XR25/R2" "VSS" 76.7766
+cap "XR33/R1" "VSS" 57.9409
+cap "XR33/R1" "XR25/R2" 385.888
+cap "VSS" "XR25/R2" 0.0323604
+cap "XR33/R1" "VSS" 0.0412729
+cap "XR33/R1" "XR25/R2" 917.449
+cap "XR25/R2" "XR33/R1" 933.602
+cap "XR27/R2" "XR35/R1" 974.796
+cap "XR29/R2" "VSS" 51.2662
+cap "XR37/R1" "VSS" 51.9892
+cap "XR29/R2" "XR37/R1" 292.044
+cap "VSS" "XR17/R2" 83.0798
+cap "VSS" "XR25/R1" 52.0803
+cap "XR17/R2" "XR25/R1" 428.749
+cap "VSS" "XR25/R1" 0.0323604
+cap "XR17/R2" "VSS" 0.0206827
+cap "XR17/R2" "XR25/R1" 1042.6
+cap "XR17/R2" "XR25/R1" 1015.48
+cap "XR27/R1" "XR19/R2" 1051.81
+cap "XR29/R1" "XR21/R2" 311.808
+cap "VSS" "XR29/R1" 47.7125
+cap "VSS" "XR21/R2" 61.1468
+cap "XR9/R2" "VSS" 68.7253
+cap "XR17/R1" "VSS" 63.0115
+cap "XR9/R2" "XR17/R1" 394.006
+cap "XR17/R1" "XR9/R2" 961.384
+cap "XR17/R1" "VSS" 0.0178322
+cap "XR9/R2" "XR17/R1" 953.931
+cap "XR19/R1" "XR19/R2" 982.586
+cap "XR21/R1" "VSS" 57.05
+cap "VSS" "XR21/R2" 45.3898
+cap "XR21/R1" "XR21/R2" 308.332
+cap "VSS" "XR17/R1" -1.42109e-14
+cap "XR9/R2" "XR17/R1" 0.300506
+cap "VSS" "XR9/R2" 2.13402
+cap "VSS" "XR11/R2" 0.068445
+cap "VSS" "XR13/R2" 1.35521
+cap "VSS" "XR1/R2" 50.6767
+cap "XR9/R1" "VSS" 51.6268
+cap "XR9/R1" "XR1/R2" 323.988
+cap "XR1/R2" "XR9/R1" 778.609
+cap "XR9/R1" "XR1/R2" 771.172
+cap "XR11/R1" "VSS" 0.0815689
+cap "XR11/R1" "XR11/R2" 792.626
+cap "VSS" "XR13/R2" 37.4554
+cap "XR13/R1" "XR13/R2" 227.105
+cap "VSS" "XR13/R1" 47.9565
+cap "XR1/R2" "VSS" 24.2839
+cap "XR9/R1" "VSS" -1.42109e-14
+cap "XR9/R1" "XR1/R2" 1.34278
+cap "VSS" "XR5/R2" 15.4978
+cap "VSS" "XR1/R1" 111.915
+cap "VSS" "XR1/R1" 151.651
+cap "XR1/R1" "VSS" 150.418
+cap "XR3/R1" "VSS" 155.35
+cap "XR5/R1" "VSS" 95.018
+merge "XR8/VSUBS" "XR7/VSUBS" -27504.4 0 0 0 0 0 0 0 0 0 0 -8200000 -82000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9910000 -82600 -2850000 -12400 0 0 0 0 0 0 0 0 0 0
+merge "XR7/VSUBS" "XR6/VSUBS"
+merge "XR6/VSUBS" "XR5/VSUBS"
+merge "XR5/VSUBS" "XR4/VSUBS"
+merge "XR4/VSUBS" "XR3/VSUBS"
+merge "XR3/VSUBS" "XR2/VSUBS"
+merge "XR2/VSUBS" "XR1/VSUBS"
+merge "XR1/VSUBS" "XR16/VSUBS"
+merge "XR16/VSUBS" "XR15/VSUBS"
+merge "XR15/VSUBS" "XR14/VSUBS"
+merge "XR14/VSUBS" "XR13/VSUBS"
+merge "XR13/VSUBS" "XR12/VSUBS"
+merge "XR12/VSUBS" "XR11/VSUBS"
+merge "XR11/VSUBS" "XR10/VSUBS"
+merge "XR10/VSUBS" "XR9/VSUBS"
+merge "XR9/VSUBS" "XR24/VSUBS"
+merge "XR24/VSUBS" "XR23/VSUBS"
+merge "XR23/VSUBS" "XR22/VSUBS"
+merge "XR22/VSUBS" "XR21/VSUBS"
+merge "XR21/VSUBS" "XR20/VSUBS"
+merge "XR20/VSUBS" "XR19/VSUBS"
+merge "XR19/VSUBS" "XR18/VSUBS"
+merge "XR18/VSUBS" "XR17/VSUBS"
+merge "XR17/VSUBS" "XR32/VSUBS"
+merge "XR32/VSUBS" "XR31/VSUBS"
+merge "XR31/VSUBS" "XR30/VSUBS"
+merge "XR30/VSUBS" "XR29/VSUBS"
+merge "XR29/VSUBS" "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_0/VSUBS"
+merge "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_0/VSUBS" "XR27/VSUBS"
+merge "XR27/VSUBS" "XR26/VSUBS"
+merge "XR26/VSUBS" "XR25/VSUBS"
+merge "XR25/VSUBS" "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_1/VSUBS"
+merge "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_1/VSUBS" "XR39/VSUBS"
+merge "XR39/VSUBS" "XR38/VSUBS"
+merge "XR38/VSUBS" "XR37/VSUBS"
+merge "XR37/VSUBS" "XR36/VSUBS"
+merge "XR36/VSUBS" "XR35/VSUBS"
+merge "XR35/VSUBS" "XR34/VSUBS"
+merge "XR34/VSUBS" "XR33/VSUBS"
+merge "XR33/VSUBS" "VSS"
+merge "XR8/R1" "XR7/R1" -40609.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8047840 -73600 0 0 0 0 0 0 0 0 0 0
+merge "XR7/R1" "XR6/R1"
+merge "XR6/R1" "XR5/R1"
+merge "XR5/R1" "XR4/R1"
+merge "XR4/R1" "XR3/R1"
+merge "XR3/R1" "XR2/R1"
+merge "XR2/R1" "XR1/R1"
+merge "XR1/R1" "XR16/R1"
+merge "XR16/R1" "XR15/R1"
+merge "XR15/R1" "XR14/R1"
+merge "XR14/R1" "XR13/R1"
+merge "XR13/R1" "XR12/R1"
+merge "XR12/R1" "XR11/R1"
+merge "XR11/R1" "XR10/R1"
+merge "XR10/R1" "XR9/R1"
+merge "XR9/R1" "XR24/R1"
+merge "XR24/R1" "XR23/R1"
+merge "XR23/R1" "XR22/R1"
+merge "XR22/R1" "XR21/R1"
+merge "XR21/R1" "XR20/R1"
+merge "XR20/R1" "XR19/R1"
+merge "XR19/R1" "XR18/R1"
+merge "XR18/R1" "XR17/R1"
+merge "XR17/R1" "XR32/R1"
+merge "XR32/R1" "XR31/R1"
+merge "XR31/R1" "XR30/R1"
+merge "XR30/R1" "XR29/R1"
+merge "XR29/R1" "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_0/R1"
+merge "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_0/R1" "XR27/R1"
+merge "XR27/R1" "XR26/R1"
+merge "XR26/R1" "XR25/R1"
+merge "XR25/R1" "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_1/R1"
+merge "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_1/R1" "XR39/R1"
+merge "XR39/R1" "XR38/R1"
+merge "XR38/R1" "XR37/R1"
+merge "XR37/R1" "XR36/R1"
+merge "XR36/R1" "XR35/R1"
+merge "XR35/R1" "XR34/R1"
+merge "XR34/R1" "XR33/R1"
+merge "XR33/R1" "A"
+merge "XR8/R2" "XR7/R2" -46352.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7723946 -76008 0 0 0 0 0 0 0 0 0 0
+merge "XR7/R2" "XR6/R2"
+merge "XR6/R2" "XR5/R2"
+merge "XR5/R2" "XR4/R2"
+merge "XR4/R2" "XR3/R2"
+merge "XR3/R2" "XR2/R2"
+merge "XR2/R2" "XR1/R2"
+merge "XR1/R2" "XR16/R2"
+merge "XR16/R2" "XR15/R2"
+merge "XR15/R2" "XR14/R2"
+merge "XR14/R2" "XR13/R2"
+merge "XR13/R2" "XR12/R2"
+merge "XR12/R2" "XR11/R2"
+merge "XR11/R2" "XR10/R2"
+merge "XR10/R2" "XR9/R2"
+merge "XR9/R2" "XR24/R2"
+merge "XR24/R2" "XR23/R2"
+merge "XR23/R2" "XR22/R2"
+merge "XR22/R2" "XR21/R2"
+merge "XR21/R2" "XR20/R2"
+merge "XR20/R2" "XR19/R2"
+merge "XR19/R2" "XR18/R2"
+merge "XR18/R2" "XR17/R2"
+merge "XR17/R2" "XR32/R2"
+merge "XR32/R2" "XR31/R2"
+merge "XR31/R2" "XR30/R2"
+merge "XR30/R2" "XR29/R2"
+merge "XR29/R2" "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_0/R2"
+merge "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_0/R2" "XR27/R2"
+merge "XR27/R2" "XR26/R2"
+merge "XR26/R2" "XR25/R2"
+merge "XR25/R2" "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_1/R2"
+merge "sky130_fd_pr__res_xhigh_po_2p85_36JPKQ_1/R2" "XR39/R2"
+merge "XR39/R2" "XR38/R2"
+merge "XR38/R2" "XR37/R2"
+merge "XR37/R2" "XR36/R2"
+merge "XR36/R2" "XR35/R2"
+merge "XR35/R2" "XR34/R2"
+merge "XR34/R2" "XR33/R2"
+merge "XR33/R2" "B"

@@ -1,0 +1,9 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1771992498
+use sky130_fd_pr__cap_mim_m3_1_BTGEPK  XC2
+timestamp 1771992498
+transform 1 0 -6431 0 1 -160
+box -11863 -5400 11863 5400
+<< end >>

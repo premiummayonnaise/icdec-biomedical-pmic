@@ -1,0 +1,20 @@
+timestamp 1770698081
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__res_xhigh_po_5p73 l=l+32
+parameters sky130_fd_pr__res_xhigh_po_2p85 l=l+32
+parameters sky130_fd_pr__res_xhigh_po_1p41 l=l+32
+parameters sky130_fd_pr__res_xhigh_po_0p69 l=l+32
+parameters sky130_fd_pr__res_xhigh_po_0p35 l=l+32
+parameters sky130_fd_pr__res_xhigh_po l=l+32 w=w
+port "B" 3 200 -70972 338 -70854 xpc
+port "A" 1 500 -7000 500 -7000 xpc
+port "VSS" 2 8334 -32152 8386 -32028 m1
+node "B" 75 2306.2 200 -70972 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000000 8000 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_0_n64000#" 274000 0 0 -64000 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 137000000 276000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 75 2306.2 500 -7000 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000000 8000 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 8334 -32152 m1 0 0 0 0 0 0 0 0 0 0 154000000 310000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 153640000 309200 640000 3200 0 0 0 0 0 0 0 0 0 0
+device rsubckt sky130_fd_pr__res_xhigh_po 0 -64000 1 -63999 l=128000 w=1000 "VSS" "a_0_n64000#" 0 0 "A" 1000 1000000,4000 "B" 1000 1000000,4000
