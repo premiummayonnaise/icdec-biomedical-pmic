@@ -1,0 +1,63 @@
+* NGSPICE file created from opamp.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_YBGU8J B D S G
+X0 S G D B sky130_fd_pr__nfet_g5v0d10v5 ad=17.4 pd=120.58 as=17.4 ps=120.58 w=60 l=1.25
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_XJDP5E w_n348_n2262# a_n148_n1964# a_90_n1964#
++ a_n90_n2061#
+X0 a_90_n1964# a_n90_n2061# a_n148_n1964# w_n348_n2262# sky130_fd_pr__pfet_g5v0d10v5 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.9
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_HEFLWT B D S G
+X0 S G D B sky130_fd_pr__pfet_g5v0d10v5 ad=46.4 pd=320.57999 as=46.4 ps=320.57999 w=160 l=1.25
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_3TRZRB B D S G
+X0 S G D B sky130_fd_pr__nfet_g5v0d10v5 ad=17.4 pd=120.58 as=17.4 ps=120.58 w=60 l=1.25
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_GM3SG7 B D S G
+X0 S G D B sky130_fd_pr__pfet_g5v0d10v5 ad=21.808 pd=150.98 as=21.808 ps=150.98 w=75.2 l=1.25
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_TL3SGF B D S G
+X0 S G D B sky130_fd_pr__pfet_g5v0d10v5 ad=21.808 pd=150.98 as=21.808 ps=150.98 w=75.2 l=1.25
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_KXYP2B B D S G
+X0 S G D B sky130_fd_pr__nfet_g5v0d10v5 ad=11.02 pd=76.58 as=11.02 ps=76.58 w=38 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_F3XVAM B D S G
+X0 S G D B sky130_fd_pr__nfet_g5v0d10v5 ad=11.02 pd=76.58 as=11.02 ps=76.58 w=38 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_YB4TWH B D S G
+X0 S G D B sky130_fd_pr__nfet_g5v0d10v5 ad=17.4 pd=120.58 as=17.4 ps=120.58 w=60 l=1.25
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_BTG3QK C2 C1
+X0 C1 C2 sky130_fd_pr__cap_mim_m3_1 l=25 w=25
+X1 C1 C2 sky130_fd_pr__cap_mim_m3_1 l=25 w=25
+X2 C1 C2 sky130_fd_pr__cap_mim_m3_1 l=25 w=25
+X3 C1 C2 sky130_fd_pr__cap_mim_m3_1 l=25 w=25
+X4 C1 C2 sky130_fd_pr__cap_mim_m3_1 l=25 w=25
+X5 C1 C2 sky130_fd_pr__cap_mim_m3_1 l=25 w=25
+X6 C1 C2 sky130_fd_pr__cap_mim_m3_1 l=25 w=25
+X7 C1 C2 sky130_fd_pr__cap_mim_m3_1 l=25 w=25
+.ends
+
+.subckt opamp VP VN IBIAS OUT VDD VSS
+XXM23 VSS XM6/S VSS IBIAS sky130_fd_pr__nfet_g5v0d10v5_YBGU8J
+Xsky130_fd_pr__pfet_g5v0d10v5_XJDP5E_0 VDD OUT XC1/C1 VSS sky130_fd_pr__pfet_g5v0d10v5_XJDP5E
+XXM27 VDD OUT VDD XM5/D sky130_fd_pr__pfet_g5v0d10v5_HEFLWT
+XXM28 VSS OUT VSS IBIAS sky130_fd_pr__nfet_g5v0d10v5_3TRZRB
+XXM1 VDD XM5/D VDD XM6/D sky130_fd_pr__pfet_g5v0d10v5_GM3SG7
+XXM2 VDD XM6/D VDD XM6/D sky130_fd_pr__pfet_g5v0d10v5_TL3SGF
+XXM5 VSS XM5/D XM6/S VN sky130_fd_pr__nfet_g5v0d10v5_KXYP2B
+XXM6 VSS XM6/D XM6/S VP sky130_fd_pr__nfet_g5v0d10v5_F3XVAM
+Xsky130_fd_pr__nfet_g5v0d10v5_YB4TWH_0 VSS IBIAS VSS IBIAS sky130_fd_pr__nfet_g5v0d10v5_YB4TWH
+XXC1 XM5/D XC1/C1 sky130_fd_pr__cap_mim_m3_1_BTG3QK
+.ends
+

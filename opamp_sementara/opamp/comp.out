@@ -42,11 +42,11 @@ Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_YBGU8J in circuit opamp (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_XJDP5E in circuit opamp (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_HEFLWT in circuit opamp (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3TRZRB in circuit opamp (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_GM3SG7 in circuit opamp (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_TL3SGF in circuit opamp (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_WPQ6A5 in circuit opamp (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_KXYP2B in circuit opamp (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_F3XVAM in circuit opamp (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_YB4TWH in circuit opamp (0)(1 instance)
@@ -60,37 +60,27 @@ sky130_fd_pr__nfet_g5v0d10v5 (5)           |sky130_fd_pr__nfet_g5v0d10v5 (5)
 sky130_fd_pr__pfet_g5v0d10v5 (4)           |sky130_fd_pr__pfet_g5v0d10v5 (4)           
 sky130_fd_pr__cap_mim_m3_1 (8->1)          |sky130_fd_pr__cap_mim_m3_1 (1)             
 Number of devices: 10                      |Number of devices: 10                      
-Number of nets: 9 **Mismatch**             |Number of nets: 10 **Mismatch**            
+Number of nets: 10                         |Number of nets: 10                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: opamp                           |Circuit 2: opamp                           
-
----------------------------------------------------------------------------------------
-Net: VSS                                   |Net: VSS                                   
-  sky130_fd_pr__nfet_g5v0d10v5/4 = 5       |  sky130_fd_pr__nfet_g5v0d10v5/4 = 5       
-  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 3   |  sky130_fd_pr__nfet_g5v0d10v5/(1|3) = 3   
-  sky130_fd_pr__pfet_g5v0d10v5/2 = 1       |  sky130_fd_pr__pfet_g5v0d10v5/2 = 1       
-  sky130_fd_pr__pfet_g5v0d10v5/4 = 4       |                                           
-  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 3   |                                           
-                                           |                                           
-(no matching net)                          |Net: VDD                                   
-                                           |  sky130_fd_pr__pfet_g5v0d10v5/(1|3) = 3   
-                                           |  sky130_fd_pr__pfet_g5v0d10v5/4 = 4       
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Netlists match uniquely with property errors.
+sky130_fd_pr__cap_mim_m3_1_BTG3QK:XC1/sky130_fd_pr__cap_mim_m3_1:0 vs. sky130_fd_pr__cap_mim_m3_1:C1:
+ M circuit1: 8   circuit2: 1   (delta=7, cutoff=0)
 
 Subcircuit pins:
 Circuit 1: opamp                           |Circuit 2: opamp                           
 -------------------------------------------|-------------------------------------------
-VSS                                        |VDD **Mismatch**                           
 VP                                         |VP                                         
 VN                                         |VN                                         
+VDD                                        |VDD                                        
 IBIAS                                      |IBIAS                                      
 OUT                                        |OUT                                        
-(no pin, node is VSS)                      |VSS                                        
+VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for opamp and opamp altered to match.
+Cell pin lists are equivalent.
 Device classes opamp and opamp are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ opamp
