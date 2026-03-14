@@ -1,0 +1,79 @@
+** sch_path: /foss/designs/icdec-biomedical-pmic/xschem/error-amplifier2/schematics/offset-mc_pex.spice
+** Post-Layout Parasitic Extraction Version
+
+* --- Models & Library ---
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice mc
+.option wnflag=1
+.param MC_SWITCH=1.0
+
+* --- Include the Extracted PEX Netlist ---
+* Pastikan file ini ada di folder yang sama
+.include "1st-stage_pex.spice"
+
+* =============================================================
+* WRAPPER: Mapping Schematic Pins to PEX Pins
+* Schematic Pin Order: VDD OUT VN VP IBIAS VSS
+* PEX Netlist Order: VP VN IBIAS VSS OUT VDD (sesuaikan dengan hasil extract Magic)
+* =============================================================
+.subckt 1st-stage VDD OUT VN VP IBIAS VSS
+  X1 VP VN IBIAS VSS OUT VDD x1st-stage
+.ends 1st-stage
+
+* --- Top Level Circuit ---
+V5 VDD VSS DC 2.5
+V7 VSS GND 0
+x2 VDD OUT VIN OUT IBIAS VSS 1st-stage
+I0 VDD IBIAS 200u
+V1 VIN VSS DC 1.25
+
+* =============================================================
+* CONTROL BLOCK: Monte Carlo with CSV Output
+* =============================================================
+.control
+  set noaskquit
+  set wr_vecnames
+  set wr_singlescale
+
+  let mc_runs = 100
+  let run = 0
+  let vcm_target = 1.25
+
+  * Initialize vector
+  compose vos_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+  dowhile run < mc_runs
+    reset
+    let current_seed = run + 1
+    setseed $&current_seed
+
+    * DC Sweep V1
+    dc V1 1.24 1.26 0.05m
+
+    * Extract Vin crossing point
+    meas dc vin_at_vcm find v(vin) when v(out)=vcm_target
+
+    * Calculate Vos and store in vector
+    let vos_val = (vcm_target - vin_at_vcm) * 1e6
+    let vos_vec[run] = vos_val
+
+    echo Iteration: $&run | Vos: $&vos_val uV
+    let run = run + 1
+  end
+
+  * CSV Output Section
+  shell rm -f vos_results_pex.csv
+  shell echo "run,vos_uv" > vos_results_pex.csv
+
+  let i = 0
+  dowhile i < mc_runs
+    let tmp_vos = vos_vec[i]
+    echo $&i, $&tmp_vos >> vos_results_pex.csv
+    let i = i + 1
+  end
+
+  echo ==========================================================
+  echo SELESAI PEX MC! Cek 'vos_results_pex.csv' sekarang.
+  print mean(vos_vec) std(vos_vec)
+  echo ==========================================================
+.endc
+.end

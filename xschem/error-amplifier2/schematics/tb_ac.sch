@@ -74,7 +74,7 @@ value=".control
 .endc
 
 "}
-C {vsource.sym} 710 -440 0 0 {name=V5 value=5 savecurrent=false}
+C {vsource.sym} 710 -440 0 0 {name=V5 value=2.5 savecurrent=false}
 C {vsource.sym} 710 -350 0 0 {name=V7 value=0 savecurrent=false}
 C {lab_pin.sym} 710 -410 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 710 -470 0 0 {name=p4 sig_type=std_logic lab=VDD}
@@ -86,7 +86,7 @@ C {sky130_fd_pr/corner.sym} 640 -610 0 0 {name=CORNER only_toplevel=true corner=
 C {lab_pin.sym} 380 -840 0 1 {name=p6 sig_type=std_logic lab=OUT}
 C {capa-2.sym} 380 -810 0 0 {name=C2
 m=1
-value=1p
+value=5p
 footprint=1206
 device=polarized_capacitor}
 C {lab_pin.sym} 250 -930 0 1 {name=p13 sig_type=std_logic lab=VDD}
@@ -113,7 +113,7 @@ C {lab_pin.sym} 400 -310 0 1 {name=p25 sig_type=std_logic lab=OUT3}
 C {lab_pin.sym} 270 -400 0 1 {name=p26 sig_type=std_logic lab=VDDr}
 C {lab_pin.sym} 250 -200 0 0 {name=p27 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 140 -400 0 0 {name=p28 lab=IBIAS}
-C {vsource.sym} 560 -250 0 0 {name=V4 value="DC 5 AC 1" savecurrent=false}
+C {vsource.sym} 560 -250 0 0 {name=V4 value="DC 2.5 AC 1" savecurrent=false}
 C {lab_pin.sym} 560 -220 0 0 {name=p30 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 560 -280 0 0 {name=p31 sig_type=std_logic lab=VDDr}
 C {icdec-biomedical-pmic/xschem/error-amplifier2/schematics/1st-stage.sym} -30 -130 0 0 {name=x1}

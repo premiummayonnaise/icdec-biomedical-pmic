@@ -1,0 +1,14 @@
+** sch_path: /foss/designs/icdec-biomedical-pmic/xschem/error-amplifier2/layout2/opamp-no-dummy.sch
+.subckt opamp-no-dummy VDD VP VN IBIAS VSS OUT
+*.PININFO VDD:B VP:I VN:I IBIAS:I VSS:B OUT:O
+XM1 net2 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=75.2 nf=1 m=1
+XM2 net1 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=75.2 nf=1 m=1
+XM5 net2 VN net3 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=38 nf=1 m=1
+XM6 net1 VP net3 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=38 nf=1 m=1
+XM23 net3 IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=1 m=1
+XM24 IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=1 m=1
+XM27 OUT net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1.25 W=160 nf=1 m=1
+XM28 OUT IBIAS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1.25 W=60 nf=1 m=1
+XC1 net4 net2 sky130_fd_pr__cap_mim_m3_1 W=25 L=25 m=8
+XM29 OUT VSS net4 VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.9 W=20 nf=1 m=1
+.ends

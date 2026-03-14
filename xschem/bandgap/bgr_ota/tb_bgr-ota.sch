@@ -27,7 +27,6 @@ N 220 -340 220 -320 {lab=VSS}
 N 110 -370 110 -200 {lab=VNr}
 N 370 -390 370 -200 {lab=OUT3}
 N 240 -200 370 -200 {lab=OUT3}
-N 260 -200 260 -190 {lab=OUT3}
 N 110 -200 180 -200 {lab=VNr}
 N 220 -1010 220 -970 {lab=VDD}
 N 290 -920 320 -920 {lab=OUT}
@@ -82,7 +81,7 @@ value=".control
 .endc
 
 "}
-C {vsource.sym} 700 -520 0 0 {name=V5 value=1.8 savecurrent=false}
+C {vsource.sym} 700 -520 0 0 {name=V5 value=1.62 savecurrent=false}
 C {vsource.sym} 700 -430 0 0 {name=V7 value=0 savecurrent=false}
 C {lab_pin.sym} 700 -490 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 700 -550 0 0 {name=p4 sig_type=std_logic lab=VDD}
@@ -116,17 +115,6 @@ C {lab_pin.sym} 150 -370 0 0 {name=p24 sig_type=std_logic lab=VPr}
 C {lab_pin.sym} 390 -390 0 1 {name=p25 sig_type=std_logic lab=OUT3}
 C {lab_pin.sym} 220 -480 0 1 {name=p26 sig_type=std_logic lab=VDDr}
 C {lab_pin.sym} 220 -320 0 0 {name=p27 sig_type=std_logic lab=VSS}
-C {capa.sym} 260 -160 0 0 {name=C3
-m=1
-value=50u
-footprint=1206
-device="ceramic capacitor"}
-C {res.sym} 210 -200 1 0 {name=R1
-value=3183.1
-footprint=1206
-device=resistor
-m=1}
-C {lab_pin.sym} 260 -130 0 0 {name=p29 sig_type=std_logic lab=VSS}
 C {vsource.sym} 550 -330 0 0 {name=V4 value="DC 1.8 AC 1" savecurrent=false}
 C {lab_pin.sym} 550 -300 0 0 {name=p30 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 550 -360 0 0 {name=p31 sig_type=std_logic lab=VDDr}
@@ -139,3 +127,8 @@ C {lab_pin.sym} 540 -190 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 540 -100 0 0 {name=p7 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 540 -250 0 0 {name=p15 sig_type=std_logic lab=VNr}
 C {lab_pin.sym} 540 -160 0 0 {name=p20 sig_type=std_logic lab=VPr}
+C {ind.sym} 210 -200 1 0 {name=L1
+m=1
+value=1n
+footprint=1206
+device=inductor}
