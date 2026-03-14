@@ -1,0 +1,77 @@
+** sch_path: /foss/designs/icdec-biomedical-pmic/opamp_sementara/opamp/input-offset.sch
+**.subckt opamp
+x1 VDD OUT VIN OUT IBIAS VSS opamp
+I0 VDD IBIAS 200u
+V1 VDD VSS 2.5
+V2 VIN VSS 3
+V4 VSS GND 0
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice mc
+
+** PEX NETLIST INCLUDE
+.include ./opamp_pex.spice
+
+
+
+
+.control
+  set noaskquit
+  set wr_vecnames
+  set wr_singlescale
+
+  let mc_runs = 100
+  let run = 0
+  let vcm_target = 1.25
+
+  * --- INIT VECTOR (100 entries) ---
+  compose vos_vec values 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+  dowhile run < mc_runs
+    reset
+
+    * FIX ERROR SETSEED: Hitung dulu di variabel luar
+    let current_seed = run + 1
+    setseed $&current_seed
+
+    * Jalankan DC Sweep (V1 adalah source yang di-sweep)
+    dc V2 1.24 1.26 0.05m
+
+    * Ekstraksi nilai Vin saat crossing
+    meas dc vin_at_vcm when v(out)=vcm_target
+
+    * Hitung Vos dalam uV dan masukkan ke vector
+    let vos_val = (vcm_target - vin_at_vcm) * 1e6
+    let vos_vec[run] = vos_val
+
+    echo Iteration: $&run | Vos: $&vos_val uV
+    let run = run + 1
+  end
+
+  * =============================================================
+  * RE-FIXED CSV OUTPUT BLOCK (INDEX EVALUATION)
+  * =============================================================
+  shell rm -f vos_naive_pex_results.csv
+  shell echo run,vos_uv > vos_results.csv
+
+  let i = 0
+  dowhile i < mc_runs
+    let tmp_vos = vos_vec[i]
+    echo $&i, $&tmp_vos >> vos_results.csv
+    let i = i + 1
+  end
+
+  echo ==========================================================
+  echo SELESAI! Cek 'vos_naive_pex_results.csv' di folder lo sekarang.
+  print mean(vos_vec) std(vos_vec)
+  echo ==========================================================
+.endc
+
+
+
+**** end user architecture code
+**.ends
+
+.GLOBAL GND
+.end
